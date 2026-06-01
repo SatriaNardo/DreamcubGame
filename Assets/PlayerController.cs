@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float wallJumpDuration = 0.15f;               
     private bool isTouchingWall;
     private bool isWallSliding;
+    private bool isWallJumping = false; 
 
     [Header("Dashing")]
     [SerializeField] private float dashForce = 24f;
@@ -48,9 +49,9 @@ public class PlayerController : MonoBehaviour
     [Header("Combat & Attacking")]
     [SerializeField] private Transform attackPoint;
     [SerializeField] private float attackRange = 1f;
-    [SerializeField] private int attackDamage = 10; // NEW: Base player damage
+    [SerializeField] private int attackDamage = 10; 
     [SerializeField] private LayerMask projectileLayer;
-    [SerializeField] private LayerMask enemyLayer;  // NEW: Layer to detect enemies
+    [SerializeField] private LayerMask enemyLayer;  
     [SerializeField] private float attackCooldown = 0.4f;
     private float lastAttackTime;
     private bool isAttackingGizmo = false; 
@@ -83,7 +84,10 @@ public class PlayerController : MonoBehaviour
             isWallSliding = false;
         }
 
-        if (!isWallSliding) Flip();
+        if (!isWallSliding && !isWallJumping && canMove) 
+        {
+            Flip();
+        }
     }
 
     void FixedUpdate()
@@ -92,7 +96,7 @@ public class PlayerController : MonoBehaviour
 
         if (canMove) rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
 
-        if (Mathf.Abs(moveInput.x) > 0.1f && isGrounded)
+        if (Mathf.Abs(moveInput.x) > 0.1f && isGrounded && canMove)
         {
             if (WakeManager.Instance != null) WakeManager.Instance.AddPassiveMovementWake();
         }
@@ -110,10 +114,17 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void OnMove(InputValue value) { moveInput = value.Get<Vector2>(); }
+    public void OnMove(InputValue value) 
+    { 
+        moveInput = value.Get<Vector2>(); 
+    }
 
     public void OnJump(InputValue value)
     {
+        // FIX: Ignore jump if dialogue is open or controls are locked!
+        if (DialogueManager.Instance != null && DialogueManager.Instance.IsDialogueActive) return;
+        if (!canMove) return;
+
         isHoldingJump = value.isPressed;
         if (isHoldingJump)
         {
@@ -128,10 +139,33 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void OnDash(InputValue value)
+    {
+        // FIX: Ignore dash if dialogue is open or controls are locked!
+        if (DialogueManager.Instance != null && DialogueManager.Instance.IsDialogueActive) return;
+        if (!canMove) return;
+
+        if (value.isPressed && canDash && !isDashing) StartCoroutine(DashRoutine());
+    }
+
+    public void OnAttack(InputValue value)
+    {
+        // FIX: Ignore attack if dialogue is open or controls are locked!
+        if (DialogueManager.Instance != null && DialogueManager.Instance.IsDialogueActive) return;
+        if (!canMove) return;
+
+        if (value.isPressed && Time.time >= lastAttackTime + attackCooldown)
+        {
+            PerformAttack();
+            if (WakeManager.Instance != null) WakeManager.Instance.AddActionSpike();
+        }
+    }
+
     private IEnumerator WallJumpRoutine()
     {
         isWallSliding = false;
         canMove = false; 
+        isWallJumping = true; 
 
         if (WakeManager.Instance != null) WakeManager.Instance.AddActionSpike();
 
@@ -139,26 +173,14 @@ public class PlayerController : MonoBehaviour
         rb.linearVelocity = new Vector2(jumpDirection * wallJumpForce.x, wallJumpForce.y);
 
         isFacingRight = !isFacingRight;
-        Vector3 localScale = transform.localScale;
-        localScale.x *= -1f;
-        transform.localScale = localScale;
+        
+        if (isFacingRight) transform.rotation = Quaternion.Euler(0, 0, 0);
+        else transform.rotation = Quaternion.Euler(0, 180, 0);
 
         yield return new WaitForSeconds(wallJumpDuration);
+        
         canMove = true; 
-    }
-
-    public void OnDash(InputValue value)
-    {
-        if (value.isPressed && canDash && !isDashing) StartCoroutine(DashRoutine());
-    }
-
-    public void OnAttack(InputValue value)
-    {
-        if (value.isPressed && Time.time >= lastAttackTime + attackCooldown)
-        {
-            PerformAttack();
-            if (WakeManager.Instance != null) WakeManager.Instance.AddActionSpike();
-        }
+        isWallJumping = false; 
     }
 
     private void PerformAttack()
@@ -169,11 +191,10 @@ public class PlayerController : MonoBehaviour
         Vector2 mouseScreenPosition = Mouse.current.position.ReadValue();
         Vector2 mouseWorldPosition = Camera.main.ScreenToWorldPoint(mouseScreenPosition);
 
-        // 1. Deflect Projectiles (UPDATED NAME)
         Collider2D[] hitProjectiles = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, projectileLayer);
         foreach (Collider2D proj in hitProjectiles)
         {
-            EnemyProjectile p = proj.GetComponent<EnemyProjectile>(); // <--- CHANGED HERE
+            EnemyProjectile p = proj.GetComponent<EnemyProjectile>(); 
             if (p != null)
             {
                 Vector2 deflectDirection = (mouseWorldPosition - (Vector2)proj.transform.position).normalized;
@@ -183,14 +204,13 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        // 2. Damage Enemies (UPDATED NAME)
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
         foreach (Collider2D enemyHit in hitEnemies)
         {
             MeleeEnemy meleeScript = enemyHit.GetComponent<MeleeEnemy>();
             if (meleeScript != null) meleeScript.TakeDamage(attackDamage);
 
-            ShootingEnemy shooterScript = enemyHit.GetComponent<ShootingEnemy>(); // <--- CHANGED HERE
+            ShootingEnemy shooterScript = enemyHit.GetComponent<ShootingEnemy>(); 
             if (shooterScript != null) shooterScript.TakeDamage(attackDamage);
         }
     }
@@ -230,37 +250,40 @@ public class PlayerController : MonoBehaviour
 
     private void Flip()
     {
-        // Check if the player is moving in the opposite direction they are currently facing
         if (isFacingRight && moveInput.x < 0f || !isFacingRight && moveInput.x > 0f)
         {
             isFacingRight = !isFacingRight; 
             
-            // VIDEO FIX [00:30:04]: Rotate 180 degrees on the Y-axis instead of using negative local scale.
-            // This ensures that Cinemachine's bounding tracking offsets turn around with the player!
-            if (isFacingRight)
-            {
-                transform.rotation = Quaternion.Euler(0, 0, 0);
-            }
-            else
-            {
-                transform.rotation = Quaternion.Euler(0, 180, 0);
-            }
+            if (isFacingRight) transform.rotation = Quaternion.Euler(0, 0, 0);
+            else transform.rotation = Quaternion.Euler(0, 180, 0);
         }
     }
     
     public void RespawnAt(Vector3 spawnPosition)
     {
-        // 1. Teleport to the new location
         transform.position = spawnPosition;
+        rb.linearVelocity = Vector2.zero; 
         
-        // 2. Kill all momentum so they don't go flying after teleporting
-        rb.linearVelocity = Vector2.zero;
-        
-        // 3. Reset any locked states so they can move normally again
         rb.gravityScale = baseGravityScale;
         isWallSliding = false;
         canMove = true;
         isDashing = false;
+        isWallJumping = false; 
+    }
+
+    // --- NEW: Cutscene Lock added here so the boss cutscene script works perfectly! ---
+    public void SetCutsceneMode(bool isLocked)
+    {
+        if (isLocked)
+        {
+            canMove = false;
+            isDashing = false;
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y); // Stop momentum, keep gravity
+        }
+        else
+        {
+            canMove = true;
+        }
     }
 
     private void OnDrawGizmos()

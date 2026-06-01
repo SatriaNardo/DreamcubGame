@@ -1,7 +1,6 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using TMPro;
-using System.Collections.Generic; // NEW: Required for using Lists
+using System.Collections.Generic;
 
 public class WakeManager : MonoBehaviour
 {
@@ -24,9 +23,12 @@ public class WakeManager : MonoBehaviour
 
     private bool isPlayerMovingThisFrame = false;
 
-    // --- NEW: Master lists to keep track of all enemies in the level ---
+    // --- Master lists for respawning ---
     private List<MeleeEnemy> allMeleeEnemies = new List<MeleeEnemy>();
     private List<ShootingEnemy> allShootingEnemies = new List<ShootingEnemy>();
+
+    // --- Active Checkpoint Memory ---
+    private Vector3 activeRespawnPosition;
 
     void Awake()
     {
@@ -36,6 +38,13 @@ public class WakeManager : MonoBehaviour
 
     void Start()
     {
+        // Find the initial starting point of the level
+        GameObject defaultSpawn = GameObject.FindGameObjectWithTag("Respawn");
+        if (defaultSpawn != null)
+        {
+            activeRespawnPosition = defaultSpawn.transform.position;
+        }
+
         UpdateUI();
     }
 
@@ -51,7 +60,7 @@ public class WakeManager : MonoBehaviour
         isPlayerMovingThisFrame = false;
     }
 
-    // --- NEW: Enemies will call these to add themselves to the Wake Manager's list ---
+    // --- ENEMY REGISTRATION ---
     public void RegisterMeleeEnemy(MeleeEnemy enemy)
     {
         if (!allMeleeEnemies.Contains(enemy)) allMeleeEnemies.Add(enemy);
@@ -62,6 +71,7 @@ public class WakeManager : MonoBehaviour
         if (!allShootingEnemies.Contains(enemy)) allShootingEnemies.Add(enemy);
     }
 
+    // --- WAKE MODIFIERS ---
     public void AddPassiveMovementWake()
     {
         isPlayerMovingThisFrame = true; 
@@ -93,6 +103,22 @@ public class WakeManager : MonoBehaviour
         UpdateUI();
     }
 
+    // Instantly maxes out the meter (Used for spikes/pits)
+    public void MaxOutWakeMeter()
+    {
+        currentWake = maxWake;
+        Debug.Log("Fell into a Dead Zone! Instant 100% Wake!");
+        CheckWakeStatus();
+        UpdateUI();
+    }
+
+    // --- CHECKPOINT SYSTEM ---
+    public void SetRespawnPoint(Vector3 newPos)
+    {
+        activeRespawnPosition = newPos;
+        Debug.Log("Checkpoint Saved!");
+    }
+
     private void UpdateUI()
     {
         if (wakeTextDisplay != null)
@@ -111,36 +137,31 @@ public class WakeManager : MonoBehaviour
         }
     }
 
+    // --- THE MASTER RESPAWN CYCLE ---
     private void TriggerInstantRespawn()
     {
         Debug.Log("YOU WOKE UP! Warping back to sleep...");
 
-        // 1. Respawn the player
-        GameObject spawnPoint = GameObject.FindGameObjectWithTag("Respawn");
-        Vector3 respawnPos = spawnPoint != null ? spawnPoint.transform.position : Vector3.zero;
-
+        // 1. Respawn the player at the memorized checkpoint
         PlayerController player = Object.FindFirstObjectByType<PlayerController>();
-        if (player != null) player.RespawnAt(respawnPos);
+        if (player != null) player.RespawnAt(activeRespawnPosition);
 
         // 2. Clear any leftover bullets flying through the air
         EnemyProjectile[] strayBullets = Object.FindObjectsByType<EnemyProjectile>(FindObjectsSortMode.None);
-        foreach (EnemyProjectile bullet in strayBullets)
+        foreach (EnemyProjectile bullet in strayBullets) Destroy(bullet.gameObject);
+
+        // 3. Wake up all the enemies!
+        foreach (MeleeEnemy melee in allMeleeEnemies) if (melee != null) melee.ResetEnemy();
+        foreach (ShootingEnemy shooter in allShootingEnemies) if (shooter != null) shooter.ResetEnemy();
+
+        // 4. Reset all Arena Gates so you don't get locked out! (FindObjectsInactive.Include prevents blind spots)
+        CombatGate[] allGates = Object.FindObjectsByType<CombatGate>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        foreach (CombatGate gate in allGates)
         {
-            Destroy(bullet.gameObject);
+            gate.ResetGate();
         }
 
-        // 3. --- NEW: Wake up all the enemies! ---
-        foreach (MeleeEnemy melee in allMeleeEnemies)
-        {
-            if (melee != null) melee.ResetEnemy();
-        }
-
-        foreach (ShootingEnemy shooter in allShootingEnemies)
-        {
-            if (shooter != null) shooter.ResetEnemy();
-        }
-
-        // 4. Reset the Wake Meter cleanly
+        // 5. Reset the Wake Meter cleanly
         currentWake = 0f;
         UpdateUI();
     }

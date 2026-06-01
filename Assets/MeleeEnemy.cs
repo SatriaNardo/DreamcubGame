@@ -214,4 +214,16 @@ public class MeleeEnemy : MonoBehaviour
             transform.localScale = new Vector3(1f, 1f, 1f);
         }
     }
+
+    // --- NEW: Editor Visualization ---
+    private void OnDrawGizmosSelected()
+    {
+        // Draw Chase Range (Yellow)
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, chaseRange);
+
+        // Draw Attack Range (Red)
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
+    }
 }
