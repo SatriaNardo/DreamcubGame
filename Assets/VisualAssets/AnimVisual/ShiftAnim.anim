@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: KeyboardAnim
+  m_Name: ShiftAnim
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,11 +21,11 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 5398998059697563366, guid: 6cb402b4301724660b56d942ef9483df, type: 3}
+      value: {fileID: 8554236681978968047, guid: 7c780e5e4deb34cd4b325fed56f974a7, type: 3}
     - time: 0.41666666
-      value: {fileID: 1088122718650235891, guid: 6cb402b4301724660b56d942ef9483df, type: 3}
+      value: {fileID: 3685322609130018794, guid: 7c780e5e4deb34cd4b325fed56f974a7, type: 3}
     - time: 0.8333333
-      value: {fileID: 5398998059697563366, guid: 6cb402b4301724660b56d942ef9483df, type: 3}
+      value: {fileID: 8554236681978968047, guid: 7c780e5e4deb34cd4b325fed56f974a7, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -48,9 +48,9 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 5398998059697563366, guid: 6cb402b4301724660b56d942ef9483df, type: 3}
-    - {fileID: 1088122718650235891, guid: 6cb402b4301724660b56d942ef9483df, type: 3}
-    - {fileID: 5398998059697563366, guid: 6cb402b4301724660b56d942ef9483df, type: 3}
+    - {fileID: 8554236681978968047, guid: 7c780e5e4deb34cd4b325fed56f974a7, type: 3}
+    - {fileID: 3685322609130018794, guid: 7c780e5e4deb34cd4b325fed56f974a7, type: 3}
+    - {fileID: 8554236681978968047, guid: 7c780e5e4deb34cd4b325fed56f974a7, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

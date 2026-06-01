@@ -19,13 +19,17 @@ public class ShootingEnemy : MonoBehaviour
     private Transform playerTransform;
     private SpriteRenderer sr;
     
-    private Vector3 startPosition; // NEW: Memorizes where it spawns
+    private Vector3 startPosition; 
+    private Vector3 baseScale; // NEW: Memorizes your custom scale in the editor!
 
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
         currentHealth = maxHealth;
-        startPosition = transform.position; // Save spawn point
+        startPosition = transform.position; 
+        
+        // Memorize whatever scale you set in the Unity Inspector!
+        baseScale = transform.localScale;
         
         // Register this enemy to the WakeManager master list
         if (WakeManager.Instance != null) WakeManager.Instance.RegisterShootingEnemy(this);
@@ -88,20 +92,18 @@ public class ShootingEnemy : MonoBehaviour
         }
     }
 
-    // --- UPDATED DEATH LOGIC ---
     private void Die()
     {
-        // Deactivate instead of Destroy!
         gameObject.SetActive(false);
     }
 
-    // --- NEW RESPAWN LOGIC ---
     public void ResetEnemy()
     {
         StopAllCoroutines();
         
-        // Reset position and stats
+        // Reset position, stats, and scale!
         transform.position = startPosition;
+        transform.localScale = baseScale; // FIX: Ensure scale is correct on respawn
         currentHealth = maxHealth;
         fireCooldownTimer = 0f;
         
@@ -114,13 +116,14 @@ public class ShootingEnemy : MonoBehaviour
 
     private void LookAtPlayer()
     {
+        // FIX: Now uses your original size and just adds a negative sign when flipping!
         if (playerTransform.position.x < transform.position.x)
         {
-            transform.localScale = new Vector3(-1f, 1f, 1f); 
+            transform.localScale = new Vector3(-Mathf.Abs(baseScale.x), baseScale.y, baseScale.z); 
         }
         else
         {
-            transform.localScale = new Vector3(1f, 1f, 1f);  
+            transform.localScale = new Vector3(Mathf.Abs(baseScale.x), baseScale.y, baseScale.z);  
         }
     }
 
