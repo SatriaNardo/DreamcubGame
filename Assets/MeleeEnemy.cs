@@ -3,6 +3,10 @@ using UnityEngine;
 
 public class MeleeEnemy : MonoBehaviour
 {
+    [Header("Health & Stats")]
+    [SerializeField] private int maxHealth = 30;
+    private int currentHealth;
+
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 4f; 
     [SerializeField] private float chaseRange = 12f;
@@ -10,7 +14,7 @@ public class MeleeEnemy : MonoBehaviour
 
     [Header("Attacking & Telegraphing")]
     [SerializeField] private Transform attackPoint;
-    [SerializeField] private SpriteRenderer visualIndicator; // Drag the AttackIndicator here
+    [SerializeField] private SpriteRenderer visualIndicator; 
     [SerializeField] private float attackHitboxRadius = 1f;
     [SerializeField] private float windUpTime = 0.5f; 
     [SerializeField] private float attackActiveTime = 0.15f; 
@@ -20,26 +24,29 @@ public class MeleeEnemy : MonoBehaviour
     [SerializeField] private float stunDuration = 2f;
 
     private Transform playerTransform;
-    private PlayerController playerScript;
     private Rigidbody2D rb;
+    private SpriteRenderer sr;
     
     private bool isFacingRight = true;
     private bool isStunned = false;
     private bool isAttacking = false;
     private float lastAttackTime;
+    
+    private Vector3 startPosition; // NEW: Memorizes where it spawns
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
+        currentHealth = maxHealth;
+        startPosition = transform.position; // Save spawn point
         
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if (player != null)
-        {
-            playerTransform = player.transform;
-            playerScript = player.GetComponent<PlayerController>();
-        }
+        // Register this enemy to the WakeManager master list
+        if (WakeManager.Instance != null) WakeManager.Instance.RegisterMeleeEnemy(this);
 
-        // Ensure the indicator is safely hidden at launch
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null) playerTransform = player.transform;
+
         if (visualIndicator != null)
         {
             visualIndicator.gameObject.SetActive(false);
@@ -52,7 +59,6 @@ public class MeleeEnemy : MonoBehaviour
         if (playerTransform == null || isStunned || isAttacking) return;
 
         float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
-
         HandleFacing();
 
         if (distanceToPlayer <= attackRange && Time.time >= lastAttackTime + attackCooldown)
@@ -75,74 +81,69 @@ public class MeleeEnemy : MonoBehaviour
         rb.linearVelocity = new Vector2(direction * moveSpeed, rb.linearVelocity.y);
     }
 
+    public void TakeDamage(int baseDamage)
+    {
+        int finalDamage = baseDamage;
+
+        if (isAttacking)
+        {
+            finalDamage *= 2; 
+            StopAllCoroutines(); 
+            isAttacking = false;
+            
+            if (WakeManager.Instance != null) WakeManager.Instance.RewardSuccessfulParry();
+            StartCoroutine(StunRoutine());
+            Debug.Log($"CRITICAL PARRY! Enemy takes {finalDamage} damage!");
+        }
+
+        currentHealth -= finalDamage;
+        StartCoroutine(DamageFlash());
+
+        if (currentHealth <= 0) Die();
+    }
+
     private IEnumerator AttackRoutine()
     {
         isAttacking = true;
-        
-        // Stop the enemy from moving horizontally while swinging their weapon
         rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); 
 
         if (visualIndicator != null)
         {
-            // 1. WIND UP PHASE: Turn on and animate the expanding yellow ring
             visualIndicator.gameObject.SetActive(true);
-            visualIndicator.color = new Color(1f, 0.92f, 0.016f, 0.4f); // Semi-transparent Yellow
+            visualIndicator.color = new Color(1f, 0.92f, 0.016f, 0.4f); 
             
             float elapsed = 0f;
             Vector3 targetScale = new Vector3(attackHitboxRadius * 2, attackHitboxRadius * 2, 1f);
             
-            // Smoothly grow the ring over the duration of the wind-up time
             while (elapsed < windUpTime)
             {
                 elapsed += Time.deltaTime;
                 visualIndicator.transform.localScale = Vector3.Lerp(Vector3.zero, targetScale, elapsed / windUpTime);
                 yield return null;
             }
-
-            // 2. STRIKE PHASE: Hitbox becomes dangerous (Snap color to Red)
-            visualIndicator.color = new Color(1f, 0f, 0f, 0.6f); // Semi-transparent Red
+            visualIndicator.color = new Color(1f, 0f, 0f, 0.6f); 
         }
 
-        // --- PARRY / CLASH DETECTION SYSTEM ---
-        // If the player timed their strike perfectly and is currently attacking on this exact frame:
-        if (playerScript != null && playerScript.IsCurrentlyAttacking)
+        Collider2D[] hits = Physics2D.OverlapCircleAll(attackPoint.position, attackHitboxRadius);
+        foreach (Collider2D hit in hits)
         {
-            // Reward the player by refunding the 30% action spike penalty from the Wake Meter
-            if (WakeManager.Instance != null)
+            if (hit.CompareTag("Player"))
             {
-                WakeManager.Instance.RewardSuccessfulParry();
+                if (WakeManager.Instance != null) WakeManager.Instance.TakeDamagePenalty();
+                break; 
             }
-
-            // Interrupt the enemy's attack execution and force them into a stunned state
-            StartCoroutine(StunRoutine());
-            yield break; // Exit the coroutine early so the player doesn't get hurt
         }
 
-        // --- DAMAGE CALCULATION ---
-        // If the player did not parry, create an overlap circle to check if they are standing in the blast zone
-        Collider2D playerHit = Physics2D.OverlapCircle(attackPoint.position, attackHitboxRadius, LayerMask.GetMask("Default")); 
-        
-        if (playerHit != null && playerHit.CompareTag("Player"))
-        {
-            Debug.Log("Player missed the parry window and was hit by the enemy slash!");
-            // TODO: Subtract player health or increase Wake Parameter heavily here!
-        }
-
-        // Leave the red active damage hitbox lingering in the world for a fraction of a second
         yield return new WaitForSeconds(attackActiveTime);
-
-        // 3. RESET PHASE: Clean up variables and hide sprites for the next loop
         ResetAttackVisuals();
     }
 
     private IEnumerator StunRoutine()
     {
-        Debug.Log("CLASH! Enemy is STUNNED!");
         isStunned = true;
         ResetAttackVisuals();
         rb.linearVelocity = Vector2.zero;
 
-        SpriteRenderer sr = GetComponent<SpriteRenderer>();
         if (sr != null) sr.color = Color.blue;
 
         yield return new WaitForSeconds(stunDuration);
@@ -150,6 +151,43 @@ public class MeleeEnemy : MonoBehaviour
         if (sr != null) sr.color = Color.white;
         isStunned = false;
         lastAttackTime = Time.time; 
+    }
+
+    private IEnumerator DamageFlash()
+    {
+        if (sr != null && !isStunned) 
+        {
+            sr.color = Color.red;
+            yield return new WaitForSeconds(0.1f);
+            sr.color = Color.white;
+        }
+    }
+
+    // --- UPDATED DEATH LOGIC ---
+    private void Die()
+    {
+        // Deactivate instead of Destroy!
+        gameObject.SetActive(false);
+    }
+
+    // --- NEW RESPAWN LOGIC ---
+    public void ResetEnemy()
+    {
+        StopAllCoroutines();
+        
+        // Reset position and stats
+        transform.position = startPosition;
+        currentHealth = maxHealth;
+        isStunned = false;
+        isAttacking = false;
+        rb.linearVelocity = Vector2.zero;
+        
+        // Fix visuals
+        if (sr != null) sr.color = Color.white;
+        ResetAttackVisuals();
+        
+        // Wake back up!
+        gameObject.SetActive(true);
     }
 
     private void ResetAttackVisuals()

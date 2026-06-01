@@ -1,21 +1,35 @@
+using System.Collections;
 using UnityEngine;
 
 public class ShootingEnemy : MonoBehaviour
 {
+    [Header("Health & Stats")]
+    [SerializeField] private int maxHealth = 20; 
+    private int currentHealth;
+
     [Header("Targeting")]
     [SerializeField] private float shootingRange = 10f;
-    [SerializeField] private float fireRate = 2f; // Seconds between shots
+    [SerializeField] private float fireRate = 2f; 
     private float fireCooldownTimer;
 
     [Header("References")]
     [SerializeField] private GameObject projectilePrefab;
-    [SerializeField] private Transform firePoint; // Where the bullet spawns
+    [SerializeField] private Transform firePoint; 
 
     private Transform playerTransform;
+    private SpriteRenderer sr;
+    
+    private Vector3 startPosition; // NEW: Memorizes where it spawns
 
     void Start()
     {
-        // Find the player automatically using their Tag
+        sr = GetComponent<SpriteRenderer>();
+        currentHealth = maxHealth;
+        startPosition = transform.position; // Save spawn point
+        
+        // Register this enemy to the WakeManager master list
+        if (WakeManager.Instance != null) WakeManager.Instance.RegisterShootingEnemy(this);
+
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
@@ -27,22 +41,17 @@ public class ShootingEnemy : MonoBehaviour
     {
         if (playerTransform == null) return;
 
-        // Calculate distance to player
         float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
-
-        // Update the reload timer
         fireCooldownTimer += Time.deltaTime;
 
-        // If the player is close enough, aim and fire
         if (distanceToPlayer <= shootingRange)
         {
-            // Simple visual flip to face the player direction
             LookAtPlayer();
 
             if (fireCooldownTimer >= fireRate)
             {
                 Shoot();
-                fireCooldownTimer = 0f; // Reset cooldown
+                fireCooldownTimer = 0f; 
             }
         }
     }
@@ -51,34 +60,70 @@ public class ShootingEnemy : MonoBehaviour
     {
         if (projectilePrefab == null || firePoint == null) return;
 
-        // 1. Calculate direction vector from enemy to player
         Vector2 direction = (playerTransform.position - firePoint.position);
-
-        // 2. Spawn the projectile prefab at the firePoint position
         GameObject newBullet = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
 
-        // 3. Send the calculated vector direction over to the projectile's movement script
-        Projectile projectileScript = newBullet.GetComponent<Projectile>();
+        EnemyProjectile projectileScript = newBullet.GetComponent<EnemyProjectile>();
         if (projectileScript != null)
         {
             projectileScript.SetDirection(direction);
         }
     }
 
-    private void LookAtPlayer()
+    public void TakeDamage(int damage)
     {
-        // Flip the enemy graphic depending on whether the player is to their left or right
-        if (playerTransform.position.x < transform.position.x)
+        currentHealth -= damage;
+        StartCoroutine(DamageFlash());
+
+        if (currentHealth <= 0) Die();
+    }
+
+    private IEnumerator DamageFlash()
+    {
+        if (sr != null) 
         {
-            transform.localScale = new Vector3(-1f, 1f, 1f); // Facing Left
-        }
-        else
-        {
-            transform.localScale = new Vector3(1f, 1f, 1f);  // Facing Right
+            sr.color = Color.red;
+            yield return new WaitForSeconds(0.1f);
+            sr.color = Color.white;
         }
     }
 
-    // Draws a helper visual circle in the editor scene view to show the enemy's vision range
+    // --- UPDATED DEATH LOGIC ---
+    private void Die()
+    {
+        // Deactivate instead of Destroy!
+        gameObject.SetActive(false);
+    }
+
+    // --- NEW RESPAWN LOGIC ---
+    public void ResetEnemy()
+    {
+        StopAllCoroutines();
+        
+        // Reset position and stats
+        transform.position = startPosition;
+        currentHealth = maxHealth;
+        fireCooldownTimer = 0f;
+        
+        // Fix visuals
+        if (sr != null) sr.color = Color.white;
+        
+        // Wake back up!
+        gameObject.SetActive(true);
+    }
+
+    private void LookAtPlayer()
+    {
+        if (playerTransform.position.x < transform.position.x)
+        {
+            transform.localScale = new Vector3(-1f, 1f, 1f); 
+        }
+        else
+        {
+            transform.localScale = new Vector3(1f, 1f, 1f);  
+        }
+    }
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.cyan;

@@ -1,57 +1,64 @@
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public class EnemyProjectile : MonoBehaviour
 {
+    [Header("Projectile Stats")]
     [SerializeField] private float speed = 10f;
-    [SerializeField] private float lifetime = 3f;
+    [SerializeField] private int damage = 15;
+    
+    private Rigidbody2D rb;
+    private bool isDeflected = false;
 
-    private Vector2 travelDirection;
-    private bool isDeflected = false; // Tracks if the player hit it
-
-    void Start()
+    void Awake()
     {
-        Destroy(gameObject, lifetime);
+        rb = GetComponent<Rigidbody2D>();
     }
 
+    // Called by the ShootingEnemy to fire directly at the player
     public void SetDirection(Vector2 direction)
     {
-        travelDirection = direction.normalized;
+        if (rb == null) rb = GetComponent<Rigidbody2D>();
+        rb.linearVelocity = direction.normalized * speed;
     }
 
-    // New Function: Called by the player's sword
+    // Called by the PlayerController when you successfully strike the bullet
     public void Deflect(Vector2 newDirection)
     {
         isDeflected = true;
-        travelDirection = newDirection.normalized;
-        speed *= 1.5f; // Optional: Make the bullet fly back even faster!
         
-        // Optional visual flair: turn the bullet a different color when deflected
-        GetComponent<SpriteRenderer>().color = Color.yellow;
-    }
-
-    void Update()
-    {
-        transform.Translate(travelDirection * speed * Time.deltaTime, Space.World);
+        // Boost the speed slightly so deflected shots feel powerful!
+        rb.linearVelocity = newDirection * (speed * 1.5f); 
+        
+        // Change the bullet's color to yellow to show the player it is now "friendly"
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        if (sr != null) sr.color = Color.yellow;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // 1. If NOT deflected and hits the Player -> Hurt Player
+        // 1. If it hits the player and HAS NOT been deflected yet
         if (!isDeflected && collision.CompareTag("Player"))
         {
-            Debug.Log("Player was hit by a projectile!");
-            // (Increase Wake Parameter here later)
+            if (WakeManager.Instance != null) WakeManager.Instance.TakeDamagePenalty();
             Destroy(gameObject);
         }
-        // 2. If DEFLECTED and hits an Enemy -> Hurt Enemy
-        else if (isDeflected && collision.CompareTag("Enemy"))
+        
+        // 2. If it hits an enemy and HAS been deflected by the player
+        else if (isDeflected && collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
-            Debug.Log("Enemy hit by deflected bullet!");
-            Destroy(collision.gameObject); // Destroys the enemy!
-            Destroy(gameObject);           // Destroys the bullet
+            MeleeEnemy melee = collision.GetComponent<MeleeEnemy>();
+            if (melee != null) melee.TakeDamage(damage * 2);
+
+            // --- RENAMED TO SHOOTING ENEMY ---
+            ShootingEnemy shooter = collision.GetComponent<ShootingEnemy>();
+            if (shooter != null) shooter.TakeDamage(damage * 2);
+
+            Destroy(gameObject);
         }
-        // 3. Hits a wall/floor
-        else if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
+
+        // 3. Destroy the bullet if it hits a wall or the floor
+        else if (collision.gameObject.layer == LayerMask.NameToLayer("Wall") || 
+                 collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
             Destroy(gameObject);
         }

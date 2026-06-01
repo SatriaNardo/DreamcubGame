@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro; // Required to control TextMeshPro components
+using TMPro;
+using System.Collections.Generic; // NEW: Required for using Lists
 
 public class WakeManager : MonoBehaviour
 {
@@ -13,15 +14,19 @@ public class WakeManager : MonoBehaviour
     [Header("Accumulation Rates")]
     [SerializeField] private float runRatePerSecond = 2f; 
     [SerializeField] private float actionSpike = 30f;     
+    [SerializeField] private float enemyHitPenalty = 40f; 
 
     [Header("Decay Settings")]
     [SerializeField] private float decayRatePerSecond = 5f; 
     
     [Header("UI Component Link")]
-    [SerializeField] private TextMeshProUGUI wakeTextDisplay; // Drag WakeText here!
+    [SerializeField] private TextMeshProUGUI wakeTextDisplay; 
 
-    private bool isGameOver = false;
     private bool isPlayerMovingThisFrame = false;
+
+    // --- NEW: Master lists to keep track of all enemies in the level ---
+    private List<MeleeEnemy> allMeleeEnemies = new List<MeleeEnemy>();
+    private List<ShootingEnemy> allShootingEnemies = new List<ShootingEnemy>();
 
     void Awake()
     {
@@ -36,97 +41,107 @@ public class WakeManager : MonoBehaviour
 
     void Update()
     {
-        if (isGameOver)
-        {
-            // if (Input.GetKeyDown(KeyCode.R))
-            // {
-            //     RestartGame();
-            // }
-            // return; 
-        }
-
         if (!isPlayerMovingThisFrame && currentWake > 0f)
         {
             currentWake -= decayRatePerSecond * Time.deltaTime;
             currentWake = Mathf.Clamp(currentWake, 0f, maxWake);
-            UpdateUI(); // Update UI during cooldown
+            UpdateUI(); 
         }
 
         isPlayerMovingThisFrame = false;
     }
 
+    // --- NEW: Enemies will call these to add themselves to the Wake Manager's list ---
+    public void RegisterMeleeEnemy(MeleeEnemy enemy)
+    {
+        if (!allMeleeEnemies.Contains(enemy)) allMeleeEnemies.Add(enemy);
+    }
+
+    public void RegisterShootingEnemy(ShootingEnemy enemy)
+    {
+        if (!allShootingEnemies.Contains(enemy)) allShootingEnemies.Add(enemy);
+    }
+
     public void AddPassiveMovementWake()
     {
-        if (isGameOver) return;
-        
         isPlayerMovingThisFrame = true; 
         currentWake += runRatePerSecond * Time.deltaTime;
         CheckWakeStatus();
-        UpdateUI(); // Update UI while running
+        UpdateUI(); 
     }
 
     public void AddActionSpike()
     {
-        if (isGameOver) return;
-
         currentWake += actionSpike;
         CheckWakeStatus();
-        UpdateUI(); // Update UI on jump/dash/attack
+        UpdateUI(); 
     }
 
-    // New Function: Formats the number nicely onto your Canvas
+    public void RewardSuccessfulParry()
+    {
+        currentWake -= actionSpike; 
+        currentWake = Mathf.Clamp(currentWake, 0f, maxWake);
+        Debug.Log("Perfect Parry! Wake spike refunded.");
+        UpdateUI();
+    }
+
+    public void TakeDamagePenalty()
+    {
+        currentWake += enemyHitPenalty;
+        Debug.Log($"Ouch! Enemy hit you. Wake spiked by {enemyHitPenalty}%!");
+        CheckWakeStatus();
+        UpdateUI();
+    }
+
     private void UpdateUI()
     {
         if (wakeTextDisplay != null)
         {
-            // Rounds the decimal to a whole number and adds the % symbol
             wakeTextDisplay.text = Mathf.RoundToInt(currentWake).ToString() + "%";
         }
-    }
-
-    // Call this function when a parry or deflection succeeds to reward the player
-    public void RewardSuccessfulParry()
-    {
-        if (isGameOver) return;
-
-        // Undo the 30% action spike penalty
-        currentWake -= actionSpike;
-        
-        // Safety check to ensure the meter doesn't drop below zero
-        currentWake = Mathf.Clamp(currentWake, 0f, maxWake);
-        
-        Debug.Log($"Perfect Parry! Wake spike refunded. Current Wake: {Mathf.RoundToInt(currentWake)}%");
-        UpdateUI();
     }
 
     private void CheckWakeStatus()
     {
         currentWake = Mathf.Clamp(currentWake, 0f, maxWake);
-
-        if (currentWake >= maxWake && !isGameOver)
+        
+        if (currentWake >= maxWake)
         {
-            TriggerGameOver();
+            TriggerInstantRespawn();
         }
     }
 
-    private void TriggerGameOver()
+    private void TriggerInstantRespawn()
     {
-        isGameOver = true;
-        
-        if (wakeTextDisplay != null)
-        {
-            wakeTextDisplay.text = "WOKE UP\n[R] to Restart";
-        }
+        Debug.Log("YOU WOKE UP! Warping back to sleep...");
 
-        Time.timeScale = 0f; 
+        // 1. Respawn the player
+        GameObject spawnPoint = GameObject.FindGameObjectWithTag("Respawn");
+        Vector3 respawnPos = spawnPoint != null ? spawnPoint.transform.position : Vector3.zero;
 
         PlayerController player = Object.FindFirstObjectByType<PlayerController>();
-        if (player != null) player.enabled = false;
-    }
+        if (player != null) player.RespawnAt(respawnPos);
 
-    public void RestartGame()
-    {
-        Time.timeScale = 1f; 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        // 2. Clear any leftover bullets flying through the air
+        EnemyProjectile[] strayBullets = Object.FindObjectsByType<EnemyProjectile>(FindObjectsSortMode.None);
+        foreach (EnemyProjectile bullet in strayBullets)
+        {
+            Destroy(bullet.gameObject);
+        }
+
+        // 3. --- NEW: Wake up all the enemies! ---
+        foreach (MeleeEnemy melee in allMeleeEnemies)
+        {
+            if (melee != null) melee.ResetEnemy();
+        }
+
+        foreach (ShootingEnemy shooter in allShootingEnemies)
+        {
+            if (shooter != null) shooter.ResetEnemy();
+        }
+
+        // 4. Reset the Wake Meter cleanly
+        currentWake = 0f;
+        UpdateUI();
     }
 }
