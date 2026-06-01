@@ -4,6 +4,12 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Unlocked Abilities (Metroidvania)")]
+    [Tooltip("Uncheck these to start the game without them!")]
+    [SerializeField] private bool isJumpUnlocked = true;
+    [SerializeField] private bool isDashUnlocked = true;
+    [SerializeField] private bool isAttackUnlocked = true;
+
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 8f;
     private Vector2 moveInput;
@@ -28,7 +34,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask wallLayer;
     [SerializeField] private float wallSlideSpeed = 3f;                    
     [SerializeField] private Vector2 wallJumpForce = new Vector2(12f, 16f); 
-    [SerializeField] private float wallJumpDuration = 0.15f;               
+    [SerializeField] private float wallJumpDuration = 0.15f;    
+    
+    // --- NEW: Wall Jump Grace Period Variables ---           
+    [SerializeField] private float wallCoyoteTime = 0.15f;
+    private float wallCoyoteTimeCounter;
+    private int wallDirection; // Remembers which side the wall was on!
+    
     private bool isTouchingWall;
     private bool isWallSliding;
     private bool isWallJumping = false; 
@@ -72,9 +84,23 @@ public class PlayerController : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, combinedGroundMask);
         isTouchingWall = Physics2D.OverlapCircle(wallCheck.position, 0.2f, wallLayer);
 
+        // 1. Ground Coyote Time
         if (isGrounded) coyoteTimeCounter = coyoteTime;
         else coyoteTimeCounter -= Time.deltaTime;
 
+        // 2. NEW: Wall Coyote Time & Memory
+        if (isTouchingWall && !isGrounded)
+        {
+            wallCoyoteTimeCounter = wallCoyoteTime;
+            // Memorize if the wall is to our right (1) or left (-1)
+            wallDirection = isFacingRight ? 1 : -1; 
+        }
+        else
+        {
+            wallCoyoteTimeCounter -= Time.deltaTime;
+        }
+
+        // 3. Wall Sliding Logic (Still strict so you only slide if pushing into it)
         if (isTouchingWall && !isGrounded && Mathf.Abs(moveInput.x) > 0.1f && canMove)
         {
             isWallSliding = true;
@@ -84,6 +110,7 @@ public class PlayerController : MonoBehaviour
             isWallSliding = false;
         }
 
+        // 4. Flip Logic
         if (!isWallSliding && !isWallJumping && canMove) 
         {
             Flip();
@@ -121,7 +148,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnJump(InputValue value)
     {
-        // FIX: Ignore jump if dialogue is open or controls are locked!
+        if (!isJumpUnlocked) return;
         if (DialogueManager.Instance != null && DialogueManager.Instance.IsDialogueActive) return;
         if (!canMove) return;
 
@@ -129,7 +156,10 @@ public class PlayerController : MonoBehaviour
         if (isHoldingJump)
         {
             if (moveInput.y < -0.1f && isGrounded) StartCoroutine(DropThroughPlatform());
-            else if (isWallSliding) StartCoroutine(WallJumpRoutine());
+            
+            // FIX: Use the new Wall Coyote Time buffer instead of the strict isWallSliding!
+            else if (wallCoyoteTimeCounter > 0f) StartCoroutine(WallJumpRoutine());
+            
             else if (coyoteTimeCounter > 0f)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
@@ -141,7 +171,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnDash(InputValue value)
     {
-        // FIX: Ignore dash if dialogue is open or controls are locked!
+        if (!isDashUnlocked) return;
         if (DialogueManager.Instance != null && DialogueManager.Instance.IsDialogueActive) return;
         if (!canMove) return;
 
@@ -150,7 +180,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnAttack(InputValue value)
     {
-        // FIX: Ignore attack if dialogue is open or controls are locked!
+        if (!isAttackUnlocked) return;
         if (DialogueManager.Instance != null && DialogueManager.Instance.IsDialogueActive) return;
         if (!canMove) return;
 
@@ -166,16 +196,23 @@ public class PlayerController : MonoBehaviour
         isWallSliding = false;
         canMove = false; 
         isWallJumping = true; 
+        
+        // Consume the wall jump buffer so they can't double-jump off air
+        wallCoyoteTimeCounter = 0f; 
 
         if (WakeManager.Instance != null) WakeManager.Instance.AddActionSpike();
 
-        float jumpDirection = isFacingRight ? -1f : 1f;
+        // FIX: Always jump AWAY from the wall we just memorized, regardless of which way we are looking right now
+        float jumpDirection = -wallDirection; 
         rb.linearVelocity = new Vector2(jumpDirection * wallJumpForce.x, wallJumpForce.y);
 
-        isFacingRight = !isFacingRight;
-        
-        if (isFacingRight) transform.rotation = Quaternion.Euler(0, 0, 0);
-        else transform.rotation = Quaternion.Euler(0, 180, 0);
+        // If the player is still facing the wall, flip them automatically so they face the direction of the jump
+        if ((wallDirection == 1 && isFacingRight) || (wallDirection == -1 && !isFacingRight))
+        {
+            isFacingRight = !isFacingRight;
+            if (isFacingRight) transform.rotation = Quaternion.Euler(0, 0, 0);
+            else transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
 
         yield return new WaitForSeconds(wallJumpDuration);
         
@@ -271,19 +308,36 @@ public class PlayerController : MonoBehaviour
         isWallJumping = false; 
     }
 
-    // --- NEW: Cutscene Lock added here so the boss cutscene script works perfectly! ---
     public void SetCutsceneMode(bool isLocked)
     {
         if (isLocked)
         {
             canMove = false;
             isDashing = false;
-            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y); // Stop momentum, keep gravity
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y); 
         }
         else
         {
             canMove = true;
         }
+    }
+    
+    public void UnlockJump()
+    {
+        isJumpUnlocked = true;
+        Debug.Log("Ability Unlocked: Jump!");
+    }
+
+    public void UnlockDash()
+    {
+        isDashUnlocked = true;
+        Debug.Log("Ability Unlocked: Dash!");
+    }
+
+    public void UnlockAttack()
+    {
+        isAttackUnlocked = true;
+        Debug.Log("Ability Unlocked: Attack!");
     }
 
     private void OnDrawGizmos()
