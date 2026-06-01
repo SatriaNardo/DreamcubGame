@@ -1,34 +1,25 @@
 fileFormatVersion: 2
-guid: d027de67833ee45acb6e686ebdfc8ea4
+guid: 6e4e49d5ffb7f4f62917d6450e1f1f4c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1246655571800289824
-    second: MC_Walk_0
+      213: 1405235646851893685
+    second: vilains4_idle_0
   - first:
-      213: -6962850012399476028
-    second: MC_Walk_1
+      213: 2460494041048734441
+    second: vilains4_idle_1
   - first:
-      213: 1940221624142577078
-    second: MC_Walk_2
+      213: 7420078210324636796
+    second: vilains4_idle_2
   - first:
-      213: -5417002690035269187
-    second: MC_Walk_3
+      213: 4871055958775534332
+    second: vilains4_idle_3
   - first:
-      213: 774337924026978959
-    second: MC_Walk_4
+      213: 5443459999686840827
+    second: vilains4_idle_4
   - first:
-      213: -834189383699312189
-    second: MC_Walk_5
-  - first:
-      213: 7722284099649549748
-    second: MC_Walk_6
-  - first:
-      213: 805629190895282845
-    second: MC_Walk_7
-  - first:
-      213: -8603707579257146128
-    second: MC_Walk_8
+      213: -959900930282630904
+    second: vilains4_idle_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,7 +87,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -163,13 +154,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MC_Walk_0
+      name: vilains4_idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 160
-        height: 80
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +169,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0ed059dcc5df2bee0800000000000000
-      internalID: -1246655571800289824
+      spriteID: 5b9c2542066608310800000000000000
+      internalID: 1405235646851893685
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Walk_1
+      name: vilains4_idle_1
       rect:
         serializedVersion: 2
-        x: 160
+        x: 64
         y: 0
-        width: 160
-        height: 80
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +191,86 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4c2ea92fdccfe5f90800000000000000
-      internalID: -6962850012399476028
+      spriteID: 9eadca84b4e652220800000000000000
+      internalID: 2460494041048734441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Walk_2
+      name: vilains4_idle_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c74240ca1d969f660800000000000000
+      internalID: 7420078210324636796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vilains4_idle_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf29dd72697799340800000000000000
+      internalID: 4871055958775534332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vilains4_idle_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf1d16e670e0b8b40800000000000000
+      internalID: 5443459999686840827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vilains4_idle_5
       rect:
         serializedVersion: 2
         x: 320
         y: 0
-        width: 160
-        height: 80
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,74 +279,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6bdbc84994d0dea10800000000000000
-      internalID: 1940221624142577078
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_Walk_3
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 0
-        width: 160
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: db1cc1101c0f2d4b0800000000000000
-      internalID: -5417002690035269187
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_Walk_4
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 160
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f82ddb14d300fba00800000000000000
-      internalID: 774337924026978959
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_Walk_5
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 0
-        width: 160
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3c1533ddc2d5c64f0800000000000000
-      internalID: -834189383699312189
+      spriteID: 801dfee803fbda2f0800000000000000
+      internalID: -959900930282630904
       vertices: []
       indices: 
       edges: []
@@ -298,7 +289,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: db5e4050673d147b29df0928f0cc3cf7
+    spriteID: 78a46f1bd0770407ab153983f8a48f79
     internalID: 0
     vertices: []
     indices: 
@@ -308,14 +299,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":160.0,"y":80.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      MC_Walk_0: -1246655571800289824
-      MC_Walk_1: -6962850012399476028
-      MC_Walk_2: 1940221624142577078
-      MC_Walk_3: -5417002690035269187
-      MC_Walk_4: 774337924026978959
-      MC_Walk_5: -834189383699312189
+      vilains4_idle_0: 1405235646851893685
+      vilains4_idle_1: 2460494041048734441
+      vilains4_idle_2: 7420078210324636796
+      vilains4_idle_3: 4871055958775534332
+      vilains4_idle_4: 5443459999686840827
+      vilains4_idle_5: -959900930282630904
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

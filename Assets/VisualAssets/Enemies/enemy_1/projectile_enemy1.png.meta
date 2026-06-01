@@ -1,34 +1,10 @@
 fileFormatVersion: 2
-guid: d027de67833ee45acb6e686ebdfc8ea4
+guid: 9abf0ec0e8e654265953d6f5e05f1609
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1246655571800289824
-    second: MC_Walk_0
-  - first:
-      213: -6962850012399476028
-    second: MC_Walk_1
-  - first:
-      213: 1940221624142577078
-    second: MC_Walk_2
-  - first:
-      213: -5417002690035269187
-    second: MC_Walk_3
-  - first:
-      213: 774337924026978959
-    second: MC_Walk_4
-  - first:
-      213: -834189383699312189
-    second: MC_Walk_5
-  - first:
-      213: 7722284099649549748
-    second: MC_Walk_6
-  - first:
-      213: 805629190895282845
-    second: MC_Walk_7
-  - first:
-      213: -8603707579257146128
-    second: MC_Walk_8
+      213: 362923538953968615
+    second: projectile_enemy1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -163,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MC_Walk_0
+      name: projectile_enemy1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 160
-        height: 80
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,118 +154,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0ed059dcc5df2bee0800000000000000
-      internalID: -1246655571800289824
+      spriteID: 7eb9afb290d590500800000000000000
+      internalID: 362923538953968615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Walk_1
+      name: projectile_enemy1_1
       rect:
         serializedVersion: 2
-        x: 160
+        x: 32
         y: 0
-        width: 160
-        height: 80
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4c2ea92fdccfe5f90800000000000000
-      internalID: -6962850012399476028
+      spriteID: 2e9d5aa62e2e54ccf917f8f9dea661ee
+      internalID: 1497258902
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Walk_2
+      name: projectile_enemy1_2
       rect:
         serializedVersion: 2
-        x: 320
+        x: 64
         y: 0
-        width: 160
-        height: 80
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6bdbc84994d0dea10800000000000000
-      internalID: 1940221624142577078
+      spriteID: 0297ed655409e416c80e632d8949ba92
+      internalID: 478346705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Walk_3
+      name: projectile_enemy1_3
       rect:
         serializedVersion: 2
-        x: 480
+        x: 96
         y: 0
-        width: 160
-        height: 80
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: db1cc1101c0f2d4b0800000000000000
-      internalID: -5417002690035269187
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_Walk_4
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 160
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f82ddb14d300fba00800000000000000
-      internalID: 774337924026978959
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_Walk_5
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 0
-        width: 160
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3c1533ddc2d5c64f0800000000000000
-      internalID: -834189383699312189
+      spriteID: 1c9368d2349cf4392b1d18fcee4220f3
+      internalID: 1123283418
       vertices: []
       indices: 
       edges: []
@@ -298,7 +230,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: db5e4050673d147b29df0928f0cc3cf7
+    spriteID: d952451ccb2174383952d442a030231e
     internalID: 0
     vertices: []
     indices: 
@@ -308,14 +240,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":160.0,"y":80.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      MC_Walk_0: -1246655571800289824
-      MC_Walk_1: -6962850012399476028
-      MC_Walk_2: 1940221624142577078
-      MC_Walk_3: -5417002690035269187
-      MC_Walk_4: 774337924026978959
-      MC_Walk_5: -834189383699312189
+      projectile_enemy1_0: 362923538953968615
+      projectile_enemy1_1: 1497258902
+      projectile_enemy1_2: 478346705
+      projectile_enemy1_3: 1123283418
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

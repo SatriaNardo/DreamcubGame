@@ -1,34 +1,46 @@
 fileFormatVersion: 2
-guid: d027de67833ee45acb6e686ebdfc8ea4
+guid: d753a36e1affd4b419483ed75de2f607
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1246655571800289824
-    second: MC_Walk_0
+      213: 268557597725578450
+    second: vilains1_dead_0
   - first:
-      213: -6962850012399476028
-    second: MC_Walk_1
+      213: 5284053770127140198
+    second: vilains1_dead_1
   - first:
-      213: 1940221624142577078
-    second: MC_Walk_2
+      213: 3056845249567586597
+    second: vilains1_dead_2
   - first:
-      213: -5417002690035269187
-    second: MC_Walk_3
+      213: 1991938000108660755
+    second: vilains1_dead_3
   - first:
-      213: 774337924026978959
-    second: MC_Walk_4
+      213: 4818760573560593123
+    second: vilains1_dead_4
   - first:
-      213: -834189383699312189
-    second: MC_Walk_5
+      213: -4318711161403718100
+    second: vilains1_dead_5
   - first:
-      213: 7722284099649549748
-    second: MC_Walk_6
+      213: -6150908362523915446
+    second: vilains1_dead_6
   - first:
-      213: 805629190895282845
-    second: MC_Walk_7
+      213: 2880422558817665458
+    second: vilains1_dead_7
   - first:
-      213: -8603707579257146128
-    second: MC_Walk_8
+      213: 1527128763524847166
+    second: vilains1_dead_8
+  - first:
+      213: 8972200599333762698
+    second: vilains1_dead_9
+  - first:
+      213: 7134292404247647924
+    second: vilains1_dead_10
+  - first:
+      213: -7354889034536242136
+    second: vilains1_dead_11
+  - first:
+      213: -4168525213255265827
+    second: vilains1_dead_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,7 +108,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -163,13 +175,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MC_Walk_0
+      name: vilains1_dead_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 160
-        height: 80
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +190,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0ed059dcc5df2bee0800000000000000
-      internalID: -1246655571800289824
+      spriteID: 2d45a2656bb1ab300800000000000000
+      internalID: 268557597725578450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Walk_1
+      name: vilains1_dead_1
       rect:
         serializedVersion: 2
-        x: 160
+        x: 64
         y: 0
-        width: 160
-        height: 80
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +212,86 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4c2ea92fdccfe5f90800000000000000
-      internalID: -6962850012399476028
+      spriteID: 665ed7668eab45940800000000000000
+      internalID: 5284053770127140198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Walk_2
+      name: vilains1_dead_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 529f0d10f881c6a20800000000000000
+      internalID: 3056845249567586597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vilains1_dead_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 318241fae09c4ab10800000000000000
+      internalID: 1991938000108660755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vilains1_dead_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ea9cb4f53dafd240800000000000000
+      internalID: 4818760573560593123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vilains1_dead_5
       rect:
         serializedVersion: 2
         x: 320
         y: 0
-        width: 160
-        height: 80
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +300,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6bdbc84994d0dea10800000000000000
-      internalID: 1940221624142577078
+      spriteID: c264409841bd014c0800000000000000
+      internalID: -4318711161403718100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Walk_3
+      name: vilains1_dead_6
       rect:
         serializedVersion: 2
-        x: 480
+        x: 384
         y: 0
-        width: 160
-        height: 80
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +322,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: db1cc1101c0f2d4b0800000000000000
-      internalID: -5417002690035269187
+      spriteID: a4b48c5ee6593aaa0800000000000000
+      internalID: -6150908362523915446
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Walk_4
+      name: vilains1_dead_7
       rect:
         serializedVersion: 2
-        x: 640
+        x: 448
         y: 0
-        width: 160
-        height: 80
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +344,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f82ddb14d300fba00800000000000000
-      internalID: 774337924026978959
+      spriteID: 2b1495d5e0159f720800000000000000
+      internalID: 2880422558817665458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Walk_5
+      name: vilains1_dead_8
       rect:
         serializedVersion: 2
-        x: 800
+        x: 512
         y: 0
-        width: 160
-        height: 80
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,8 +366,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3c1533ddc2d5c64f0800000000000000
-      internalID: -834189383699312189
+      spriteID: e361e24f483713510800000000000000
+      internalID: 1527128763524847166
       vertices: []
       indices: 
       edges: []
@@ -298,7 +376,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: db5e4050673d147b29df0928f0cc3cf7
+    spriteID: f280043e90e3e420c93c5ee594c4bf03
     internalID: 0
     vertices: []
     indices: 
@@ -308,14 +386,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":160.0,"y":80.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":9.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      MC_Walk_0: -1246655571800289824
-      MC_Walk_1: -6962850012399476028
-      MC_Walk_2: 1940221624142577078
-      MC_Walk_3: -5417002690035269187
-      MC_Walk_4: 774337924026978959
-      MC_Walk_5: -834189383699312189
+      vilains1_dead_0: 268557597725578450
+      vilains1_dead_1: 5284053770127140198
+      vilains1_dead_2: 3056845249567586597
+      vilains1_dead_3: 1991938000108660755
+      vilains1_dead_4: 4818760573560593123
+      vilains1_dead_5: -4318711161403718100
+      vilains1_dead_6: -6150908362523915446
+      vilains1_dead_7: 2880422558817665458
+      vilains1_dead_8: 1527128763524847166
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

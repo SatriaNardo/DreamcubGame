@@ -1,34 +1,43 @@
 fileFormatVersion: 2
-guid: d027de67833ee45acb6e686ebdfc8ea4
+guid: 878eea7198d7a44678e9004ce0541c32
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1246655571800289824
-    second: MC_Walk_0
+      213: 5369705076827283779
+    second: vilains1_attack_0
   - first:
-      213: -6962850012399476028
-    second: MC_Walk_1
+      213: 1452675973456891587
+    second: vilains1_attack_1
   - first:
-      213: 1940221624142577078
-    second: MC_Walk_2
+      213: 2434294295329094506
+    second: vilains1_attack_2
   - first:
-      213: -5417002690035269187
-    second: MC_Walk_3
+      213: -8998459428402138810
+    second: vilains1_attack_3
   - first:
-      213: 774337924026978959
-    second: MC_Walk_4
+      213: 8580699866509048626
+    second: vilains1_attack_4
   - first:
-      213: -834189383699312189
-    second: MC_Walk_5
+      213: 2971847267667096554
+    second: vilains1_attack_5
   - first:
-      213: 7722284099649549748
-    second: MC_Walk_6
+      213: 519354149874489384
+    second: vilains1_attack_6
   - first:
-      213: 805629190895282845
-    second: MC_Walk_7
+      213: 6479250109359605184
+    second: vilains1_attack_7
   - first:
-      213: -8603707579257146128
-    second: MC_Walk_8
+      213: 2816041351161656310
+    second: vilains1_attack_8
+  - first:
+      213: -7754098827089111310
+    second: vilains1_attack_9
+  - first:
+      213: -5115755289473664121
+    second: vilains1_attack_10
+  - first:
+      213: 7581520056370586361
+    second: vilains1_attack_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,7 +105,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -163,13 +172,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MC_Walk_0
+      name: vilains1_attack_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 160
-        height: 80
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0ed059dcc5df2bee0800000000000000
-      internalID: -1246655571800289824
+      spriteID: 341e6e44156058a40800000000000000
+      internalID: 5369705076827283779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Walk_1
+      name: vilains1_attack_1
       rect:
         serializedVersion: 2
-        x: 160
+        x: 64
         y: 0
-        width: 160
-        height: 80
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +209,86 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4c2ea92fdccfe5f90800000000000000
-      internalID: -6962850012399476028
+      spriteID: 3ce84abe911f82410800000000000000
+      internalID: 1452675973456891587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Walk_2
+      name: vilains1_attack_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6bb9df93c958c120800000000000000
+      internalID: 2434294295329094506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vilains1_attack_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 641735463dc0f1380800000000000000
+      internalID: -8998459428402138810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vilains1_attack_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23b738be015c41770800000000000000
+      internalID: 8580699866509048626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vilains1_attack_5
       rect:
         serializedVersion: 2
         x: 320
         y: 0
-        width: 160
-        height: 80
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +297,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6bdbc84994d0dea10800000000000000
-      internalID: 1940221624142577078
+      spriteID: ae3330c285f1e3920800000000000000
+      internalID: 2971847267667096554
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Walk_3
+      name: vilains1_attack_6
       rect:
         serializedVersion: 2
-        x: 480
+        x: 384
         y: 0
-        width: 160
-        height: 80
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,52 +319,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: db1cc1101c0f2d4b0800000000000000
-      internalID: -5417002690035269187
+      spriteID: 828d4eff8dd153700800000000000000
+      internalID: 519354149874489384
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Walk_4
+      name: vilains1_attack_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c54a4b55abeae950800000000000000
+      internalID: 6479250109359605184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vilains1_attack_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ac72ad08f2b4b518c4fdb4cfb7c72c
+      internalID: 2816041351161656310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vilains1_attack_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89d0f86f6ee64516ba929cca900d497
+      internalID: -7754098827089111310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vilains1_attack_10
       rect:
         serializedVersion: 2
         x: 640
         y: 0
-        width: 160
-        height: 80
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f82ddb14d300fba00800000000000000
-      internalID: 774337924026978959
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_Walk_5
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 0
-        width: 160
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3c1533ddc2d5c64f0800000000000000
-      internalID: -834189383699312189
+      spriteID: 2407ec6ac3c634446b9e9c535a8c7223
+      internalID: -5115755289473664121
       vertices: []
       indices: 
       edges: []
@@ -298,7 +417,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: db5e4050673d147b29df0928f0cc3cf7
+    spriteID: 6ee6d707a5b034e72ba94fea42905b16
     internalID: 0
     vertices: []
     indices: 
@@ -308,14 +427,19 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":160.0,"y":80.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":11.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      MC_Walk_0: -1246655571800289824
-      MC_Walk_1: -6962850012399476028
-      MC_Walk_2: 1940221624142577078
-      MC_Walk_3: -5417002690035269187
-      MC_Walk_4: 774337924026978959
-      MC_Walk_5: -834189383699312189
+      vilains1_attack_0: 5369705076827283779
+      vilains1_attack_1: 1452675973456891587
+      vilains1_attack_10: -5115755289473664121
+      vilains1_attack_2: 2434294295329094506
+      vilains1_attack_3: -8998459428402138810
+      vilains1_attack_4: 8580699866509048626
+      vilains1_attack_5: 2971847267667096554
+      vilains1_attack_6: 519354149874489384
+      vilains1_attack_7: 6479250109359605184
+      vilains1_attack_8: 2816041351161656310
+      vilains1_attack_9: -7754098827089111310
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
