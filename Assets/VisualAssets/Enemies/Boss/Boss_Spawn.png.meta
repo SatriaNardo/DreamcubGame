@@ -1,0 +1,1432 @@
+fileFormatVersion: 2
+guid: 175d46e1171544a2aac5ad21f523e5ff
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9210284030790988634
+    second: Boss_Spawn_0
+  - first:
+      213: -3692554252752513001
+    second: Boss_Spawn_1
+  - first:
+      213: 1313677677631571703
+    second: Boss_Spawn_2
+  - first:
+      213: -209225714926855501
+    second: Boss_Spawn_3
+  - first:
+      213: 7050330892454684914
+    second: Boss_Spawn_4
+  - first:
+      213: 4068761997596643474
+    second: Boss_Spawn_5
+  - first:
+      213: -1841629017732643766
+    second: Boss_Spawn_6
+  - first:
+      213: 4594239864641844457
+    second: Boss_Spawn_7
+  - first:
+      213: -3821461180860322630
+    second: Boss_Spawn_8
+  - first:
+      213: -5155298843034184528
+    second: Boss_Spawn_9
+  - first:
+      213: -3012275199734285975
+    second: Boss_Spawn_10
+  - first:
+      213: 8460573725717564736
+    second: Boss_Spawn_11
+  - first:
+      213: 4492716541869743517
+    second: Boss_Spawn_12
+  - first:
+      213: -3161846865252267125
+    second: Boss_Spawn_13
+  - first:
+      213: 4296328918570611209
+    second: Boss_Spawn_14
+  - first:
+      213: -4967835287261696029
+    second: Boss_Spawn_15
+  - first:
+      213: 2386376825241052779
+    second: Boss_Spawn_16
+  - first:
+      213: 7997492207133321988
+    second: Boss_Spawn_17
+  - first:
+      213: -2296866196938593386
+    second: Boss_Spawn_18
+  - first:
+      213: 7560266640475107036
+    second: Boss_Spawn_19
+  - first:
+      213: 3398908458461853149
+    second: Boss_Spawn_20
+  - first:
+      213: -4233216760865490104
+    second: Boss_Spawn_21
+  - first:
+      213: 7697533937024024402
+    second: Boss_Spawn_22
+  - first:
+      213: 672095880739253080
+    second: Boss_Spawn_23
+  - first:
+      213: -552619820787037546
+    second: Boss_Spawn_24
+  - first:
+      213: 4737058289599247988
+    second: Boss_Spawn_25
+  - first:
+      213: 5144121553129122787
+    second: Boss_Spawn_26
+  - first:
+      213: -1140099393028564318
+    second: Boss_Spawn_27
+  - first:
+      213: -7398375098228710936
+    second: Boss_Spawn_28
+  - first:
+      213: -6636529794261436113
+    second: Boss_Spawn_29
+  - first:
+      213: 6669768699347727322
+    second: Boss_Spawn_30
+  - first:
+      213: -2631473753371153698
+    second: Boss_Spawn_31
+  - first:
+      213: 439063512161837363
+    second: Boss_Spawn_32
+  - first:
+      213: -8040218135173379663
+    second: Boss_Spawn_33
+  - first:
+      213: -7361407306042021617
+    second: Boss_Spawn_34
+  - first:
+      213: 6122823219596388249
+    second: Boss_Spawn_35
+  - first:
+      213: -8795988434904143846
+    second: Boss_Spawn_36
+  - first:
+      213: -3402746058586262683
+    second: Boss_Spawn_37
+  - first:
+      213: -3519081689778314197
+    second: Boss_Spawn_38
+  - first:
+      213: 6009234678907045060
+    second: Boss_Spawn_39
+  - first:
+      213: -5795984249640219888
+    second: Boss_Spawn_40
+  - first:
+      213: 7899088358451881830
+    second: Boss_Spawn_41
+  - first:
+      213: -5281788019892286434
+    second: Boss_Spawn_42
+  - first:
+      213: -4570300021390805545
+    second: Boss_Spawn_43
+  - first:
+      213: 8938367042744510058
+    second: Boss_Spawn_44
+  - first:
+      213: -8863819428441835929
+    second: Boss_Spawn_45
+  - first:
+      213: 2472454114334910613
+    second: Boss_Spawn_46
+  - first:
+      213: -6414277276680622440
+    second: Boss_Spawn_47
+  - first:
+      213: 8129970365756506765
+    second: Boss_Spawn_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boss_Spawn_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a53ffbf178081df70800000000000000
+      internalID: 9210284030790988634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_1
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71814da987961ccc0800000000000000
+      internalID: -3692554252752513001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_2
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f6079c33ee1b3210800000000000000
+      internalID: 1313677677631571703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_3
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ba58ef125ea81df0800000000000000
+      internalID: -209225714926855501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_4
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f869b9a79ec7d160800000000000000
+      internalID: 7050330892454684914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_5
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2905b56ca75277830800000000000000
+      internalID: 4068761997596643474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_6
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a448efd6a283176e0800000000000000
+      internalID: -1841629017732643766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_7
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e47ae8c0d402cf30800000000000000
+      internalID: 4594239864641844457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_8
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abc20ef8d4177fac0800000000000000
+      internalID: -3821461180860322630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_9
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b417f52403b478b0800000000000000
+      internalID: -5155298843034184528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_10
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9697e126aaf3236d0800000000000000
+      internalID: -3012275199734285975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_11
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04d066d3afef96570800000000000000
+      internalID: 8460573725717564736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_12
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9ddaa234e5595e30800000000000000
+      internalID: 4492716541869743517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_13
+      rect:
+        serializedVersion: 2
+        x: 2574
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8bc47a370dde14d0800000000000000
+      internalID: -3161846865252267125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_14
+      rect:
+        serializedVersion: 2
+        x: 2772
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 902b3a57360af9b30800000000000000
+      internalID: 4296328918570611209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_15
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3efad108024be0bb0800000000000000
+      internalID: -4967835287261696029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_16
+      rect:
+        serializedVersion: 2
+        x: 3168
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b66a7b8341d1e1120800000000000000
+      internalID: 2386376825241052779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_17
+      rect:
+        serializedVersion: 2
+        x: 3366
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40be2243accccfe60800000000000000
+      internalID: 7997492207133321988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_18
+      rect:
+        serializedVersion: 2
+        x: 3564
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b6fdafc54ef10e0800000000000000
+      internalID: -2296866196938593386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_19
+      rect:
+        serializedVersion: 2
+        x: 3762
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde21c814767be860800000000000000
+      internalID: 7560266640475107036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_20
+      rect:
+        serializedVersion: 2
+        x: 3960
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd570ba1c395b2f20800000000000000
+      internalID: 3398908458461853149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_21
+      rect:
+        serializedVersion: 2
+        x: 4158
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84bf167d8c79045c0800000000000000
+      internalID: -4233216760865490104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_22
+      rect:
+        serializedVersion: 2
+        x: 4356
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25fb4da155223da60800000000000000
+      internalID: 7697533937024024402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_23
+      rect:
+        serializedVersion: 2
+        x: 4554
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85b677284a3c35900800000000000000
+      internalID: 672095880739253080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_24
+      rect:
+        serializedVersion: 2
+        x: 4752
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69a062e6333b458f0800000000000000
+      internalID: -552619820787037546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_25
+      rect:
+        serializedVersion: 2
+        x: 4950
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 476f1e79a696db140800000000000000
+      internalID: 4737058289599247988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_26
+      rect:
+        serializedVersion: 2
+        x: 5148
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb21bf3c47936740800000000000000
+      internalID: 5144121553129122787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_27
+      rect:
+        serializedVersion: 2
+        x: 5346
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aad4ed74ad8d20f0800000000000000
+      internalID: -1140099393028564318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_28
+      rect:
+        serializedVersion: 2
+        x: 5544
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e16bf2eb01b35990800000000000000
+      internalID: -7398375098228710936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_29
+      rect:
+        serializedVersion: 2
+        x: 5742
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2930cf505f46e3a0800000000000000
+      internalID: -6636529794261436113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_30
+      rect:
+        serializedVersion: 2
+        x: 5940
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad3f3aa4b47cf8c50800000000000000
+      internalID: 6669768699347727322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_31
+      rect:
+        serializedVersion: 2
+        x: 6138
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda6c8e30902b7bd0800000000000000
+      internalID: -2631473753371153698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_32
+      rect:
+        serializedVersion: 2
+        x: 6336
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 331ed3420fdd71600800000000000000
+      internalID: 439063512161837363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_33
+      rect:
+        serializedVersion: 2
+        x: 6534
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b9465874386b6090800000000000000
+      internalID: -8040218135173379663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_34
+      rect:
+        serializedVersion: 2
+        x: 6732
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f09666cbe0707d990800000000000000
+      internalID: -7361407306042021617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_35
+      rect:
+        serializedVersion: 2
+        x: 6930
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9976e823743a8f450800000000000000
+      internalID: 6122823219596388249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_36
+      rect:
+        serializedVersion: 2
+        x: 7128
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1828112f1f5ee580800000000000000
+      internalID: -8795988434904143846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_37
+      rect:
+        serializedVersion: 2
+        x: 7326
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 563fa1dfc7407c0d0800000000000000
+      internalID: -3402746058586262683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_38
+      rect:
+        serializedVersion: 2
+        x: 7524
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b24ae2919d5b92fc0800000000000000
+      internalID: -3519081689778314197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_39
+      rect:
+        serializedVersion: 2
+        x: 7722
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c486382a17156350800000000000000
+      internalID: 6009234678907045060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_40
+      rect:
+        serializedVersion: 2
+        x: 7920
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01b8f6c8807809fa0800000000000000
+      internalID: -5795984249640219888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_41
+      rect:
+        serializedVersion: 2
+        x: 8118
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 667a2f6c2033f9d60800000000000000
+      internalID: 7899088358451881830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_42
+      rect:
+        serializedVersion: 2
+        x: 8316
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1c086fa7c153b6b0800000000000000
+      internalID: -5281788019892286434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_43
+      rect:
+        serializedVersion: 2
+        x: 8514
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d57a0458580390c0800000000000000
+      internalID: -4570300021390805545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_44
+      rect:
+        serializedVersion: 2
+        x: 8712
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6668d6c7757b0c70800000000000000
+      internalID: 8938367042744510058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_45
+      rect:
+        serializedVersion: 2
+        x: 8910
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 766b48e31336df480800000000000000
+      internalID: -8863819428441835929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_46
+      rect:
+        serializedVersion: 2
+        x: 9108
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 598a268daebef4220800000000000000
+      internalID: 2472454114334910613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_47
+      rect:
+        serializedVersion: 2
+        x: 9306
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89e67981dc8ebf6a0800000000000000
+      internalID: -6414277276680622440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Spawn_48
+      rect:
+        serializedVersion: 2
+        x: 9504
+        y: 0
+        width: 198
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d828e5529f473d070800000000000000
+      internalID: 8129970365756506765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e1deb37a58d5449f7b3ab519be5eee72
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":198.0,"y":163.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Boss_Spawn_0: 9210284030790988634
+      Boss_Spawn_1: -3692554252752513001
+      Boss_Spawn_10: -3012275199734285975
+      Boss_Spawn_11: 8460573725717564736
+      Boss_Spawn_12: 4492716541869743517
+      Boss_Spawn_13: -3161846865252267125
+      Boss_Spawn_14: 4296328918570611209
+      Boss_Spawn_15: -4967835287261696029
+      Boss_Spawn_16: 2386376825241052779
+      Boss_Spawn_17: 7997492207133321988
+      Boss_Spawn_18: -2296866196938593386
+      Boss_Spawn_19: 7560266640475107036
+      Boss_Spawn_2: 1313677677631571703
+      Boss_Spawn_20: 3398908458461853149
+      Boss_Spawn_21: -4233216760865490104
+      Boss_Spawn_22: 7697533937024024402
+      Boss_Spawn_23: 672095880739253080
+      Boss_Spawn_24: -552619820787037546
+      Boss_Spawn_25: 4737058289599247988
+      Boss_Spawn_26: 5144121553129122787
+      Boss_Spawn_27: -1140099393028564318
+      Boss_Spawn_28: -7398375098228710936
+      Boss_Spawn_29: -6636529794261436113
+      Boss_Spawn_3: -209225714926855501
+      Boss_Spawn_30: 6669768699347727322
+      Boss_Spawn_31: -2631473753371153698
+      Boss_Spawn_32: 439063512161837363
+      Boss_Spawn_33: -8040218135173379663
+      Boss_Spawn_34: -7361407306042021617
+      Boss_Spawn_35: 6122823219596388249
+      Boss_Spawn_36: -8795988434904143846
+      Boss_Spawn_37: -3402746058586262683
+      Boss_Spawn_38: -3519081689778314197
+      Boss_Spawn_39: 6009234678907045060
+      Boss_Spawn_4: 7050330892454684914
+      Boss_Spawn_40: -5795984249640219888
+      Boss_Spawn_41: 7899088358451881830
+      Boss_Spawn_42: -5281788019892286434
+      Boss_Spawn_43: -4570300021390805545
+      Boss_Spawn_44: 8938367042744510058
+      Boss_Spawn_45: -8863819428441835929
+      Boss_Spawn_46: 2472454114334910613
+      Boss_Spawn_47: -6414277276680622440
+      Boss_Spawn_48: 8129970365756506765
+      Boss_Spawn_5: 4068761997596643474
+      Boss_Spawn_6: -1841629017732643766
+      Boss_Spawn_7: 4594239864641844457
+      Boss_Spawn_8: -3821461180860322630
+      Boss_Spawn_9: -5155298843034184528
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
