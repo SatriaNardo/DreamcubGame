@@ -1,46 +1,37 @@
 fileFormatVersion: 2
-guid: 1a2274255d9994dcabef296dcf9413e6
+guid: 50634ebac60ca4281af6052d7687c8be
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2539791353346494900
-    second: listrik_0
+      213: 43696299196856114
+    second: object_BG_math_0
   - first:
-      213: 5832094508929319734
-    second: listrik_1
+      213: 9147216802518330032
+    second: object_BG_math_1
   - first:
-      213: 9179948927455145134
-    second: listrik_2
+      213: 7957589866725816326
+    second: object_BG_math_2
   - first:
-      213: -907652303071160771
-    second: listrik_3
+      213: 8992800461606826815
+    second: object_BG_math_3
   - first:
-      213: -5150519560676893634
-    second: listrik_4
+      213: -8088018151230799222
+    second: object_BG_math_4
   - first:
-      213: -1136508082942342365
-    second: listrik_5
+      213: 6254881972720565974
+    second: object_BG_math_5
   - first:
-      213: -6184394749355590863
-    second: listrik_6
+      213: -5720808980834097252
+    second: object_BG_math_6
   - first:
-      213: 7900353760445594064
-    second: listrik_7
+      213: -1560691489539972691
+    second: object_BG_math_7
   - first:
-      213: 4027007810875751160
-    second: listrik_8
+      213: -4812214749608725472
+    second: object_BG_math_8
   - first:
-      213: 6318366859645121342
-    second: listrik_9
-  - first:
-      213: 770961292775183295
-    second: listrik_10
-  - first:
-      213: -8512511374155398741
-    second: listrik_11
-  - first:
-      213: -7261414742226418432
-    second: listrik_12
+      213: -8207367266736683374
+    second: object_BG_math_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -175,177 +166,221 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: listrik_0
+      name: object_BG_math_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
+        x: 487
+        y: 182
+        width: 176
+        height: 44
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4b193db87c62f3320800000000000000
-      internalID: 2539791353346494900
+      spriteID: 237b0a77d8d3b9000800000000000000
+      internalID: 43696299196856114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: listrik_1
+      name: object_BG_math_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
+        x: 736
+        y: 166
+        width: 77
+        height: 76
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6330d3d5e03cfe050800000000000000
-      internalID: 5832094508929319734
+      spriteID: 0bae695c73171fe70800000000000000
+      internalID: 9147216802518330032
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: listrik_2
+      name: object_BG_math_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
+        x: 406
+        y: 35
+        width: 76
+        height: 112
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eac213d79eab56f70800000000000000
-      internalID: 9179948927455145134
+      spriteID: 608b07a92d90f6e60800000000000000
+      internalID: 7957589866725816326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: listrik_3
+      name: object_BG_math_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 64
-        height: 64
+        x: 508
+        y: 112
+        width: 32
+        height: 63
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d36d0ef0a0f5763f0800000000000000
-      internalID: -907652303071160771
+      spriteID: f333b0abf58dccc70800000000000000
+      internalID: 8992800461606826815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: listrik_4
+      name: object_BG_math_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
+        x: 555
+        y: 57
+        width: 156
+        height: 97
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e3c17298fbda588b0800000000000000
-      internalID: -5150519560676893634
+      spriteID: a820af6f75691cf80800000000000000
+      internalID: -8088018151230799222
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: listrik_5
+      name: object_BG_math_5
       rect:
         serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
+        x: 723
+        y: 84
+        width: 66
+        height: 76
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 32b8cd78bef4a30f0800000000000000
-      internalID: -1136508082942342365
+      spriteID: 6def000b30ecdc650800000000000000
+      internalID: 6254881972720565974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: listrik_6
+      name: object_BG_math_6
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
+        x: 782
+        y: 121
+        width: 8
+        height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 13b7ed5edbd9c2aa0800000000000000
-      internalID: -6184394749355590863
+      spriteID: c97e485ca8a9b90b0800000000000000
+      internalID: -5720808980834097252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: listrik_7
+      name: object_BG_math_7
       rect:
         serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
+        x: 868
+        y: 45
+        width: 74
+        height: 114
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0d9f74323e1b3ad60800000000000000
-      internalID: 7900353760445594064
+      spriteID: da1aef1fb5f475ae0800000000000000
+      internalID: -1560691489539972691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_BG_math_8
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 95
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0243da27e24973db0800000000000000
+      internalID: -4812214749608725472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_BG_math_9
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 68
+        width: 8
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 296cdf494f2991e80800000000000000
+      internalID: -8207367266736683374
       vertices: []
       indices: 
       edges: []
@@ -354,7 +389,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: db1646da4eb784e38b51dc32f514fa74
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -362,18 +397,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      listrik_0: 2539791353346494900
-      listrik_1: 5832094508929319734
-      listrik_2: 9179948927455145134
-      listrik_3: -907652303071160771
-      listrik_4: -5150519560676893634
-      listrik_5: -1136508082942342365
-      listrik_6: -6184394749355590863
-      listrik_7: 7900353760445594064
+      object_BG_math_0: 43696299196856114
+      object_BG_math_1: 9147216802518330032
+      object_BG_math_2: 7957589866725816326
+      object_BG_math_3: 8992800461606826815
+      object_BG_math_4: -8088018151230799222
+      object_BG_math_5: 6254881972720565974
+      object_BG_math_6: -5720808980834097252
+      object_BG_math_7: -1560691489539972691
+      object_BG_math_8: -4812214749608725472
+      object_BG_math_9: -8207367266736683374
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

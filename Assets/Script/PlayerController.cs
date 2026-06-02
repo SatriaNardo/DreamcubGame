@@ -70,6 +70,10 @@ public class PlayerController : MonoBehaviour
     private float lastAttackTime;
     private bool isAttackingGizmo = false; 
 
+    [SerializeField] private CameraFollow cameraFollow;
+
+    private Vector3 originalOffset;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -118,6 +122,17 @@ public class PlayerController : MonoBehaviour
         }
 
         UpdateAnimations();
+<<<<<<< Updated upstream
+=======
+
+        if (Keyboard.current.spaceKey.wasReleasedThisFrame && rb.linearVelocity.y > 0f)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
+            coyoteTimeCounter = 0f;
+        }
+
+
+>>>>>>> Stashed changes
     }
 
     void FixedUpdate()
@@ -373,5 +388,24 @@ public class PlayerController : MonoBehaviour
         
         if (groundCheck != null) { Gizmos.color = Color.red; Gizmos.DrawWireSphere(groundCheck.position, 0.2f); }
         if (wallCheck != null) { Gizmos.color = Color.green; Gizmos.DrawWireSphere(wallCheck.position, 0.2f); }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("LookDown"))
+        {
+            originalOffset = cameraFollow.offset;
+            Vector3 newOffset = cameraFollow.offset;
+            newOffset.y = -4f;
+            cameraFollow.offset = newOffset;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("LookDown"))
+        {
+            cameraFollow.offset = originalOffset;
+        }
     }
 }

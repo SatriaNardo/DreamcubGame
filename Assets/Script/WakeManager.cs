@@ -227,7 +227,7 @@ public class WakeManager : MonoBehaviour
     IEnumerator EyeAnimation()
     {
         EyeTransitionPrefab.SetActive(true);
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1.5f);
         EyeTransitionPrefab.SetActive(false);
     }
 }
