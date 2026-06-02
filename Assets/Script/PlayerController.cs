@@ -20,24 +20,21 @@ public class PlayerController : MonoBehaviour
     private bool isFacingRight = true;
     private bool canMove = true; 
 
-    [Header("Jumping & Variable Height")]
-    [SerializeField] private float jumpForce = 7f;           // Lower initial pop
-    [SerializeField] private float maxJumpHoldTime = 0.35f;   // How long you can hold to gain height
-    [SerializeField] private float holdJumpForce = 18f;      // Upward push while holding
-    private float jumpTimeCounter;
-    private bool isJumping;
-
-    [Header("Snappy Gravity")]
-    [SerializeField] private float baseGravityScale = 4f;    
-    [SerializeField] private float fallMultiplier = 2f;      
-    [SerializeField] private float lowJumpMultiplier = 1.5f; 
+    [Header("Jumping Mechanics (Tap-Only Fixed Height)")]
+    [SerializeField] private float jumpForce = 15f; // Adjust this value to set your exact fixed jump peak
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask platformLayer;
     private float coyoteTime = 0.15f;
     private float coyoteTimeCounter;
     private bool isGrounded;
-    private bool isHoldingJump;
+
+    [Header("Snappy Gravity System")]
+    [SerializeField] private float baseGravityScale = 4f;    
+    [SerializeField] private float fallMultiplier = 2f;      
+    private Collider2D playerCollider;
+    private Rigidbody2D rb;
+    private LayerMask combinedGroundMask;
 
     [Header("Wall Sliding & Jumping")]
     [SerializeField] private Transform wallCheck;
@@ -62,9 +59,6 @@ public class PlayerController : MonoBehaviour
 
     [Header("Platform Drop")]
     [SerializeField] private float dropDownForce = 12f;
-    private Collider2D playerCollider;
-    private Rigidbody2D rb;
-    private LayerMask combinedGroundMask;
 
     [Header("Combat & Attacking")]
     [SerializeField] private Transform attackPoint;
@@ -144,28 +138,11 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            // --- CHARGE-UP HOLD ENGINE ---
-            if (isHoldingJump && isJumping)
-            {
-                if (jumpTimeCounter > 0)
-                {
-                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, holdJumpForce);
-                    jumpTimeCounter -= Time.fixedDeltaTime;
-                }
-                else
-                {
-                    isJumping = false;
-                }
-            }
-
-            // --- SNAPPY VARIABLE FALL GRAVITY ---
+            // --- SNAPPY FALL GRAVITY ---
+            // Automatically increases gravity scale only when the player is moving downwards
             if (rb.linearVelocity.y < -0.01f) 
             {
                 rb.gravityScale = baseGravityScale * fallMultiplier;
-            }
-            else if (rb.linearVelocity.y > 0.01f && !isHoldingJump) 
-            {
-                rb.gravityScale = baseGravityScale * lowJumpMultiplier;
             }
             else 
             {
@@ -189,35 +166,24 @@ public class PlayerController : MonoBehaviour
         moveInput = value.Get<Vector2>(); 
     }
 
-    // --- FIXED: Swapped back to InputValue to eliminate the MissingMethodException error! ---
     public void OnJump(InputValue value)
     {
         if (!isJumpUnlocked) return;
         if (DialogueManager.Instance != null && DialogueManager.Instance.IsDialogueActive) return;
         if (!canMove) return;
 
-        // Correctly read true/false from the InputValue context
-        isHoldingJump = value.isPressed;
-        
-        if (isHoldingJump)
+        // Triggers once right when the button is first tapped down
+        if (value.isPressed)
         {
             if (moveInput.y < -0.1f && isGrounded) StartCoroutine(DropThroughPlatform());
             else if (wallCoyoteTimeCounter > 0f) StartCoroutine(WallJumpRoutine());
             else if (coyoteTimeCounter > 0f)
             {
-                isJumping = true;
-                jumpTimeCounter = maxJumpHoldTime;
-                
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-                coyoteTimeCounter = 0f; 
+                coyoteTimeCounter = 0f; // Prevent double jumping inside coyote window
                 
                 if (WakeManager.Instance != null) WakeManager.Instance.AddActionSpike();
             }
-        }
-        else
-        {
-            // Triggers correctly the exact frame you release the spacebar/button!
-            isJumping = false;
         }
     }
 
@@ -305,6 +271,7 @@ public class PlayerController : MonoBehaviour
             if (flyingScript != null) flyingScript.TakeDamage(attackDamage);
         }
     }
+    
 
     private IEnumerator AttackGizmoVisual()
     {
