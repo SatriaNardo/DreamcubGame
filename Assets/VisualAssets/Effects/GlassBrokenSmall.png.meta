@@ -1,0 +1,1560 @@
+fileFormatVersion: 2
+guid: 9412ef65d455a43c8974758289278c52
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8610621458362917898
+    second: GlassBrokenSmall_0
+  - first:
+      213: 6076224310384479645
+    second: GlassBrokenSmall_1
+  - first:
+      213: 9200549723352474931
+    second: GlassBrokenSmall_2
+  - first:
+      213: -7021943739098529743
+    second: GlassBrokenSmall_3
+  - first:
+      213: -6858959327431239125
+    second: GlassBrokenSmall_4
+  - first:
+      213: -2969495705975820098
+    second: GlassBrokenSmall_5
+  - first:
+      213: -876052922672075028
+    second: GlassBrokenSmall_6
+  - first:
+      213: 5623429073136984973
+    second: GlassBrokenSmall_7
+  - first:
+      213: 4855650066530655886
+    second: GlassBrokenSmall_8
+  - first:
+      213: -5602358877577793743
+    second: GlassBrokenSmall_9
+  - first:
+      213: -1280965636816263298
+    second: GlassBrokenSmall_10
+  - first:
+      213: 99149041459681712
+    second: GlassBrokenSmall_11
+  - first:
+      213: 7014238625729968473
+    second: GlassBrokenSmall_12
+  - first:
+      213: 4951836389389308496
+    second: GlassBrokenSmall_13
+  - first:
+      213: -1140116406470256350
+    second: GlassBrokenSmall_14
+  - first:
+      213: 4336064257776226736
+    second: GlassBrokenSmall_15
+  - first:
+      213: -5457595280782254332
+    second: GlassBrokenSmall_16
+  - first:
+      213: -6918466780872111618
+    second: GlassBrokenSmall_17
+  - first:
+      213: -1460358145201537470
+    second: GlassBrokenSmall_18
+  - first:
+      213: -193759434298950458
+    second: GlassBrokenSmall_19
+  - first:
+      213: 8821574921384461591
+    second: GlassBrokenSmall_20
+  - first:
+      213: -1594738610417950303
+    second: GlassBrokenSmall_21
+  - first:
+      213: 4358012048780310365
+    second: GlassBrokenSmall_22
+  - first:
+      213: -6102592957122336136
+    second: GlassBrokenSmall_23
+  - first:
+      213: 4368146016335304140
+    second: GlassBrokenSmall_24
+  - first:
+      213: 20328222806456324
+    second: GlassBrokenSmall_25
+  - first:
+      213: 3356712102225809306
+    second: GlassBrokenSmall_26
+  - first:
+      213: -7311984858560324657
+    second: GlassBrokenSmall_27
+  - first:
+      213: 7227929548465517471
+    second: GlassBrokenSmall_28
+  - first:
+      213: 560266497577413080
+    second: GlassBrokenSmall_29
+  - first:
+      213: 3032493372944952710
+    second: GlassBrokenSmall_30
+  - first:
+      213: -5242430631869660682
+    second: GlassBrokenSmall_31
+  - first:
+      213: 2278769053029711955
+    second: GlassBrokenSmall_32
+  - first:
+      213: 7254790299821616315
+    second: GlassBrokenSmall_33
+  - first:
+      213: -6365598748035568760
+    second: GlassBrokenSmall_34
+  - first:
+      213: 7552009856496379868
+    second: GlassBrokenSmall_35
+  - first:
+      213: 3196780311126408780
+    second: GlassBrokenSmall_36
+  - first:
+      213: 6274435027326710152
+    second: GlassBrokenSmall_37
+  - first:
+      213: -2572893104116345911
+    second: GlassBrokenSmall_38
+  - first:
+      213: 2377081222012424656
+    second: GlassBrokenSmall_39
+  - first:
+      213: 7107329805298941000
+    second: GlassBrokenSmall_40
+  - first:
+      213: -8882050431742199765
+    second: GlassBrokenSmall_41
+  - first:
+      213: -6468414421871214401
+    second: GlassBrokenSmall_42
+  - first:
+      213: 8204241482551056820
+    second: GlassBrokenSmall_43
+  - first:
+      213: -202331488470349631
+    second: GlassBrokenSmall_44
+  - first:
+      213: -3969010369886518839
+    second: GlassBrokenSmall_45
+  - first:
+      213: 4247843978383155374
+    second: GlassBrokenSmall_46
+  - first:
+      213: -611368625999680730
+    second: GlassBrokenSmall_47
+  - first:
+      213: -6918588940116820351
+    second: GlassBrokenSmall_48
+  - first:
+      213: 2799026039105001594
+    second: GlassBrokenSmall_49
+  - first:
+      213: 5748155342269192294
+    second: GlassBrokenSmall_50
+  - first:
+      213: -7505935987278408595
+    second: GlassBrokenSmall_51
+  - first:
+      213: -2532414042068600829
+    second: GlassBrokenSmall_52
+  - first:
+      213: -162933486576898431
+    second: GlassBrokenSmall_53
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GlassBrokenSmall_0
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1024
+        width: 68
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a04e31968921f7770800000000000000
+      internalID: 8610621458362917898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_1
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1026
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9d4f0c21d5135450800000000000000
+      internalID: 6076224310384479645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_2
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1029
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3352ebe0a3beeaf70800000000000000
+      internalID: 9200549723352474931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_3
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 1043
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13001468f5b0d8e90800000000000000
+      internalID: -7021943739098529743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_4
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1068
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2adb9ff4d410d0a0800000000000000
+      internalID: -6858959327431239125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_5
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 1047
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb07343736b3ac6d0800000000000000
+      internalID: -2969495705975820098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_6
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 1055
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cee20b32282a7d3f0800000000000000
+      internalID: -876052922672075028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_7
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 1062
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d832fe3a2fe6a0e40800000000000000
+      internalID: 5623429073136984973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_8
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 1048
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8e5929520cb26340800000000000000
+      internalID: 4855650066530655886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_9
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 1038
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13f28bd884c6042b0800000000000000
+      internalID: -5602358877577793743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_10
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 1047
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e77a5184a88193ee0800000000000000
+      internalID: -1280965636816263298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_11
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 1007
+        width: 38
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b95604278f306100800000000000000
+      internalID: 99149041459681712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_12
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1006
+        width: 70
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9597578fdd4975160800000000000000
+      internalID: 7014238625729968473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_13
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 964
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 052176fc5f478b440800000000000000
+      internalID: 4951836389389308496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_14
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 997
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 229debd3b2e7d20f0800000000000000
+      internalID: -1140116406470256350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_15
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 884
+        width: 47
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b11500187bcc2c30800000000000000
+      internalID: 4336064257776226736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_16
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 826
+        width: 73
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40f1029f10ab244b0800000000000000
+      internalID: -5457595280782254332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_17
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 876
+        width: 37
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef907cf4e1bacff90800000000000000
+      internalID: -6918466780872111618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_18
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 862
+        width: 25
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24ef9661104cbbbe0800000000000000
+      internalID: -1460358145201537470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_19
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 874
+        width: 80
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ccfab232d0af4df0800000000000000
+      internalID: -193759434298950458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_20
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 806
+        width: 44
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7158d9cf6a78c6a70800000000000000
+      internalID: 8821574921384461591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_21
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 820
+        width: 67
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a12070eea95ed9e0800000000000000
+      internalID: -1594738610417950303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_22
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 770
+        width: 92
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d573c6e5ed4ca7c30800000000000000
+      internalID: 4358012048780310365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_23
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 788
+        width: 72
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a2ce5d90c3f4ba0800000000000000
+      internalID: -6102592957122336136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 716
+        width: 178
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc514be88a5ce9c30800000000000000
+      internalID: 4368146016335304140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_25
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 660
+        width: 74
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4083b433968384000800000000000000
+      internalID: 20328222806456324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_26
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 622
+        width: 53
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f8c625fdf659e20800000000000000
+      internalID: 3356712102225809306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_27
+      rect:
+        serializedVersion: 2
+        x: 1873
+        y: 620
+        width: 47
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcb1a7ef28c968a90800000000000000
+      internalID: -7311984858560324657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 578
+        width: 40
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9336dd01a3ce4460800000000000000
+      internalID: 7227929548465517471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 365
+        width: 62
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d967af396776c700800000000000000
+      internalID: 560266497577413080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 311
+        width: 45
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68d2c16e7a4951a20800000000000000
+      internalID: 3032493372944952710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_31
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 268
+        width: 88
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f148cbad152f37b0800000000000000
+      internalID: -5242430631869660682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_32
+      rect:
+        serializedVersion: 2
+        x: 1874
+        y: 327
+        width: 46
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3504dfa5160df9f10800000000000000
+      internalID: 2278769053029711955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 298
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbc21d417513ea460800000000000000
+      internalID: 7254790299821616315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_34
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 279
+        width: 36
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88b2ba04aa9d8a7a0800000000000000
+      internalID: -6365598748035568760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_35
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 245
+        width: 117
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd727b4c3f02ec860800000000000000
+      internalID: 7552009856496379868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 155
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4ef6a571ce3d5c20800000000000000
+      internalID: 3196780311126408780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 89
+        width: 93
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 881b31af965431750800000000000000
+      internalID: 6274435027326710152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_38
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 134
+        width: 94
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c3d7148a5f3b4cd0800000000000000
+      internalID: -2572893104116345911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_39
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 58
+        width: 36
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d15d40f6c61df020800000000000000
+      internalID: 2377081222012424656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_40
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 10
+        width: 47
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84cb36a3dce42a260800000000000000
+      internalID: 7107329805298941000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_41
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 85
+        width: 73
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b28b6e2013e9cb480800000000000000
+      internalID: -8882050431742199765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_42
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 107
+        width: 72
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb04a5cba539b36a0800000000000000
+      internalID: -6468414421871214401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_43
+      rect:
+        serializedVersion: 2
+        x: 1819
+        y: 44
+        width: 101
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b9daf219225bd170800000000000000
+      internalID: 8204241482551056820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_44
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 7
+        width: 82
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c849de459c213df0800000000000000
+      internalID: -202331488470349631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_45
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 0
+        width: 71
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c18219e81e3be8c0800000000000000
+      internalID: -3969010369886518839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_46
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 0
+        width: 44
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea06fc0a79f53fa30800000000000000
+      internalID: 4247843978383155374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_47
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 0
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62b687c497bf387f0800000000000000
+      internalID: -611368625999680730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_48
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 11
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18ef365e30c3cff90800000000000000
+      internalID: -6918588940116820351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_49
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 0
+        width: 38
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a781ce94a5328d620800000000000000
+      internalID: 2799026039105001594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_50
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 0
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66818b924dc85cf40800000000000000
+      internalID: 5748155342269192294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_51
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 7
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d64137bdcfe85d790800000000000000
+      internalID: -7505935987278408595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_52
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 14
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3083a4698de0bdcd0800000000000000
+      internalID: -2532414042068600829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBrokenSmall_53
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 7
+        width: 98
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18e61927bd42dbdf0800000000000000
+      internalID: -162933486576898431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GlassBrokenSmall_0: 8610621458362917898
+      GlassBrokenSmall_1: 6076224310384479645
+      GlassBrokenSmall_10: -1280965636816263298
+      GlassBrokenSmall_11: 99149041459681712
+      GlassBrokenSmall_12: 7014238625729968473
+      GlassBrokenSmall_13: 4951836389389308496
+      GlassBrokenSmall_14: -1140116406470256350
+      GlassBrokenSmall_15: 4336064257776226736
+      GlassBrokenSmall_16: -5457595280782254332
+      GlassBrokenSmall_17: -6918466780872111618
+      GlassBrokenSmall_18: -1460358145201537470
+      GlassBrokenSmall_19: -193759434298950458
+      GlassBrokenSmall_2: 9200549723352474931
+      GlassBrokenSmall_20: 8821574921384461591
+      GlassBrokenSmall_21: -1594738610417950303
+      GlassBrokenSmall_22: 4358012048780310365
+      GlassBrokenSmall_23: -6102592957122336136
+      GlassBrokenSmall_24: 4368146016335304140
+      GlassBrokenSmall_25: 20328222806456324
+      GlassBrokenSmall_26: 3356712102225809306
+      GlassBrokenSmall_27: -7311984858560324657
+      GlassBrokenSmall_28: 7227929548465517471
+      GlassBrokenSmall_29: 560266497577413080
+      GlassBrokenSmall_3: -7021943739098529743
+      GlassBrokenSmall_30: 3032493372944952710
+      GlassBrokenSmall_31: -5242430631869660682
+      GlassBrokenSmall_32: 2278769053029711955
+      GlassBrokenSmall_33: 7254790299821616315
+      GlassBrokenSmall_34: -6365598748035568760
+      GlassBrokenSmall_35: 7552009856496379868
+      GlassBrokenSmall_36: 3196780311126408780
+      GlassBrokenSmall_37: 6274435027326710152
+      GlassBrokenSmall_38: -2572893104116345911
+      GlassBrokenSmall_39: 2377081222012424656
+      GlassBrokenSmall_4: -6858959327431239125
+      GlassBrokenSmall_40: 7107329805298941000
+      GlassBrokenSmall_41: -8882050431742199765
+      GlassBrokenSmall_42: -6468414421871214401
+      GlassBrokenSmall_43: 8204241482551056820
+      GlassBrokenSmall_44: -202331488470349631
+      GlassBrokenSmall_45: -3969010369886518839
+      GlassBrokenSmall_46: 4247843978383155374
+      GlassBrokenSmall_47: -611368625999680730
+      GlassBrokenSmall_48: -6918588940116820351
+      GlassBrokenSmall_49: 2799026039105001594
+      GlassBrokenSmall_5: -2969495705975820098
+      GlassBrokenSmall_50: 5748155342269192294
+      GlassBrokenSmall_51: -7505935987278408595
+      GlassBrokenSmall_52: -2532414042068600829
+      GlassBrokenSmall_53: -162933486576898431
+      GlassBrokenSmall_6: -876052922672075028
+      GlassBrokenSmall_7: 5623429073136984973
+      GlassBrokenSmall_8: 4855650066530655886
+      GlassBrokenSmall_9: -5602358877577793743
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

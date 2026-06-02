@@ -1,0 +1,1664 @@
+fileFormatVersion: 2
+guid: aff8df9dd9d034a9d80e48602bdcbe11
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5250023897942179833
+    second: GlassOutline 1_0
+  - first:
+      213: 3155153366229952361
+    second: GlassOutline 1_1
+  - first:
+      213: -8871300976532380582
+    second: GlassOutline 1_2
+  - first:
+      213: -4644105598826560990
+    second: GlassOutline 1_3
+  - first:
+      213: 446049153737871805
+    second: GlassOutline 1_4
+  - first:
+      213: 3949445455656045310
+    second: GlassOutline 1_5
+  - first:
+      213: -2682783418055455287
+    second: GlassOutline 1_6
+  - first:
+      213: -9207624692214497717
+    second: GlassOutline 1_7
+  - first:
+      213: 1018278728969898488
+    second: GlassOutline 1_8
+  - first:
+      213: 8879106981996593969
+    second: GlassOutline 1_9
+  - first:
+      213: 4028706853697474900
+    second: GlassOutline 1_10
+  - first:
+      213: 4507094249444531755
+    second: GlassOutline 1_11
+  - first:
+      213: -4286030272658211062
+    second: GlassOutline 1_12
+  - first:
+      213: -2895568279740944526
+    second: GlassOutline 1_13
+  - first:
+      213: 7647680827845250296
+    second: GlassOutline 1_14
+  - first:
+      213: 1690693523283557114
+    second: GlassOutline 1_15
+  - first:
+      213: 6772585346066650612
+    second: GlassOutline 1_16
+  - first:
+      213: -785902546843246917
+    second: GlassOutline 1_17
+  - first:
+      213: -724782102171107367
+    second: GlassOutline 1_18
+  - first:
+      213: 7769256558378491785
+    second: GlassOutline 1_19
+  - first:
+      213: -5812971759230274926
+    second: GlassOutline 1_20
+  - first:
+      213: 7756788529244136341
+    second: GlassOutline 1_21
+  - first:
+      213: -2105651803046660237
+    second: GlassOutline 1_22
+  - first:
+      213: 5694256109520288741
+    second: GlassOutline 1_23
+  - first:
+      213: 7192609237994441248
+    second: GlassOutline 1_24
+  - first:
+      213: 6571774924975088887
+    second: GlassOutline 1_25
+  - first:
+      213: -8523624905130684286
+    second: GlassOutline 1_26
+  - first:
+      213: -1306062473119494292
+    second: GlassOutline 1_27
+  - first:
+      213: -6197723532816367363
+    second: GlassOutline 1_28
+  - first:
+      213: -2652797421687962080
+    second: GlassOutline 1_29
+  - first:
+      213: 2736497655913950894
+    second: GlassOutline 1_30
+  - first:
+      213: 3609331234231766215
+    second: GlassOutline 1_31
+  - first:
+      213: 6857624466610762139
+    second: GlassOutline 1_32
+  - first:
+      213: -8755078986697241208
+    second: GlassOutline 1_33
+  - first:
+      213: 3942559332507762201
+    second: GlassOutline 1_34
+  - first:
+      213: 6658985290588332754
+    second: GlassOutline 1_35
+  - first:
+      213: -4978695090635257529
+    second: GlassOutline 1_36
+  - first:
+      213: 4476326311477975211
+    second: GlassOutline 1_37
+  - first:
+      213: -4952504187586961192
+    second: GlassOutline 1_38
+  - first:
+      213: 7701317075216037597
+    second: GlassOutline 1_39
+  - first:
+      213: -8094715206358407789
+    second: GlassOutline 1_40
+  - first:
+      213: -1455212170260677430
+    second: GlassOutline 1_41
+  - first:
+      213: -9113536679773538168
+    second: GlassOutline 1_42
+  - first:
+      213: 4848618825289698117
+    second: GlassOutline 1_43
+  - first:
+      213: 1656534167952170364
+    second: GlassOutline 1_44
+  - first:
+      213: -4386871931834968679
+    second: GlassOutline 1_45
+  - first:
+      213: 8376896315308145013
+    second: GlassOutline 1_46
+  - first:
+      213: -2391455713024045495
+    second: GlassOutline 1_47
+  - first:
+      213: 3428918916363323547
+    second: GlassOutline 1_48
+  - first:
+      213: -1414751488329356144
+    second: GlassOutline 1_49
+  - first:
+      213: 5783805581394766523
+    second: GlassOutline 1_50
+  - first:
+      213: 2754221313926462391
+    second: GlassOutline 1_51
+  - first:
+      213: 6776377977960525191
+    second: GlassOutline 1_52
+  - first:
+      213: -6094704378181593197
+    second: GlassOutline 1_53
+  - first:
+      213: 2746765222795496275
+    second: GlassOutline 1_54
+  - first:
+      213: 7196473852250669074
+    second: GlassOutline 1_55
+  - first:
+      213: 3650114437501952028
+    second: GlassOutline 1_56
+  - first:
+      213: -3980994537724755248
+    second: GlassOutline 1_57
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GlassOutline 1_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 718
+        width: 267
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ffb72b5be4dbd840800000000000000
+      internalID: 5250023897942179833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_1
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 1021
+        width: 74
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 967a306154b59cb20800000000000000
+      internalID: 3155153366229952361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_2
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 827
+        width: 265
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a54263693cec2e480800000000000000
+      internalID: -8871300976532380582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_3
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1023
+        width: 79
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2224a8a3092dc8fb0800000000000000
+      internalID: -4644105598826560990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_4
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 988
+        width: 108
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db1d8e0975fa03600800000000000000
+      internalID: 446049153737871805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_5
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 1026
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efac82487bf3fc630800000000000000
+      internalID: 3949445455656045310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_6
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 1040
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd0f7df1b6d4cad0800000000000000
+      internalID: -2682783418055455287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_7
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 1044
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4e70736022f73080800000000000000
+      internalID: -9207624692214497717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_8
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 1052
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f94692eb17a12e00800000000000000
+      internalID: 1018278728969898488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_9
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1059
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1330990b1cce83b70800000000000000
+      internalID: 8879106981996593969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_10
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 1045
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 451d1d6d987d8e730800000000000000
+      internalID: 4028706853697474900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_11
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 1035
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ed85b175a6c8e30800000000000000
+      internalID: 4507094249444531755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_12
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 1044
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0ff2a5ec26f484c0800000000000000
+      internalID: -4286030272658211062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_13
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 1004
+        width: 44
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27fe62fadffd0d7d0800000000000000
+      internalID: -2895568279740944526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_14
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 979
+        width: 94
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc084b9135022a60800000000000000
+      internalID: 7647680827845250296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_15
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 1003
+        width: 76
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afabe5f3dcc867710800000000000000
+      internalID: 1690693523283557114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_16
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 921
+        width: 217
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f591535d7e0dfd50800000000000000
+      internalID: 6772585346066650612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_17
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 881
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbe555b2cc9e715f0800000000000000
+      internalID: -785902546843246917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_18
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 823
+        width: 79
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dfb784a48e01f5f0800000000000000
+      internalID: -724782102171107367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_19
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 859
+        width: 31
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98f16033da1f1db60800000000000000
+      internalID: 7769256558378491785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_20
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 770
+        width: 145
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 292b3b1cbfc245fa0800000000000000
+      internalID: -5812971759230274926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_21
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 780
+        width: 226
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 593eb63f116a5ab60800000000000000
+      internalID: 7756788529244136341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_22
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 871
+        width: 83
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3773eb267d837c2e0800000000000000
+      internalID: -2105651803046660237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_23
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 817
+        width: 73
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ebfd0c13cf060f40800000000000000
+      internalID: 5694256109520288741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_24
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 785
+        width: 78
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a0ade6ef741d360800000000000000
+      internalID: 7192609237994441248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_25
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 767
+        width: 98
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f4a5fab972a33b50800000000000000
+      internalID: 6571774924975088887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 713
+        width: 181
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28053031f4006b980800000000000000
+      internalID: -8523624905130684286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_27
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 703
+        width: 100
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6f8e3bb91fefdde0800000000000000
+      internalID: -1306062473119494292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_28
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 657
+        width: 80
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df0c66aa8434df9a0800000000000000
+      internalID: -6197723532816367363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_29
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 619
+        width: 59
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0268733dcce5f2bd0800000000000000
+      internalID: -2652797421687962080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_30
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 617
+        width: 50
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaea0759e1ef9f520800000000000000
+      internalID: 2736497655913950894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 575
+        width: 43
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cc4b1d62abe61230800000000000000
+      internalID: 3609331234231766215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 362
+        width: 65
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b91bc5f7e1d2b2f50800000000000000
+      internalID: 6857624466610762139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 295
+        width: 48
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88d8c694c06bf7680800000000000000
+      internalID: -8755078986697241208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_34
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 265
+        width: 94
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91eb60803d8c6b630800000000000000
+      internalID: 3942559332507762201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_35
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 324
+        width: 49
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d2a11a47d7796c50800000000000000
+      internalID: 6658985290588332754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 197
+        width: 158
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74944bd713f18eab0800000000000000
+      internalID: -4978695090635257529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_37
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 276
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba8116e401b1f1e30800000000000000
+      internalID: 4476326311477975211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_38
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 242
+        width: 123
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d0ae3e4eab254bb0800000000000000
+      internalID: -4952504187586961192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_39
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 81
+        width: 167
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6f6ea931390ea60800000000000000
+      internalID: 7701317075216037597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_40
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 199
+        width: 184
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 395ed0f486bc9af80800000000000000
+      internalID: -8094715206358407789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 331
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acc79cebd3c0ecbe0800000000000000
+      internalID: -1455212170260677430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_42
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 4
+        width: 88
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 888fa92eca6368180800000000000000
+      internalID: -9113536679773538168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_43
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 0
+        width: 77
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b0aace121c94340800000000000000
+      internalID: 4848618825289698117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_44
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 9
+        width: 109
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d161f8c013df610800000000000000
+      internalID: 1656534167952170364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_45
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 0
+        width: 50
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99558db7833be13c0800000000000000
+      internalID: -4386871931834968679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_46
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 8
+        width: 22
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 579783ae0d6b04470800000000000000
+      internalID: 8376896315308145013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_47
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 0
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94e8f1113b7dfced0800000000000000
+      internalID: -2391455713024045495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_48
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 4
+        width: 37
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9804755697f59f20800000000000000
+      internalID: 3428918916363323547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_49
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 11
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09c6cac540bcd5ce0800000000000000
+      internalID: -1414751488329356144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_50
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 0
+        width: 70
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbae4f84884344050800000000000000
+      internalID: 5783805581394766523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_51
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 55
+        width: 42
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bb756941b5f83620800000000000000
+      internalID: 2754221313926462391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_52
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 7
+        width: 53
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78ded104ed78a0e50800000000000000
+      internalID: 6776377977960525191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_53
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 0
+        width: 164
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 397d77fb8a24b6ba0800000000000000
+      internalID: -6094704378181593197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_54
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 0
+        width: 265
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35b4f1aca687e1620800000000000000
+      internalID: 2746765222795496275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_55
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 41
+        width: 104
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 210c9ce07d20fd360800000000000000
+      internalID: 7196473852250669074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_56
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 0
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1024d4edbfc7a230800000000000000
+      internalID: 3650114437501952028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassOutline 1_57
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 0
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d245266f8aa0c8c0800000000000000
+      internalID: -3980994537724755248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GlassOutline 1_0: 5250023897942179833
+      GlassOutline 1_1: 3155153366229952361
+      GlassOutline 1_10: 4028706853697474900
+      GlassOutline 1_11: 4507094249444531755
+      GlassOutline 1_12: -4286030272658211062
+      GlassOutline 1_13: -2895568279740944526
+      GlassOutline 1_14: 7647680827845250296
+      GlassOutline 1_15: 1690693523283557114
+      GlassOutline 1_16: 6772585346066650612
+      GlassOutline 1_17: -785902546843246917
+      GlassOutline 1_18: -724782102171107367
+      GlassOutline 1_19: 7769256558378491785
+      GlassOutline 1_2: -8871300976532380582
+      GlassOutline 1_20: -5812971759230274926
+      GlassOutline 1_21: 7756788529244136341
+      GlassOutline 1_22: -2105651803046660237
+      GlassOutline 1_23: 5694256109520288741
+      GlassOutline 1_24: 7192609237994441248
+      GlassOutline 1_25: 6571774924975088887
+      GlassOutline 1_26: -8523624905130684286
+      GlassOutline 1_27: -1306062473119494292
+      GlassOutline 1_28: -6197723532816367363
+      GlassOutline 1_29: -2652797421687962080
+      GlassOutline 1_3: -4644105598826560990
+      GlassOutline 1_30: 2736497655913950894
+      GlassOutline 1_31: 3609331234231766215
+      GlassOutline 1_32: 6857624466610762139
+      GlassOutline 1_33: -8755078986697241208
+      GlassOutline 1_34: 3942559332507762201
+      GlassOutline 1_35: 6658985290588332754
+      GlassOutline 1_36: -4978695090635257529
+      GlassOutline 1_37: 4476326311477975211
+      GlassOutline 1_38: -4952504187586961192
+      GlassOutline 1_39: 7701317075216037597
+      GlassOutline 1_4: 446049153737871805
+      GlassOutline 1_40: -8094715206358407789
+      GlassOutline 1_41: -1455212170260677430
+      GlassOutline 1_42: -9113536679773538168
+      GlassOutline 1_43: 4848618825289698117
+      GlassOutline 1_44: 1656534167952170364
+      GlassOutline 1_45: -4386871931834968679
+      GlassOutline 1_46: 8376896315308145013
+      GlassOutline 1_47: -2391455713024045495
+      GlassOutline 1_48: 3428918916363323547
+      GlassOutline 1_49: -1414751488329356144
+      GlassOutline 1_5: 3949445455656045310
+      GlassOutline 1_50: 5783805581394766523
+      GlassOutline 1_51: 2754221313926462391
+      GlassOutline 1_52: 6776377977960525191
+      GlassOutline 1_53: -6094704378181593197
+      GlassOutline 1_54: 2746765222795496275
+      GlassOutline 1_55: 7196473852250669074
+      GlassOutline 1_56: 3650114437501952028
+      GlassOutline 1_57: -3980994537724755248
+      GlassOutline 1_6: -2682783418055455287
+      GlassOutline 1_7: -9207624692214497717
+      GlassOutline 1_8: 1018278728969898488
+      GlassOutline 1_9: 8879106981996593969
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

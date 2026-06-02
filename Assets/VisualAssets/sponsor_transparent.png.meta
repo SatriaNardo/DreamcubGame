@@ -1,0 +1,2184 @@
+fileFormatVersion: 2
+guid: 89b08193f2c3c4427adb686f70b8a996
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7391720352510804749
+    second: sponsor_transparent_0
+  - first:
+      213: -1177745301414712742
+    second: sponsor_transparent_1
+  - first:
+      213: 5050511912460827103
+    second: sponsor_transparent_2
+  - first:
+      213: 8723306760799014962
+    second: sponsor_transparent_3
+  - first:
+      213: 1387945880563087263
+    second: sponsor_transparent_4
+  - first:
+      213: -5594495118916676016
+    second: sponsor_transparent_5
+  - first:
+      213: 3740057184963706384
+    second: sponsor_transparent_6
+  - first:
+      213: -3393236996417403581
+    second: sponsor_transparent_7
+  - first:
+      213: -4930728904369362599
+    second: sponsor_transparent_8
+  - first:
+      213: 3984344271567341729
+    second: sponsor_transparent_9
+  - first:
+      213: -9214449044443522789
+    second: sponsor_transparent_10
+  - first:
+      213: -6590465780091609852
+    second: sponsor_transparent_11
+  - first:
+      213: 5963491232093836531
+    second: sponsor_transparent_12
+  - first:
+      213: -4362273273187874074
+    second: sponsor_transparent_13
+  - first:
+      213: -7159011521678686940
+    second: sponsor_transparent_14
+  - first:
+      213: 8645891516369033077
+    second: sponsor_transparent_15
+  - first:
+      213: -2015047546448341793
+    second: sponsor_transparent_16
+  - first:
+      213: 6424646388846883784
+    second: sponsor_transparent_17
+  - first:
+      213: -8544561762851950763
+    second: sponsor_transparent_18
+  - first:
+      213: -6060421702983211366
+    second: sponsor_transparent_19
+  - first:
+      213: -5844073634489079345
+    second: sponsor_transparent_20
+  - first:
+      213: 5714920986318863372
+    second: sponsor_transparent_21
+  - first:
+      213: -8421223055219658588
+    second: sponsor_transparent_22
+  - first:
+      213: 4884320149306145373
+    second: sponsor_transparent_23
+  - first:
+      213: 8127164142942752257
+    second: sponsor_transparent_24
+  - first:
+      213: -8496489084467306752
+    second: sponsor_transparent_25
+  - first:
+      213: 4629773918178264616
+    second: sponsor_transparent_26
+  - first:
+      213: 2494857045528118361
+    second: sponsor_transparent_27
+  - first:
+      213: -1270857280271353057
+    second: sponsor_transparent_28
+  - first:
+      213: 7408644138003905636
+    second: sponsor_transparent_29
+  - first:
+      213: -9128276580292173626
+    second: sponsor_transparent_30
+  - first:
+      213: -5148293800438127570
+    second: sponsor_transparent_31
+  - first:
+      213: 2791388583907334961
+    second: sponsor_transparent_32
+  - first:
+      213: -3002702653921790787
+    second: sponsor_transparent_33
+  - first:
+      213: 7781638468377182678
+    second: sponsor_transparent_34
+  - first:
+      213: -3099903020459178579
+    second: sponsor_transparent_35
+  - first:
+      213: 8800395698218710052
+    second: sponsor_transparent_36
+  - first:
+      213: 7068270155048381812
+    second: sponsor_transparent_37
+  - first:
+      213: 7920757736864223080
+    second: sponsor_transparent_38
+  - first:
+      213: 9060711530139830580
+    second: sponsor_transparent_39
+  - first:
+      213: 6382425137515405783
+    second: sponsor_transparent_40
+  - first:
+      213: 2904724518211426930
+    second: sponsor_transparent_41
+  - first:
+      213: 1144837279944075517
+    second: sponsor_transparent_42
+  - first:
+      213: -2651962143798049761
+    second: sponsor_transparent_43
+  - first:
+      213: -8541037447000660999
+    second: sponsor_transparent_44
+  - first:
+      213: -5349129967298649625
+    second: sponsor_transparent_45
+  - first:
+      213: 8673120611481884076
+    second: sponsor_transparent_46
+  - first:
+      213: 8285168552436747552
+    second: sponsor_transparent_47
+  - first:
+      213: 7931528877721849883
+    second: sponsor_transparent_48
+  - first:
+      213: 656608826283512321
+    second: sponsor_transparent_49
+  - first:
+      213: -7466243627972338630
+    second: sponsor_transparent_50
+  - first:
+      213: 8165545068605170831
+    second: sponsor_transparent_51
+  - first:
+      213: -2729436251041272191
+    second: sponsor_transparent_52
+  - first:
+      213: 4822264199051601116
+    second: sponsor_transparent_53
+  - first:
+      213: 7243977962247183162
+    second: sponsor_transparent_54
+  - first:
+      213: 5855208381076523268
+    second: sponsor_transparent_55
+  - first:
+      213: -2123310763743883130
+    second: sponsor_transparent_56
+  - first:
+      213: -8705390454028787788
+    second: sponsor_transparent_57
+  - first:
+      213: -2342790918955749599
+    second: sponsor_transparent_58
+  - first:
+      213: -2737163595439842260
+    second: sponsor_transparent_59
+  - first:
+      213: -4343330288944592257
+    second: sponsor_transparent_60
+  - first:
+      213: -8427084706800660223
+    second: sponsor_transparent_61
+  - first:
+      213: -843033792354181934
+    second: sponsor_transparent_62
+  - first:
+      213: -9211033502383458840
+    second: sponsor_transparent_63
+  - first:
+      213: 5302116647205337627
+    second: sponsor_transparent_64
+  - first:
+      213: -4495655899029578770
+    second: sponsor_transparent_65
+  - first:
+      213: -8584684482009588038
+    second: sponsor_transparent_66
+  - first:
+      213: 4819342582328555568
+    second: sponsor_transparent_67
+  - first:
+      213: 993426187797896688
+    second: sponsor_transparent_68
+  - first:
+      213: -728913736796094029
+    second: sponsor_transparent_69
+  - first:
+      213: -2713236582398620404
+    second: sponsor_transparent_70
+  - first:
+      213: 4032282736739660783
+    second: sponsor_transparent_71
+  - first:
+      213: -352972314800519085
+    second: sponsor_transparent_72
+  - first:
+      213: 3215110342178883745
+    second: sponsor_transparent_73
+  - first:
+      213: -1743425077193790020
+    second: sponsor_transparent_74
+  - first:
+      213: -1044153418369165648
+    second: sponsor_transparent_75
+  - first:
+      213: 3343433897923811962
+    second: sponsor_transparent_76
+  - first:
+      213: -5445996220528402120
+    second: sponsor_transparent_77
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sponsor_transparent_0
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 852
+        width: 80
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d038e626f7aa49660800000000000000
+      internalID: 7391720352510804749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_1
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 851
+        width: 57
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a6a4963eec7afe0800000000000000
+      internalID: -1177745301414712742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_2
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 852
+        width: 51
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd93b1c53d5071640800000000000000
+      internalID: 5050511912460827103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_3
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 851
+        width: 57
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2305038e7496f0970800000000000000
+      internalID: 8723306760799014962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_4
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 852
+        width: 80
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f97fd6abc69f24310800000000000000
+      internalID: 1387945880563087263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_5
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 901
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 056905b845c5c52b0800000000000000
+      internalID: -5594495118916676016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_6
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 706
+        width: 62
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01eb86da13a57e330800000000000000
+      internalID: 3740057184963706384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_7
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 703
+        width: 42
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 345c3dd0eecc8e0d0800000000000000
+      internalID: -3393236996417403581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_8
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 721
+        width: 53
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95920538f28829bb0800000000000000
+      internalID: -4930728904369362599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_9
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 702
+        width: 147
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a842a9410c3b4730800000000000000
+      internalID: 3984344271567341729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_10
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 709
+        width: 70
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1991011a63bf1080800000000000000
+      internalID: -9214449044443522789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_11
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 727
+        width: 118
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d95417a46f984a0800000000000000
+      internalID: -6590465780091609852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_12
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 747
+        width: 66
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f41c1efda392c250800000000000000
+      internalID: 5963491232093836531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_13
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 748
+        width: 75
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eac47202971673c0800000000000000
+      internalID: -4362273273187874074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_14
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 747
+        width: 74
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 425c96b73f416ac90800000000000000
+      internalID: -7159011521678686940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_15
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 747
+        width: 67
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5775db7b6806cf770800000000000000
+      internalID: 8645891516369033077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_16
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 748
+        width: 67
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd49c64ceec1904e0800000000000000
+      internalID: -2015047546448341793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_17
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 747
+        width: 67
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c3f6b6f9dde82950800000000000000
+      internalID: 6424646388846883784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_18
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 747
+        width: 52
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55fe2d3095e9b6980800000000000000
+      internalID: -8544561762851950763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_19
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 748
+        width: 21
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a962e94129e05eba0800000000000000
+      internalID: -6060421702983211366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_20
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 624
+        width: 73
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc96d0f1efda5eea0800000000000000
+      internalID: -5844073634489079345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_21
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 613
+        width: 119
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0cf5fcab5a7f4f40800000000000000
+      internalID: 5714920986318863372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_22
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 637
+        width: 43
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a07d43bf3ec12b80800000000000000
+      internalID: -8421223055219658588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_23
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 619
+        width: 147
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5afcac2c4798c340800000000000000
+      internalID: 4884320149306145373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_24
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 563
+        width: 92
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10e056b7abc79c070800000000000000
+      internalID: 8127164142942752257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_25
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 553
+        width: 61
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00f975aa138661a80800000000000000
+      internalID: -8496489084467306752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_26
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 575
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 826426759d2404040800000000000000
+      internalID: 4629773918178264616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_27
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 556
+        width: 41
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 954851cb3438f9220800000000000000
+      internalID: 2494857045528118361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_28
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 558
+        width: 40
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1bf43179020d5ee0800000000000000
+      internalID: -1270857280271353057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_29
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 203
+        width: 269
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46cb001479ac0d660800000000000000
+      internalID: 7408644138003905636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_30
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 451
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c0ea2c50d8d15180800000000000000
+      internalID: -9128276580292173626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_31
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 407
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e242a89b0169d88b0800000000000000
+      internalID: -5148293800438127570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_32
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 408
+        width: 55
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b90eda0210db620800000000000000
+      internalID: 2791388583907334961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_33
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 408
+        width: 127
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db47ed268d14456d0800000000000000
+      internalID: -3002702653921790787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_34
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 407
+        width: 15
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d1032645feedfb60800000000000000
+      internalID: 7781638468377182678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_35
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 288
+        width: 113
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da5ce5b70aeeaf4d0800000000000000
+      internalID: -3099903020459178579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_36
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 351
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 424b333d249412a70800000000000000
+      internalID: 8800395698218710052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_37
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 319
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47d6728b14a871260800000000000000
+      internalID: 7068270155048381812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_38
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 319
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86f08b9123f2ced60800000000000000
+      internalID: 7920757736864223080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_39
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 351
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4394546812d1ebd70800000000000000
+      internalID: 9060711530139830580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_40
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 319
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d12127d8dde29850800000000000000
+      internalID: 6382425137515405783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_41
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 350
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27a1c563f87af4820800000000000000
+      internalID: 2904724518211426930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_42
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 319
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df8e0b4c07743ef00800000000000000
+      internalID: 1144837279944075517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_43
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 350
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14422d1b76523bd0800000000000000
+      internalID: -2651962143798049761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_44
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 318
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f3673eb1b3287980800000000000000
+      internalID: -8541037447000660999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_45
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 351
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e164c9b2a214c5b0800000000000000
+      internalID: -5349129967298649625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_46
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 319
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca51f757e3d1d5870800000000000000
+      internalID: 8673120611481884076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_47
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 351
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02dca38d6e4daf270800000000000000
+      internalID: 8285168552436747552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_48
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 319
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b101d52cd73721e60800000000000000
+      internalID: 7931528877721849883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_49
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 350
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 102d307af3ebc1900800000000000000
+      internalID: 656608826283512321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_50
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 319
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c5f2c6af2926890800000000000000
+      internalID: -7466243627972338630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_51
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 351
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8467ab1af7d15170800000000000000
+      internalID: 8165545068605170831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_52
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 318
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18e6c9bd0381f1ad0800000000000000
+      internalID: -2729436251041272191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_53
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 351
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd4ed855dbf1ce240800000000000000
+      internalID: 4822264199051601116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_54
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 350
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b50809397c78460800000000000000
+      internalID: 7243977962247183162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_55
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 351
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 409c4f71001e14150800000000000000
+      internalID: 5855208381076523268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_56
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 294
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68058433c1c7882e0800000000000000
+      internalID: -2123310763743883130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_57
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 294
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf9984518d303780800000000000000
+      internalID: -8705390454028787788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_58
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 294
+        width: 45
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12fa1a4621cbc7fd0800000000000000
+      internalID: -2342790918955749599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_59
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 294
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2c5da94634a30ad0800000000000000
+      internalID: -2737163595439842260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_60
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 294
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a43493d1469b3c0800000000000000
+      internalID: -4343330288944592257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_61
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 294
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10115079b1bfc0b80800000000000000
+      internalID: -8427084706800660223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_62
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 290
+        width: 37
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dc14118b31fc44f0800000000000000
+      internalID: -843033792354181934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_63
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 294
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e5363ce4d5db2080800000000000000
+      internalID: -9211033502383458840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_64
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 294
+        width: 46
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1afb52bff6e49940800000000000000
+      internalID: 5302116647205337627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_65
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 276
+        width: 52
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eebd3f167c83c91c0800000000000000
+      internalID: -4495655899029578770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_66
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 258
+        width: 47
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abe920d72f21dd880800000000000000
+      internalID: -8584684482009588038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_67
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 275
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0387b9e6b8eb1e240800000000000000
+      internalID: 4819342582328555568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_68
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 275
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fd934abadb59cd00800000000000000
+      internalID: 993426187797896688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_69
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 275
+        width: 47
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b1cd5e71d062e5f0800000000000000
+      internalID: -728913736796094029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_70
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 221
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d098224b5a85ad0800000000000000
+      internalID: -2713236582398620404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_71
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 221
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe3be4df8cb85f730800000000000000
+      internalID: 4032282736739660783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_72
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 221
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35884c0cc8df91bf0800000000000000
+      internalID: -352972314800519085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_73
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 221
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a8c14362dd5e9c20800000000000000
+      internalID: 3215110342178883745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_74
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 221
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd2b5d112c1ec7e0800000000000000
+      internalID: -1743425077193790020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_75
+      rect:
+        serializedVersion: 2
+        x: 1493
+        y: 221
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b698178ffb6281f0800000000000000
+      internalID: -1044153418369165648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_76
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 221
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7a9fb77a63466e20800000000000000
+      internalID: 3343433897923811962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponsor_transparent_77
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 215
+        width: 53
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831e843aa4feb64b0800000000000000
+      internalID: -5445996220528402120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sponsor_transparent_0: 7391720352510804749
+      sponsor_transparent_1: -1177745301414712742
+      sponsor_transparent_10: -9214449044443522789
+      sponsor_transparent_11: -6590465780091609852
+      sponsor_transparent_12: 5963491232093836531
+      sponsor_transparent_13: -4362273273187874074
+      sponsor_transparent_14: -7159011521678686940
+      sponsor_transparent_15: 8645891516369033077
+      sponsor_transparent_16: -2015047546448341793
+      sponsor_transparent_17: 6424646388846883784
+      sponsor_transparent_18: -8544561762851950763
+      sponsor_transparent_19: -6060421702983211366
+      sponsor_transparent_2: 5050511912460827103
+      sponsor_transparent_20: -5844073634489079345
+      sponsor_transparent_21: 5714920986318863372
+      sponsor_transparent_22: -8421223055219658588
+      sponsor_transparent_23: 4884320149306145373
+      sponsor_transparent_24: 8127164142942752257
+      sponsor_transparent_25: -8496489084467306752
+      sponsor_transparent_26: 4629773918178264616
+      sponsor_transparent_27: 2494857045528118361
+      sponsor_transparent_28: -1270857280271353057
+      sponsor_transparent_29: 7408644138003905636
+      sponsor_transparent_3: 8723306760799014962
+      sponsor_transparent_30: -9128276580292173626
+      sponsor_transparent_31: -5148293800438127570
+      sponsor_transparent_32: 2791388583907334961
+      sponsor_transparent_33: -3002702653921790787
+      sponsor_transparent_34: 7781638468377182678
+      sponsor_transparent_35: -3099903020459178579
+      sponsor_transparent_36: 8800395698218710052
+      sponsor_transparent_37: 7068270155048381812
+      sponsor_transparent_38: 7920757736864223080
+      sponsor_transparent_39: 9060711530139830580
+      sponsor_transparent_4: 1387945880563087263
+      sponsor_transparent_40: 6382425137515405783
+      sponsor_transparent_41: 2904724518211426930
+      sponsor_transparent_42: 1144837279944075517
+      sponsor_transparent_43: -2651962143798049761
+      sponsor_transparent_44: -8541037447000660999
+      sponsor_transparent_45: -5349129967298649625
+      sponsor_transparent_46: 8673120611481884076
+      sponsor_transparent_47: 8285168552436747552
+      sponsor_transparent_48: 7931528877721849883
+      sponsor_transparent_49: 656608826283512321
+      sponsor_transparent_5: -5594495118916676016
+      sponsor_transparent_50: -7466243627972338630
+      sponsor_transparent_51: 8165545068605170831
+      sponsor_transparent_52: -2729436251041272191
+      sponsor_transparent_53: 4822264199051601116
+      sponsor_transparent_54: 7243977962247183162
+      sponsor_transparent_55: 5855208381076523268
+      sponsor_transparent_56: -2123310763743883130
+      sponsor_transparent_57: -8705390454028787788
+      sponsor_transparent_58: -2342790918955749599
+      sponsor_transparent_59: -2737163595439842260
+      sponsor_transparent_6: 3740057184963706384
+      sponsor_transparent_60: -4343330288944592257
+      sponsor_transparent_61: -8427084706800660223
+      sponsor_transparent_62: -843033792354181934
+      sponsor_transparent_63: -9211033502383458840
+      sponsor_transparent_64: 5302116647205337627
+      sponsor_transparent_65: -4495655899029578770
+      sponsor_transparent_66: -8584684482009588038
+      sponsor_transparent_67: 4819342582328555568
+      sponsor_transparent_68: 993426187797896688
+      sponsor_transparent_69: -728913736796094029
+      sponsor_transparent_7: -3393236996417403581
+      sponsor_transparent_70: -2713236582398620404
+      sponsor_transparent_71: 4032282736739660783
+      sponsor_transparent_72: -352972314800519085
+      sponsor_transparent_73: 3215110342178883745
+      sponsor_transparent_74: -1743425077193790020
+      sponsor_transparent_75: -1044153418369165648
+      sponsor_transparent_76: 3343433897923811962
+      sponsor_transparent_77: -5445996220528402120
+      sponsor_transparent_8: -4930728904369362599
+      sponsor_transparent_9: 3984344271567341729
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

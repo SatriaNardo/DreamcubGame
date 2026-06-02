@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 94e78b14cc5a04d9eba759b9aa56fce6
+guid: 10a6fafbb70f54a38b11d3947d723e5b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1932488391114324948
-    second: BG_math_0
+      213: -1220104927222352385
+    second: sponsor_black_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BG_math_0
+      name: sponsor_black_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 960
-        height: 270
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4db7fe4f3f391da10800000000000000
-      internalID: 1932488391114324948
+      spriteID: ff535387801511fe0800000000000000
+      internalID: -1220104927222352385
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BG_math_0: 1932488391114324948
+      sponsor_black_0: -1220104927222352385
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -20,18 +20,21 @@ public class PlayerController : MonoBehaviour
     private bool isFacingRight = true;
     private bool canMove = true; 
 
-    [Header("Jumping & Snappy Gravity")]
-    [SerializeField] private float jumpForce = 16f;         
-    [SerializeField] private float baseGravityScale = 4f;    
-    [SerializeField] private float fallMultiplier = 2f;      
-    [SerializeField] private float lowJumpMultiplier = 1.5f; 
+    [Header("Jumping Mechanics (Tap-Only Fixed Height)")]
+    [SerializeField] private float jumpForce = 15f; // Adjust this value to set your exact fixed jump peak
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask platformLayer;
     private float coyoteTime = 0.15f;
     private float coyoteTimeCounter;
     private bool isGrounded;
-    private bool isHoldingJump;
+
+    [Header("Snappy Gravity System")]
+    [SerializeField] private float baseGravityScale = 4f;    
+    [SerializeField] private float fallMultiplier = 2f;      
+    private Collider2D playerCollider;
+    private Rigidbody2D rb;
+    private LayerMask combinedGroundMask;
 
     [Header("Wall Sliding & Jumping")]
     [SerializeField] private Transform wallCheck;
@@ -56,13 +59,9 @@ public class PlayerController : MonoBehaviour
 
     [Header("Platform Drop")]
     [SerializeField] private float dropDownForce = 12f;
-    private Collider2D playerCollider;
-    private Rigidbody2D rb;
-    private LayerMask combinedGroundMask;
 
     [Header("Combat & Attacking")]
     [SerializeField] private Transform attackPoint;
-    // --- CHANGED: Attack Area is now a Vector2 (X for width, Y for height) ---
     [SerializeField] private Vector2 attackArea = new Vector2(1.5f, 1f);
     [SerializeField] private int attackDamage = 10; 
     [SerializeField] private LayerMask projectileLayer;
@@ -119,6 +118,12 @@ public class PlayerController : MonoBehaviour
         }
 
         UpdateAnimations();
+
+        if (Keyboard.current.spaceKey.wasReleasedThisFrame && rb.linearVelocity.y > 0f)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
+            coyoteTimeCounter = 0f;
+        }
     }
 
     void FixedUpdate()
@@ -139,9 +144,16 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            if (rb.linearVelocity.y < 0) rb.gravityScale = baseGravityScale * fallMultiplier;
-            else if (rb.linearVelocity.y > 0 && !isHoldingJump) rb.gravityScale = baseGravityScale * lowJumpMultiplier;
-            else rb.gravityScale = baseGravityScale;
+            // --- SNAPPY FALL GRAVITY ---
+            // Automatically increases gravity scale only when the player is moving downwards
+            if (rb.linearVelocity.y < -0.01f) 
+            {
+                rb.gravityScale = baseGravityScale * fallMultiplier;
+            }
+            else 
+            {
+                rb.gravityScale = baseGravityScale;
+            }
         }
     }
 
@@ -166,15 +178,16 @@ public class PlayerController : MonoBehaviour
         if (DialogueManager.Instance != null && DialogueManager.Instance.IsDialogueActive) return;
         if (!canMove) return;
 
-        isHoldingJump = value.isPressed;
-        if (isHoldingJump)
+        // Triggers once right when the button is first tapped down
+        if (value.isPressed)
         {
             if (moveInput.y < -0.1f && isGrounded) StartCoroutine(DropThroughPlatform());
             else if (wallCoyoteTimeCounter > 0f) StartCoroutine(WallJumpRoutine());
             else if (coyoteTimeCounter > 0f)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-                coyoteTimeCounter = 0f;
+                coyoteTimeCounter = 0f; // Prevent double jumping inside coyote window
+                
                 if (WakeManager.Instance != null) WakeManager.Instance.AddActionSpike();
             }
         }
@@ -238,7 +251,6 @@ public class PlayerController : MonoBehaviour
         Vector2 mouseScreenPosition = Mouse.current.position.ReadValue();
         Vector2 mouseWorldPosition = Camera.main.ScreenToWorldPoint(mouseScreenPosition);
 
-        // --- CHANGED: Using OverlapBoxAll instead of OverlapCircleAll ---
         Collider2D[] hitProjectiles = Physics2D.OverlapBoxAll(attackPoint.position, attackArea, 0f, projectileLayer);
         foreach (Collider2D proj in hitProjectiles)
         {
@@ -252,7 +264,6 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        // --- CHANGED: Using OverlapBoxAll instead of OverlapCircleAll ---
         Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(attackPoint.position, attackArea, 0f, enemyLayer);
         foreach (Collider2D enemyHit in hitEnemies)
         {
@@ -261,8 +272,12 @@ public class PlayerController : MonoBehaviour
 
             ShootingEnemy shooterScript = enemyHit.GetComponent<ShootingEnemy>(); 
             if (shooterScript != null) shooterScript.TakeDamage(attackDamage);
+
+            FlyingMeleeEnemy flyingScript = enemyHit.GetComponent<FlyingMeleeEnemy>();
+            if (flyingScript != null) flyingScript.TakeDamage(attackDamage);
         }
     }
+    
 
     private IEnumerator AttackGizmoVisual()
     {
@@ -351,7 +366,6 @@ public class PlayerController : MonoBehaviour
     {
         Gizmos.color = isAttackingGizmo ? Color.red : Color.white;
         
-        // --- CHANGED: Using DrawWireCube to draw a rectangle instead of a sphere ---
         if (attackPoint != null) Gizmos.DrawWireCube(attackPoint.position, attackArea);
         
         if (groundCheck != null) { Gizmos.color = Color.red; Gizmos.DrawWireSphere(groundCheck.position, 0.2f); }
