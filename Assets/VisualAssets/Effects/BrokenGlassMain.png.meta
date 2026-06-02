@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: eecc8f30f70a14a6fb652eb76fecec23
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8093432705175283794
+    second: BrokenGlassMain_0
+  - first:
+      213: 8325982039868992148
+    second: BrokenGlassMain_1
+  - first:
+      213: -7878592494964438583
+    second: BrokenGlassMain_2
+  - first:
+      213: 398493640099228580
+    second: BrokenGlassMain_3
+  - first:
+      213: -6564204973918594146
+    second: BrokenGlassMain_4
+  - first:
+      213: 6681373927124423269
+    second: BrokenGlassMain_5
+  - first:
+      213: -8913679564895854712
+    second: BrokenGlassMain_6
+  - first:
+      213: 3989509560515799264
+    second: BrokenGlassMain_7
+  - first:
+      213: 4862295008105317631
+    second: BrokenGlassMain_8
+  - first:
+      213: -3974735831654695196
+    second: BrokenGlassMain_9
+  - first:
+      213: -3841166788393803771
+    second: BrokenGlassMain_10
+  - first:
+      213: 7887386249540321599
+    second: BrokenGlassMain_11
+  - first:
+      213: 7210194551928104116
+    second: BrokenGlassMain_12
+  - first:
+      213: -5273377502083300360
+    second: BrokenGlassMain_13
+  - first:
+      213: -483021454269701280
+    second: BrokenGlassMain_14
+  - first:
+      213: 4967531571585261474
+    second: BrokenGlassMain_15
+  - first:
+      213: -2898441288974468073
+    second: BrokenGlassMain_16
+  - first:
+      213: 1177356585100013395
+    second: BrokenGlassMain_17
+  - first:
+      213: 3733118541179222317
+    second: BrokenGlassMain_18
+  - first:
+      213: 3092877500606795247
+    second: BrokenGlassMain_19
+  - first:
+      213: -3272159502353863723
+    second: BrokenGlassMain_20
+  - first:
+      213: 6716989219889366850
+    second: BrokenGlassMain_21
+  - first:
+      213: 4146683828847335373
+    second: BrokenGlassMain_22
+  - first:
+      213: -2954946003927747277
+    second: BrokenGlassMain_23
+  - first:
+      213: -6463458248831653649
+    second: BrokenGlassMain_24
+  - first:
+      213: -4641205558034546876
+    second: BrokenGlassMain_25
+  - first:
+      213: 5927662112373096961
+    second: BrokenGlassMain_26
+  - first:
+      213: -8515449103905591503
+    second: BrokenGlassMain_27
+  - first:
+      213: -2619695803197136902
+    second: BrokenGlassMain_28
+  - first:
+      213: -8585772502100644299
+    second: BrokenGlassMain_29
+  - first:
+      213: 1388094238941295922
+    second: BrokenGlassMain_30
+  - first:
+      213: 1189052868089535175
+    second: BrokenGlassMain_31
+  - first:
+      213: -7310250803788314251
+    second: BrokenGlassMain_32
+  - first:
+      213: 1834571725418899391
+    second: BrokenGlassMain_33
+  - first:
+      213: 86774288930540618
+    second: BrokenGlassMain_34
+  - first:
+      213: 8021986558881180610
+    second: BrokenGlassMain_35
+  - first:
+      213: 3847581904006123217
+    second: BrokenGlassMain_36
+  - first:
+      213: -7270415377003692737
+    second: BrokenGlassMain_37
+  - first:
+      213: -2196964083914909154
+    second: BrokenGlassMain_38
+  - first:
+      213: -7060300793371286353
+    second: BrokenGlassMain_39
+  - first:
+      213: 1507734125052015688
+    second: BrokenGlassMain_40
+  - first:
+      213: 6847114352425970753
+    second: BrokenGlassMain_41
+  - first:
+      213: -527836786477543580
+    second: BrokenGlassMain_42
+  - first:
+      213: -8255546626026225006
+    second: BrokenGlassMain_43
+  - first:
+      213: 4913305795400214733
+    second: BrokenGlassMain_44
+  - first:
+      213: -5329884317551226535
+    second: BrokenGlassMain_45
+  - first:
+      213: 8487658692159076645
+    second: BrokenGlassMain_46
+  - first:
+      213: -4546301590121230390
+    second: BrokenGlassMain_47
+  - first:
+      213: -2096788872032190155
+    second: BrokenGlassMain_48
+  - first:
+      213: 4882963298833961597
+    second: BrokenGlassMain_49
+  - first:
+      213: -4294263255426240869
+    second: BrokenGlassMain_50
+  - first:
+      213: -8545882135479993011
+    second: BrokenGlassMain_51
+  - first:
+      213: 8085545409741651429
+    second: BrokenGlassMain_52
+  - first:
+      213: -2421978668825075498
+    second: BrokenGlassMain_53
+  - first:
+      213: -921952788409701919
+    second: BrokenGlassMain_54
+  - first:
+      213: -2404313142783821072
+    second: BrokenGlassMain_55
+  - first:
+      213: -6609218144878220032
+    second: BrokenGlassMain_56
+  - first:
+      213: 8827997184491373597
+    second: BrokenGlassMain_57
+  - first:
+      213: -3546664626721738881
+    second: BrokenGlassMain_58
+  - first:
+      213: 7823935625621988750
+    second: BrokenGlassMain_59
+  - first:
+      213: 7532325201714755762
+    second: BrokenGlassMain_60
+  - first:
+      213: 7964739407785887972
+    second: BrokenGlassMain_61
+  - first:
+      213: -7633441827393334768
+    second: BrokenGlassMain_62
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BrokenGlassMain_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 258608d1a26a15070800000000000000
+      internalID: 8093432705175283794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrokenGlassMain_1
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a6ca46d84db8370800000000000000
+      internalID: 8325982039868992148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrokenGlassMain_2
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c9069f4edd99a290800000000000000
+      internalID: -7878592494964438583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 01e1ba849af164378a1eb24a33eafd32
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":1920.0,"y":1080.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      BrokenGlassMain_0: 8093432705175283794
+      BrokenGlassMain_1: 8325982039868992148
+      BrokenGlassMain_2: -7878592494964438583
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
