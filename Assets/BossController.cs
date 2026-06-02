@@ -8,12 +8,15 @@ public class BossController : MonoBehaviour
     private int currentHealth;
     [SerializeField] private float moveSpeed = 3f;
     
+    [Header("Visual Feedback")]
+    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Color flashColor = Color.red;
+    [SerializeField] private float flashDuration = 0.1f;
+    private Color originalColor;
+
     private bool hasFightStarted = false; 
     private bool isPhaseTwo = false;
     private bool isActing = false; 
-    
-    // --- NEW: Stores where the boss wants to go ---
-    private float targetVelocityX = 0f; 
 
     [Header("References")]
     [SerializeField] private Animator anim;
@@ -23,9 +26,8 @@ public class BossController : MonoBehaviour
     [Header("Attacks")]
     [SerializeField] private float attackRange = 2f;
     [SerializeField] private float attackCooldown = 2.5f;
-    [SerializeField] private int meleeDamage = 20;
     
-    [Header("Special 1: Cube Summon")]
+    [Header("Special: Cube Summon")]
     [SerializeField] private GameObject cubePrefab;
     [SerializeField] private Transform summonPoint;
 
@@ -33,11 +35,15 @@ public class BossController : MonoBehaviour
     {
         currentHealth = maxHealth;
         if (player == null) player = GameObject.FindGameObjectWithTag("Player").transform;
+        
+        if (spriteRenderer != null) originalColor = spriteRenderer.color;
+        
+        rb.gravityScale = 0f; 
+        rb.isKinematic = true; 
     }
 
     void Update()
     {
-        // Only flip the boss if the fight has started
         if (hasFightStarted && !isActing && player != null)
         {
             FlipTowardsPlayer();
@@ -46,49 +52,42 @@ public class BossController : MonoBehaviour
 
     void FixedUpdate()
     {
-        // If the fight hasn't started or boss is in an animation, stop all movement
-        if (!hasFightStarted || isActing || player == null)
+        if (!hasFightStarted || isActing)
         {
-            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
-            return;
+            rb.linearVelocity = Vector2.zero;
+            return; 
         }
 
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
         if (distanceToPlayer > attackRange)
         {
-            // --- MOVEMENT ---
             anim.SetBool("isWalking", true);
-            float moveDirection = (player.position.x > transform.position.x) ? 1f : -1f;
-            
-            // Set velocity directly in FixedUpdate
-            rb.linearVelocity = new Vector2(moveDirection * moveSpeed, rb.linearVelocity.y);
+            Vector2 moveDirection = (player.position - transform.position).normalized;
+            rb.linearVelocity = moveDirection * moveSpeed;
         }
         else
         {
-            // --- STOP AND ATTACK ---
             anim.SetBool("isWalking", false);
-            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
-            
-            // Only trigger attack if not already doing one
+            rb.linearVelocity = Vector2.zero;
             StartCoroutine(ChooseAttackRoutine());
         }
     }
 
     public void StartBossFight()
     {
-        Debug.Log("BOSS SIGNAL RECEIVED: The cutscene told the boss to wake up!");
         StartCoroutine(SpawnRoutine());
     }
 
     private IEnumerator SpawnRoutine()
     {
         isActing = true;
+        rb.isKinematic = true;
         anim.Play("Boss_Spawn");
         
         yield return new WaitForSeconds(2f); 
         
-        Debug.Log("SPAWN FINISHED: The boss is now actively hunting the player!");
+        rb.isKinematic = false;
         hasFightStarted = true;
         isActing = false;
     }
@@ -97,34 +96,31 @@ public class BossController : MonoBehaviour
     {
         isActing = true;
         anim.SetBool("isWalking", false);
-        targetVelocityX = 0f;
-        rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y); 
+        rb.linearVelocity = Vector2.zero;
 
         int attackChoice = Random.Range(0, 2);
 
-        if (attackChoice == 0)
+        if (attackChoice == 0) // Melee
         {
-            Debug.Log("BOSS ATTACK: Melee!");
             anim.SetTrigger("MeleeAttack");
-            yield return new WaitForSeconds(0.5f); 
+            yield return new WaitForSeconds(1.0f); 
+            
             if (Vector2.Distance(transform.position, player.position) <= attackRange)
             {
                 player.GetComponent<PlayerController>().PlayHitAnimation();
+                if (WakeManager.Instance != null) WakeManager.Instance.TakeDamagePenalty();
             }
-            yield return new WaitForSeconds(0.5f); 
         }
-        else
+        else // Cube
         {
-            Debug.Log("BOSS ATTACK: Summoning Cube!");
             anim.SetTrigger("SummonCube");
-            yield return new WaitForSeconds(0.8f); 
+            yield return new WaitForSeconds(1.6f); 
             
             if (cubePrefab != null && summonPoint != null)
             {
                 GameObject cube = Instantiate(cubePrefab, summonPoint.position, Quaternion.identity);
                 cube.GetComponent<BossCube>().Initialize(player, transform);
             }
-            yield return new WaitForSeconds(0.8f); 
         }
 
         yield return new WaitForSeconds(attackCooldown);
@@ -133,19 +129,26 @@ public class BossController : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        if (!hasFightStarted) return;
+        if (!hasFightStarted) return; 
 
         currentHealth -= damage;
-        anim.SetTrigger("Hit");
+        StartCoroutine(TriggerHitFlash());
 
         if (currentHealth <= maxHealth / 2 && !isPhaseTwo)
         {
             StartCoroutine(PhaseTwoTransitionRoutine());
         }
 
-        if (currentHealth <= 0)
+        if (currentHealth <= 0) Die();
+    }
+
+    private IEnumerator TriggerHitFlash()
+    {
+        if (spriteRenderer != null)
         {
-            Die();
+            spriteRenderer.color = flashColor;
+            yield return new WaitForSeconds(flashDuration);
+            spriteRenderer.color = originalColor;
         }
     }
 
@@ -153,16 +156,10 @@ public class BossController : MonoBehaviour
     {
         isPhaseTwo = true;
         isActing = true;
-        targetVelocityX = 0f;
-        rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y); 
-
         anim.Play("Boss_PhaseTransition");
         yield return new WaitForSeconds(1.5f); 
-
         moveSpeed += 2f; 
         attackCooldown -= 0.75f;
-
-        yield return new WaitForSeconds(1f); 
         isActing = false;
     }
 
@@ -175,9 +172,8 @@ public class BossController : MonoBehaviour
     private void Die()
     {
         isActing = true;
-        hasFightStarted = false; 
-        targetVelocityX = 0f;
-        rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+        hasFightStarted = false;
+        rb.linearVelocity = Vector2.zero;
         anim.Play("Boss_Death");
         Destroy(gameObject, 2f);
     }
