@@ -1,20 +1,34 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI; // --- REQUIRED: For the speaker portrait UI image ---
 using TMPro; 
-using UnityEngine.InputSystem; // NEW: Required for the New Input System!
+using UnityEngine.InputSystem;
 
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance { get; private set; }
 
+    // --- THE FIX: This structure must live here inside DialogueManager ---
+    [System.Serializable]
+    public struct DialogueLine
+    {
+        [TextArea(2, 4)]
+        public string sentence;
+        [Tooltip("Optional portrait sprite. Leave blank for narrator text!")]
+        public Sprite speakerPortrait; 
+    }
+
     [Header("UI References")]
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TextMeshProUGUI dialogueText;
     
+    // --- NEW: Drag your UI Image for the character portrait here ---
+    [SerializeField] private Image portraitDisplay;
+
     [Header("Settings")]
     [SerializeField] private float typingSpeed = 0.04f;
 
-    private string[] currentSentences;
+    private DialogueLine[] currentLines; // Swapped string[] for DialogueLine[]
     private int currentSentenceIndex;
     private bool isTyping;
 
@@ -29,21 +43,19 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         dialoguePanel.SetActive(false);
+        if (portraitDisplay != null) portraitDisplay.gameObject.SetActive(false);
     }
 
     void Update()
     {
         if (!IsDialogueActive) return;
 
-        // --- FIX: Using the New Input System to detect taps/clicks globally ---
         bool advanceInputPressed = false;
 
-        // Check for Mouse Click
         if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
         {
             advanceInputPressed = true;
         }
-        // Check for Mobile Touch
         else if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
         {
             advanceInputPressed = true;
@@ -55,39 +67,59 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void StartDialogue(string[] sentences)
+    // --- CHANGED: Now accepts the new DialogueLine[] structure ---
+    public void StartDialogue(DialogueLine[] lines)
     {
         if (IsDialogueActive) return;
 
-        currentSentences = sentences;
+        currentLines = lines;
         currentSentenceIndex = 0;
         IsDialogueActive = true;
         dialoguePanel.SetActive(true);
         
-        StartCoroutine(TypeSentence(currentSentences[currentSentenceIndex]));
+        SetupDialogueView(currentLines[currentSentenceIndex]);
     }
 
     public void DisplayNextSentence()
     {
-        // If the text is still typing, tapping skips to the end of the sentence instantly
         if (isTyping)
         {
             StopAllCoroutines();
-            dialogueText.text = currentSentences[currentSentenceIndex];
+            dialogueText.text = currentLines[currentSentenceIndex].sentence;
             isTyping = false;
             return;
         }
 
         currentSentenceIndex++; 
 
-        if (currentSentenceIndex < currentSentences.Length)
+        if (currentSentenceIndex < currentLines.Length)
         {
-            StartCoroutine(TypeSentence(currentSentences[currentSentenceIndex]));
+            SetupDialogueView(currentLines[currentSentenceIndex]);
         }
         else
         {
             EndDialogue();
         }
+    }
+
+    // --- NEW: Handles updating the sprite portrait layout cleanly ---
+    private void SetupDialogueView(DialogueLine currentLine)
+    {
+        if (portraitDisplay != null)
+        {
+            if (currentLine.speakerPortrait != null)
+            {
+                portraitDisplay.sprite = currentLine.speakerPortrait;
+                portraitDisplay.gameObject.SetActive(true);
+            }
+            else
+            {
+                // If no sprite is selected, hide the avatar window frame
+                portraitDisplay.gameObject.SetActive(false);
+            }
+        }
+
+        StartCoroutine(TypeSentence(currentLine.sentence));
     }
 
     private IEnumerator TypeSentence(string sentence)
@@ -107,5 +139,6 @@ public class DialogueManager : MonoBehaviour
     {
         IsDialogueActive = false;
         dialoguePanel.SetActive(false);
+        if (portraitDisplay != null) portraitDisplay.gameObject.SetActive(false);
     }
 }

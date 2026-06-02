@@ -1,51 +1,31 @@
+using System.Collections;
 using UnityEngine;
-using UnityEngine.InputSystem; // Since you use the new Input System
 
 public class InteractableNPC : MonoBehaviour
 {
-    [Header("Dialogue Content")]
-    [TextArea(3, 10)] // Makes the text box bigger in the Unity Inspector!
-    [SerializeField] private string[] dialogueLines;
-    
-    [Header("Visuals")]
-    [SerializeField] private GameObject interactPrompt; // E.g., an arrow or "!" above their head
+    [Header("NPC Dialogue Content")]
+    // --- CHANGE THIS LINE TO MATCH BELOW ---
+    [SerializeField] private DialogueManager.DialogueLine[] npcDialogue;
 
-    private bool isPlayerNearby = false;
+    // ... Keep any other variables you have here (like detection ranges or animator references) ...
 
-    void Start()
+    // This is likely your interaction method where the error is triggering
+    public void Interact(PlayerController player)
     {
-        if (interactPrompt != null) interactPrompt.SetActive(false);
-    }
-
-    void Update()
-    {
-        // If the player is standing here, and the dialogue hasn't started yet...
-        if (isPlayerNearby && !DialogueManager.Instance.IsDialogueActive)
+        if (DialogueManager.Instance != null && !DialogueManager.Instance.IsDialogueActive)
         {
-            // If they press 'E' on the keyboard (or you can map this to a UI button/New Input Action)
-            if (Keyboard.current.eKey.wasPressedThisFrame) 
-            {
-                DialogueManager.Instance.StartDialogue(dialogueLines);
-                if (interactPrompt != null) interactPrompt.SetActive(false); // Hide the "!" bubble
-            }
+            // --- FIXED: Now passing the correct struct array type ---
+            DialogueManager.Instance.StartDialogue(npcDialogue);
+            StartCoroutine(HandleInteractionFreeze(player));
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private IEnumerator HandleInteractionFreeze(PlayerController player)
     {
-        if (collision.CompareTag("Player"))
-        {
-            isPlayerNearby = true;
-            if (interactPrompt != null) interactPrompt.SetActive(true);
-        }
-    }
+        if (player != null) player.SetCutsceneMode(true);
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            isPlayerNearby = false;
-            if (interactPrompt != null) interactPrompt.SetActive(false);
-        }
+        yield return new WaitUntil(() => !DialogueManager.Instance.IsDialogueActive);
+
+        if (player != null) player.SetCutsceneMode(false);
     }
 }
