@@ -37,44 +37,41 @@ public class BossController : MonoBehaviour
 
     void Update()
     {
-        if (!hasFightStarted || isActing || player == null) 
+        // Only flip the boss if the fight has started
+        if (hasFightStarted && !isActing && player != null)
         {
-            targetVelocityX = 0f;
+            FlipTowardsPlayer();
+        }
+    }
+
+    void FixedUpdate()
+    {
+        // If the fight hasn't started or boss is in an animation, stop all movement
+        if (!hasFightStarted || isActing || player == null)
+        {
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
             return;
         }
 
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-        FlipTowardsPlayer();
 
         if (distanceToPlayer > attackRange)
         {
+            // --- MOVEMENT ---
             anim.SetBool("isWalking", true);
             float moveDirection = (player.position.x > transform.position.x) ? 1f : -1f;
             
-            // Remember the speed, but move the physics body in FixedUpdate
-            targetVelocityX = moveDirection * moveSpeed; 
+            // Set velocity directly in FixedUpdate
+            rb.linearVelocity = new Vector2(moveDirection * moveSpeed, rb.linearVelocity.y);
         }
         else
         {
+            // --- STOP AND ATTACK ---
             anim.SetBool("isWalking", false);
-            targetVelocityX = 0f; // Stop moving
-            
-            StartCoroutine(ChooseAttackRoutine());
-        }
-    }
-
-    // --- NEW: FixedUpdate handles the actual Rigidbody movement smoothly ---
-    void FixedUpdate()
-    {
-        if (hasFightStarted && !isActing)
-        {
-            // Apply the movement
-            rb.linearVelocity = new Vector2(targetVelocityX, rb.linearVelocity.y);
-        }
-        else if (isActing)
-        {
-            // Force the boss to stop sliding if they are swinging a weapon
             rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+            
+            // Only trigger attack if not already doing one
+            StartCoroutine(ChooseAttackRoutine());
         }
     }
 
