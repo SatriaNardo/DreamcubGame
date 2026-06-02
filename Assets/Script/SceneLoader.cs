@@ -7,4 +7,10 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene("TutorialMap");
     }
+
+     public void QuitGame()
+    {
+        Debug.Log("Game Ditutup");
+        Application.Quit();
+    }
 }
