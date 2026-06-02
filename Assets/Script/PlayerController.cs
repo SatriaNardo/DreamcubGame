@@ -118,6 +118,12 @@ public class PlayerController : MonoBehaviour
         }
 
         UpdateAnimations();
+
+        if (Keyboard.current.spaceKey.wasReleasedThisFrame && rb.linearVelocity.y > 0f)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
+            coyoteTimeCounter = 0f;
+        }
     }
 
     void FixedUpdate()
