@@ -1,34 +1,25 @@
 fileFormatVersion: 2
-guid: 8a4496fdeca3a4e829e74963ba7938d1
+guid: a5afabee6989348c28d75f4d24a237ec
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7566001254248236219
-    second: 1-bit_UI_byBatuhanK_0
+      213: 4352891136212179680
+    second: platformer_mtk_0
   - first:
-      213: 6900779525515493339
-    second: 1-bit_UI_byBatuhanK_1
+      213: -8289015833838411253
+    second: platformer_mtk_1
   - first:
-      213: 3966392815263420760
-    second: 1-bit_UI_byBatuhanK_2
+      213: 6437784481349220209
+    second: platformer_mtk_2
   - first:
-      213: -6681285175846793865
-    second: 1-bit_UI_byBatuhanK_3
+      213: 5726680381883600813
+    second: platformer_mtk_3
   - first:
-      213: 539889525855581842
-    second: 1-bit_UI_byBatuhanK_4
+      213: 2575146319609539953
+    second: platformer_mtk_4
   - first:
-      213: -87505471827237910
-    second: 1-bit_UI_byBatuhanK_5
-  - first:
-      213: 3004623737311694110
-    second: 1-bit_UI_byBatuhanK_6
-  - first:
-      213: -6893457498772346192
-    second: 1-bit_UI_byBatuhanK_7
-  - first:
-      213: 998387198676639397
-    second: 1-bit_UI_byBatuhanK_8
+      213: 7537736051078987754
+    second: platformer_mtk_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -163,199 +154,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1-bit_UI_byBatuhanK_0
+      name: platformer_mtk_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 148
-        width: 71
-        height: 103
+        x: 0
+        y: 5
+        width: 257
+        height: 59
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 54bbf5612f9200790800000000000000
-      internalID: -7566001254248236219
+      spriteID: 0ea9fdffc63986c30800000000000000
+      internalID: 4352891136212179680
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1-bit_UI_byBatuhanK_1
+      name: platformer_mtk_1
       rect:
         serializedVersion: 2
-        x: 86
-        y: 155
-        width: 116
-        height: 99
+        x: 259
+        y: 1
+        width: 58
+        height: 63
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bdfb3a3aa6e74cf50800000000000000
-      internalID: 6900779525515493339
+      spriteID: b022976240087fc80800000000000000
+      internalID: -8289015833838411253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1-bit_UI_byBatuhanK_2
+      name: platformer_mtk_2
       rect:
         serializedVersion: 2
-        x: 210
-        y: 153
-        width: 253
-        height: 100
+        x: 326
+        y: 5
+        width: 48
+        height: 54
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 851107920457b0730800000000000000
-      internalID: 3966392815263420760
+      spriteID: 177b75f70ea975950800000000000000
+      internalID: 6437784481349220209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1-bit_UI_byBatuhanK_3
+      name: platformer_mtk_3
       rect:
         serializedVersion: 2
-        x: 8
-        y: 35
-        width: 71
-        height: 109
+        x: 395
+        y: 23
+        width: 50
+        height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 77d8192188e4743a0800000000000000
-      internalID: -6681285175846793865
+      spriteID: dafce505771497f40800000000000000
+      internalID: 5726680381883600813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1-bit_UI_byBatuhanK_4
+      name: platformer_mtk_4
       rect:
         serializedVersion: 2
-        x: 88
-        y: 78
-        width: 112
-        height: 12
-      alignment: 9
-      pivot: {x: 0.02, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 296739ec9a21e7700800000000000000
-      internalID: 539889525855581842
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1-bit_UI_byBatuhanK_5
-      rect:
-        serializedVersion: 2
-        x: 210
-        y: 108
-        width: 35
-        height: 43
+        x: 447
+        y: 15
+        width: 83
+        height: 49
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ae3a5dbac3e19cef0800000000000000
-      internalID: -87505471827237910
+      spriteID: 17d2bf81fe1ccb320800000000000000
+      internalID: 2575146319609539953
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1-bit_UI_byBatuhanK_6
+      name: platformer_mtk_5
       rect:
         serializedVersion: 2
-        x: 270
-        y: 57
-        width: 175
-        height: 83
+        x: 454
+        y: 0
+        width: 123
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 17, y: 15, z: 16, w: 15}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e1d8b22be5192b920800000000000000
-      internalID: 3004623737311694110
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1-bit_UI_byBatuhanK_7
-      rect:
-        serializedVersion: 2
-        x: 88
-        y: 90
-        width: 112
-        height: 12
-      alignment: 9
-      pivot: {x: 0.02, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0baeb6f8de48550a0800000000000000
-      internalID: -6893457498772346192
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1-bit_UI_byBatuhanK_8
-      rect:
-        serializedVersion: 2
-        x: 86
-        y: 8
-        width: 116
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5ae1b651edbfadd00800000000000000
-      internalID: 998387198676639397
+      spriteID: aeff737700b6b9860800000000000000
+      internalID: 7537736051078987754
       vertices: []
       indices: 
       edges: []
@@ -364,7 +289,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9a53ed71619a047b6b434bb0f0dba7c5
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -372,19 +297,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      1-bit_UI_byBatuhanK_0: -7566001254248236219
-      1-bit_UI_byBatuhanK_1: 6900779525515493339
-      1-bit_UI_byBatuhanK_2: 3966392815263420760
-      1-bit_UI_byBatuhanK_3: -6681285175846793865
-      1-bit_UI_byBatuhanK_4: 539889525855581842
-      1-bit_UI_byBatuhanK_5: -87505471827237910
-      1-bit_UI_byBatuhanK_6: 3004623737311694110
-      1-bit_UI_byBatuhanK_7: -6893457498772346192
-      1-bit_UI_byBatuhanK_8: 998387198676639397
+      platformer_mtk_0: 4352891136212179680
+      platformer_mtk_1: -8289015833838411253
+      platformer_mtk_2: 6437784481349220209
+      platformer_mtk_3: 5726680381883600813
+      platformer_mtk_4: 2575146319609539953
+      platformer_mtk_5: 7537736051078987754
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -7,10 +7,16 @@ public class ShootingEnemy : MonoBehaviour
     [SerializeField] private int maxHealth = 20; 
     private int currentHealth;
 
-    [Header("Targeting")]
+    [Header("Targeting & Timing")]
     [SerializeField] private float shootingRange = 10f;
     [SerializeField] private float fireRate = 2f; 
+    [Tooltip("How long does the enemy prepare before the bullet actually spawns?")]
+    [SerializeField] private float shootWindUpTime = 0.5f; 
     private float fireCooldownTimer;
+
+    [Header("Animation Settings")]
+    [Tooltip("How long does the death animation take before the body disappears?")]
+    [SerializeField] private float deathAnimationLength = 1.5f;
 
     [Header("References")]
     [SerializeField] private GameObject projectilePrefab;
@@ -18,20 +24,25 @@ public class ShootingEnemy : MonoBehaviour
 
     private Transform playerTransform;
     private SpriteRenderer sr;
+    private Animator anim; 
+    private Rigidbody2D rb; 
     
     private Vector3 startPosition; 
-    private Vector3 baseScale; // NEW: Memorizes your custom scale in the editor!
+    private Vector3 baseScale; 
+    
+    private bool isDead = false;
+    private bool isShooting = false;
 
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>(); 
+        
         currentHealth = maxHealth;
         startPosition = transform.position; 
-        
-        // Memorize whatever scale you set in the Unity Inspector!
         baseScale = transform.localScale;
         
-        // Register this enemy to the WakeManager master list
         if (WakeManager.Instance != null) WakeManager.Instance.RegisterShootingEnemy(this);
 
         GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -43,7 +54,7 @@ public class ShootingEnemy : MonoBehaviour
 
     void Update()
     {
-        if (playerTransform == null) return;
+        if (playerTransform == null || isDead || isShooting) return;
 
         float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
         fireCooldownTimer += Time.deltaTime;
@@ -54,32 +65,51 @@ public class ShootingEnemy : MonoBehaviour
 
             if (fireCooldownTimer >= fireRate)
             {
-                Shoot();
+                StartCoroutine(ShootRoutine());
                 fireCooldownTimer = 0f; 
             }
         }
     }
 
-    private void Shoot()
+    private IEnumerator ShootRoutine()
     {
-        if (projectilePrefab == null || firePoint == null) return;
+        isShooting = true;
+        
+        if (anim != null) anim.SetTrigger("Shoot");
 
-        Vector2 direction = (playerTransform.position - firePoint.position);
-        GameObject newBullet = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
+        yield return new WaitForSeconds(shootWindUpTime);
 
-        EnemyProjectile projectileScript = newBullet.GetComponent<EnemyProjectile>();
-        if (projectileScript != null)
+        if (projectilePrefab != null && firePoint != null)
         {
-            projectileScript.SetDirection(direction);
+            Vector2 direction = (playerTransform.position - firePoint.position);
+            GameObject newBullet = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
+
+            EnemyProjectile projectileScript = newBullet.GetComponent<EnemyProjectile>();
+            if (projectileScript != null)
+            {
+                projectileScript.SetDirection(direction);
+            }
         }
+
+        isShooting = false;
     }
 
     public void TakeDamage(int damage)
     {
-        currentHealth -= damage;
-        StartCoroutine(DamageFlash());
+        if (isDead) return;
 
-        if (currentHealth <= 0) Die();
+        currentHealth -= damage;
+
+        if (currentHealth <= 0) 
+        {
+            // Stop the wind-up if they die while preparing to shoot!
+            StopAllCoroutines(); 
+            StartCoroutine(DeathRoutine());
+        }
+        else
+        {
+            StartCoroutine(DamageFlash());
+        }
     }
 
     private IEnumerator DamageFlash()
@@ -92,8 +122,28 @@ public class ShootingEnemy : MonoBehaviour
         }
     }
 
-    private void Die()
+    private IEnumerator DeathRoutine()
     {
+        isDead = true;
+        isShooting = false;
+        
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.bodyType = RigidbodyType2D.Kinematic;
+        }
+
+        if (anim != null)
+        {
+            anim.ResetTrigger("Shoot"); // Clear sticky triggers
+            anim.SetTrigger("Die");
+        }
+
+        Collider2D col = GetComponent<Collider2D>();
+        if (col != null) col.enabled = false;
+
+        yield return new WaitForSeconds(deathAnimationLength);
+        
         gameObject.SetActive(false);
     }
 
@@ -101,22 +151,36 @@ public class ShootingEnemy : MonoBehaviour
     {
         StopAllCoroutines();
         
-        // Reset position, stats, and scale!
         transform.position = startPosition;
-        transform.localScale = baseScale; // FIX: Ensure scale is correct on respawn
+        transform.localScale = baseScale; 
         currentHealth = maxHealth;
         fireCooldownTimer = 0f;
+        isDead = false;
+        isShooting = false;
         
-        // Fix visuals
+        if (rb != null)
+        {
+            rb.bodyType = RigidbodyType2D.Dynamic;
+            rb.linearVelocity = Vector2.zero;
+        }
+        
+        Collider2D col = GetComponent<Collider2D>();
+        if (col != null) col.enabled = true;
+
         if (sr != null) sr.color = Color.white;
         
-        // Wake back up!
+        if (anim != null)
+        {
+            anim.ResetTrigger("Die");
+            anim.ResetTrigger("Shoot");
+            anim.Play("Idle"); 
+        }
+        
         gameObject.SetActive(true);
     }
 
     private void LookAtPlayer()
     {
-        // FIX: Now uses your original size and just adds a negative sign when flipping!
         if (playerTransform.position.x < transform.position.x)
         {
             transform.localScale = new Vector3(-Mathf.Abs(baseScale.x), baseScale.y, baseScale.z); 

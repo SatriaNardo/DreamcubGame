@@ -10,6 +10,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool isDashUnlocked = true;
     [SerializeField] private bool isAttackUnlocked = true;
 
+    [Header("Animation")]
+    [Tooltip("Drag your player's Animator here!")]
+    [SerializeField] private Animator anim;
+
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 8f;
     private Vector2 moveInput;
@@ -35,11 +39,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float wallSlideSpeed = 3f;                    
     [SerializeField] private Vector2 wallJumpForce = new Vector2(12f, 16f); 
     [SerializeField] private float wallJumpDuration = 0.15f;    
-    
-    // --- NEW: Wall Jump Grace Period Variables ---           
     [SerializeField] private float wallCoyoteTime = 0.15f;
     private float wallCoyoteTimeCounter;
-    private int wallDirection; // Remembers which side the wall was on!
+    private int wallDirection; 
     
     private bool isTouchingWall;
     private bool isWallSliding;
@@ -60,7 +62,8 @@ public class PlayerController : MonoBehaviour
 
     [Header("Combat & Attacking")]
     [SerializeField] private Transform attackPoint;
-    [SerializeField] private float attackRange = 1f;
+    // --- CHANGED: Attack Area is now a Vector2 (X for width, Y for height) ---
+    [SerializeField] private Vector2 attackArea = new Vector2(1.5f, 1f);
     [SerializeField] private int attackDamage = 10; 
     [SerializeField] private LayerMask projectileLayer;
     [SerializeField] private LayerMask enemyLayer;  
@@ -72,6 +75,10 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         playerCollider = GetComponent<Collider2D>();
+        
+        if (anim == null) anim = GetComponent<Animator>(); 
+        if (anim == null) anim = GetComponentInChildren<Animator>();
+
         rb.gravityScale = baseGravityScale;
         combinedGroundMask = groundLayer | platformLayer;
         Physics2D.queriesStartInColliders = true;
@@ -84,15 +91,12 @@ public class PlayerController : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, combinedGroundMask);
         isTouchingWall = Physics2D.OverlapCircle(wallCheck.position, 0.2f, wallLayer);
 
-        // 1. Ground Coyote Time
         if (isGrounded) coyoteTimeCounter = coyoteTime;
         else coyoteTimeCounter -= Time.deltaTime;
 
-        // 2. NEW: Wall Coyote Time & Memory
         if (isTouchingWall && !isGrounded)
         {
             wallCoyoteTimeCounter = wallCoyoteTime;
-            // Memorize if the wall is to our right (1) or left (-1)
             wallDirection = isFacingRight ? 1 : -1; 
         }
         else
@@ -100,7 +104,6 @@ public class PlayerController : MonoBehaviour
             wallCoyoteTimeCounter -= Time.deltaTime;
         }
 
-        // 3. Wall Sliding Logic (Still strict so you only slide if pushing into it)
         if (isTouchingWall && !isGrounded && Mathf.Abs(moveInput.x) > 0.1f && canMove)
         {
             isWallSliding = true;
@@ -110,11 +113,12 @@ public class PlayerController : MonoBehaviour
             isWallSliding = false;
         }
 
-        // 4. Flip Logic
         if (!isWallSliding && !isWallJumping && canMove) 
         {
             Flip();
         }
+
+        UpdateAnimations();
     }
 
     void FixedUpdate()
@@ -141,6 +145,16 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void UpdateAnimations()
+    {
+        if (anim == null) return;
+
+        anim.SetFloat("Speed", Mathf.Abs(rb.linearVelocity.x));
+        anim.SetFloat("yVelocity", rb.linearVelocity.y);
+        anim.SetBool("isGrounded", isGrounded);
+        anim.SetBool("isWallSliding", isWallSliding);
+    }
+
     public void OnMove(InputValue value) 
     { 
         moveInput = value.Get<Vector2>(); 
@@ -156,10 +170,7 @@ public class PlayerController : MonoBehaviour
         if (isHoldingJump)
         {
             if (moveInput.y < -0.1f && isGrounded) StartCoroutine(DropThroughPlatform());
-            
-            // FIX: Use the new Wall Coyote Time buffer instead of the strict isWallSliding!
             else if (wallCoyoteTimeCounter > 0f) StartCoroutine(WallJumpRoutine());
-            
             else if (coyoteTimeCounter > 0f)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
@@ -196,17 +207,13 @@ public class PlayerController : MonoBehaviour
         isWallSliding = false;
         canMove = false; 
         isWallJumping = true; 
-        
-        // Consume the wall jump buffer so they can't double-jump off air
         wallCoyoteTimeCounter = 0f; 
 
         if (WakeManager.Instance != null) WakeManager.Instance.AddActionSpike();
 
-        // FIX: Always jump AWAY from the wall we just memorized, regardless of which way we are looking right now
         float jumpDirection = -wallDirection; 
         rb.linearVelocity = new Vector2(jumpDirection * wallJumpForce.x, wallJumpForce.y);
 
-        // If the player is still facing the wall, flip them automatically so they face the direction of the jump
         if ((wallDirection == 1 && isFacingRight) || (wallDirection == -1 && !isFacingRight))
         {
             isFacingRight = !isFacingRight;
@@ -223,12 +230,16 @@ public class PlayerController : MonoBehaviour
     private void PerformAttack()
     {
         lastAttackTime = Time.time;
+        
+        if (anim != null) anim.SetTrigger("Attack");
+
         StartCoroutine(AttackGizmoVisual());
 
         Vector2 mouseScreenPosition = Mouse.current.position.ReadValue();
         Vector2 mouseWorldPosition = Camera.main.ScreenToWorldPoint(mouseScreenPosition);
 
-        Collider2D[] hitProjectiles = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, projectileLayer);
+        // --- CHANGED: Using OverlapBoxAll instead of OverlapCircleAll ---
+        Collider2D[] hitProjectiles = Physics2D.OverlapBoxAll(attackPoint.position, attackArea, 0f, projectileLayer);
         foreach (Collider2D proj in hitProjectiles)
         {
             EnemyProjectile p = proj.GetComponent<EnemyProjectile>(); 
@@ -241,7 +252,8 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
+        // --- CHANGED: Using OverlapBoxAll instead of OverlapCircleAll ---
+        Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(attackPoint.position, attackArea, 0f, enemyLayer);
         foreach (Collider2D enemyHit in hitEnemies)
         {
             MeleeEnemy meleeScript = enemyHit.GetComponent<MeleeEnemy>();
@@ -263,6 +275,9 @@ public class PlayerController : MonoBehaviour
     {
         canDash = false;
         isDashing = true;
+        
+        if (anim != null) anim.SetTrigger("Dash");
+
         if (WakeManager.Instance != null) WakeManager.Instance.AddActionSpike();
         rb.gravityScale = 0f;
         float dashDirection = moveInput.x != 0 ? Mathf.Sign(moveInput.x) : (isFacingRight ? 1f : -1f);
@@ -283,6 +298,11 @@ public class PlayerController : MonoBehaviour
             yield return new WaitForSeconds(0.2f);
             Physics2D.IgnoreCollision(playerCollider, hit.collider, false);
         }
+    }
+
+    public void PlayHitAnimation()
+    {
+        if (anim != null) anim.SetTrigger("Hit");
     }
 
     private void Flip()
@@ -315,6 +335,7 @@ public class PlayerController : MonoBehaviour
             canMove = false;
             isDashing = false;
             rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y); 
+            if (anim != null) anim.SetFloat("Speed", 0f); 
         }
         else
         {
@@ -322,28 +343,17 @@ public class PlayerController : MonoBehaviour
         }
     }
     
-    public void UnlockJump()
-    {
-        isJumpUnlocked = true;
-        Debug.Log("Ability Unlocked: Jump!");
-    }
-
-    public void UnlockDash()
-    {
-        isDashUnlocked = true;
-        Debug.Log("Ability Unlocked: Dash!");
-    }
-
-    public void UnlockAttack()
-    {
-        isAttackUnlocked = true;
-        Debug.Log("Ability Unlocked: Attack!");
-    }
+    public void UnlockJump() { isJumpUnlocked = true; }
+    public void UnlockDash() { isDashUnlocked = true; }
+    public void UnlockAttack() { isAttackUnlocked = true; }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = isAttackingGizmo ? Color.red : Color.white;
-        if (attackPoint != null) Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+        
+        // --- CHANGED: Using DrawWireCube to draw a rectangle instead of a sphere ---
+        if (attackPoint != null) Gizmos.DrawWireCube(attackPoint.position, attackArea);
+        
         if (groundCheck != null) { Gizmos.color = Color.red; Gizmos.DrawWireSphere(groundCheck.position, 0.2f); }
         if (wallCheck != null) { Gizmos.color = Color.green; Gizmos.DrawWireSphere(wallCheck.position, 0.2f); }
     }

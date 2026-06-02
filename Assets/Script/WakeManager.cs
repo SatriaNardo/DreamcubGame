@@ -26,6 +26,9 @@ public class WakeManager : MonoBehaviour
     // --- Master lists for respawning ---
     private List<MeleeEnemy> allMeleeEnemies = new List<MeleeEnemy>();
     private List<ShootingEnemy> allShootingEnemies = new List<ShootingEnemy>();
+    
+    // NEW: List for Flying Enemies!
+    private List<FlyingMeleeEnemy> allFlyingEnemies = new List<FlyingMeleeEnemy>();
 
     // --- Active Checkpoint Memory ---
     private Vector3 activeRespawnPosition;
@@ -38,7 +41,6 @@ public class WakeManager : MonoBehaviour
 
     void Start()
     {
-        // Find the initial starting point of the level
         GameObject defaultSpawn = GameObject.FindGameObjectWithTag("Respawn");
         if (defaultSpawn != null)
         {
@@ -69,6 +71,12 @@ public class WakeManager : MonoBehaviour
     public void RegisterShootingEnemy(ShootingEnemy enemy)
     {
         if (!allShootingEnemies.Contains(enemy)) allShootingEnemies.Add(enemy);
+    }
+
+    // NEW: Registration for Flying Enemies!
+    public void RegisterFlyingEnemy(FlyingMeleeEnemy enemy)
+    {
+        if (!allFlyingEnemies.Contains(enemy)) allFlyingEnemies.Add(enemy);
     }
 
     // --- WAKE MODIFIERS ---
@@ -103,7 +111,6 @@ public class WakeManager : MonoBehaviour
         UpdateUI();
     }
 
-    // Instantly maxes out the meter (Used for spikes/pits)
     public void MaxOutWakeMeter()
     {
         currentWake = maxWake;
@@ -112,7 +119,6 @@ public class WakeManager : MonoBehaviour
         UpdateUI();
     }
 
-    // --- CHECKPOINT SYSTEM ---
     public void SetRespawnPoint(Vector3 newPos)
     {
         activeRespawnPosition = newPos;
@@ -124,6 +130,11 @@ public class WakeManager : MonoBehaviour
         if (wakeTextDisplay != null)
         {
             wakeTextDisplay.text = Mathf.RoundToInt(currentWake).ToString() + "%";
+        }
+
+        if (WakeBarUI.Instance != null)
+        {
+            WakeBarUI.Instance.UpdateWakeBar(currentWake, maxWake);
         }
     }
 
@@ -142,26 +153,25 @@ public class WakeManager : MonoBehaviour
     {
         Debug.Log("YOU WOKE UP! Warping back to sleep...");
 
-        // 1. Respawn the player at the memorized checkpoint
         PlayerController player = Object.FindFirstObjectByType<PlayerController>();
         if (player != null) player.RespawnAt(activeRespawnPosition);
 
-        // 2. Clear any leftover bullets flying through the air
         EnemyProjectile[] strayBullets = Object.FindObjectsByType<EnemyProjectile>(FindObjectsSortMode.None);
         foreach (EnemyProjectile bullet in strayBullets) Destroy(bullet.gameObject);
 
-        // 3. Wake up all the enemies!
+        // Wake up all the enemies!
         foreach (MeleeEnemy melee in allMeleeEnemies) if (melee != null) melee.ResetEnemy();
         foreach (ShootingEnemy shooter in allShootingEnemies) if (shooter != null) shooter.ResetEnemy();
+        
+        // NEW: Wake up all the flying enemies!
+        foreach (FlyingMeleeEnemy flyer in allFlyingEnemies) if (flyer != null) flyer.ResetEnemy();
 
-        // 4. Reset all Arena Gates so you don't get locked out! (FindObjectsInactive.Include prevents blind spots)
         CombatGate[] allGates = Object.FindObjectsByType<CombatGate>(FindObjectsInactive.Include, FindObjectsSortMode.None);
         foreach (CombatGate gate in allGates)
         {
             gate.ResetGate();
         }
 
-        // 5. Reset the Wake Meter cleanly
         currentWake = 0f;
         UpdateUI();
     }

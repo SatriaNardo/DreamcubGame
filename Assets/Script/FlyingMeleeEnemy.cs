@@ -1,15 +1,15 @@
 using System.Collections;
 using UnityEngine;
 
-public class MeleeEnemy : MonoBehaviour
+public class FlyingMeleeEnemy : MonoBehaviour
 {
     [Header("Health & Stats")]
-    [SerializeField] private int maxHealth = 30;
+    [SerializeField] private int maxHealth = 20;
     private int currentHealth;
 
     [Header("Movement")]
-    [SerializeField] private float moveSpeed = 4f; 
-    [SerializeField] private float chaseRange = 12f;
+    [SerializeField] private float moveSpeed = 3.5f; 
+    [SerializeField] private float chaseRange = 14f;
     [SerializeField] private float attackRange = 1.5f;
 
     [Header("Attacking & Telegraphing")]
@@ -49,10 +49,12 @@ public class MeleeEnemy : MonoBehaviour
         
         currentHealth = maxHealth;
         startPosition = transform.position; 
-        
         baseScale = transform.localScale; 
         
-        if (WakeManager.Instance != null) WakeManager.Instance.RegisterMeleeEnemy(this);
+        // Force gravity to 0 so the enemy floats!
+        if (rb != null) rb.gravityScale = 0f;
+        
+        if (WakeManager.Instance != null) WakeManager.Instance.RegisterFlyingEnemy(this);
 
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null) playerTransform = player.transform;
@@ -68,6 +70,10 @@ public class MeleeEnemy : MonoBehaviour
     {
         if (playerTransform == null || isStunned || isAttacking || isDead) 
         {
+            // Stop mid-air if stunned or attacking
+            if (!isDead && !isAttacking) rb.linearVelocity = Vector2.zero; 
+            
+            // --- CHANGED to isWalking ---
             if (anim != null) anim.SetBool("isWalking", false);
             return;
         }
@@ -81,20 +87,26 @@ public class MeleeEnemy : MonoBehaviour
         }
         else if (distanceToPlayer <= chaseRange && distanceToPlayer > attackRange)
         {
-            MoveTowardsPlayer();
+            FlyTowardsPlayer();
+            // --- CHANGED to isWalking ---
             if (anim != null) anim.SetBool("isWalking", true); 
         }
         else
         {
-            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            // Stop moving if the player is too far away
+            rb.linearVelocity = Vector2.Lerp(rb.linearVelocity, Vector2.zero, Time.deltaTime * 5f);
+            // --- CHANGED to isWalking ---
             if (anim != null) anim.SetBool("isWalking", false); 
         }
     }
 
-    private void MoveTowardsPlayer()
+    private void FlyTowardsPlayer()
     {
-        float direction = playerTransform.position.x > transform.position.x ? 1f : -1f;
-        rb.linearVelocity = new Vector2(direction * moveSpeed, rb.linearVelocity.y);
+        // Get the direction to the player in both X and Y
+        Vector2 direction = (playerTransform.position - transform.position).normalized;
+        
+        // Apply velocity in all directions
+        rb.linearVelocity = direction * moveSpeed;
     }
 
     public void TakeDamage(int baseDamage)
@@ -103,6 +115,7 @@ public class MeleeEnemy : MonoBehaviour
 
         int finalDamage = baseDamage;
 
+        // Critical Parry Logic
         if (isAttacking)
         {
             finalDamage *= 2; 
@@ -111,14 +124,13 @@ public class MeleeEnemy : MonoBehaviour
             
             if (WakeManager.Instance != null) WakeManager.Instance.RewardSuccessfulParry();
             StartCoroutine(StunRoutine());
-            Debug.Log($"CRITICAL PARRY! Enemy takes {finalDamage} damage!");
+            Debug.Log($"CRITICAL PARRY! Flying Enemy takes {finalDamage} damage!");
         }
 
         currentHealth -= finalDamage;
 
         if (currentHealth <= 0) 
         {
-            // Stop the wind-up if they die mid-swing!
             StopAllCoroutines();
             StartCoroutine(DeathRoutine()); 
         }
@@ -131,7 +143,9 @@ public class MeleeEnemy : MonoBehaviour
     private IEnumerator AttackRoutine() 
     {
         isAttacking = true;
-        rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); 
+        
+        // Lock position while winding up
+        rb.linearVelocity = Vector2.zero; 
         
         if (anim != null) anim.SetTrigger("Attack"); 
 
@@ -142,7 +156,6 @@ public class MeleeEnemy : MonoBehaviour
             
             float correctedScaleX = (attackHitboxRadius * 2) / Mathf.Abs(baseScale.x);
             float correctedScaleY = (attackHitboxRadius * 2) / Mathf.Abs(baseScale.y);
-            
             visualIndicator.transform.localScale = new Vector3(correctedScaleX, correctedScaleY, 1f); 
         }
 
@@ -159,6 +172,11 @@ public class MeleeEnemy : MonoBehaviour
             if (hit.CompareTag("Player"))
             {
                 if (WakeManager.Instance != null) WakeManager.Instance.TakeDamagePenalty();
+                
+                // Trigger the player's hit animation directly
+                PlayerController pc = hit.GetComponent<PlayerController>();
+                if (pc != null) pc.PlayHitAnimation();
+                
                 break; 
             }
         }
@@ -171,11 +189,14 @@ public class MeleeEnemy : MonoBehaviour
     {
         isStunned = true;
         ResetAttackVisuals();
+        
+        // Add a tiny bit of gravity or knockback here if you want them to fall when parried!
         rb.linearVelocity = Vector2.zero;
         
         if (anim != null) 
         {
             anim.ResetTrigger("Attack"); 
+            // --- CHANGED to isWalking ---
             anim.SetBool("isWalking", false);
             anim.Play("Idle"); 
         }
@@ -204,16 +225,19 @@ public class MeleeEnemy : MonoBehaviour
         ResetAttackVisuals();
         
         rb.linearVelocity = Vector2.zero; 
-        rb.bodyType = RigidbodyType2D.Kinematic;
+        
+        // Turn on gravity so their dead body falls out of the sky!
+        rb.gravityScale = 2f; 
         
         if (anim != null)
         {
-            anim.ResetTrigger("Attack"); // Clear sticky triggers
+            anim.ResetTrigger("Attack"); 
             anim.SetTrigger("Die");
         }
 
+        // Disable triggers but keep physics so they can hit the ground
         Collider2D col = GetComponent<Collider2D>();
-        if (col != null) col.enabled = false;
+        if (col != null) col.isTrigger = false; 
 
         yield return new WaitForSeconds(deathAnimationLength);
         gameObject.SetActive(false);
@@ -229,14 +253,19 @@ public class MeleeEnemy : MonoBehaviour
         isAttacking = false;
         isDead = false;
         
-        rb.bodyType = RigidbodyType2D.Dynamic;
+        // Reset gravity back to floating
+        rb.gravityScale = 0f; 
         rb.linearVelocity = Vector2.zero;
         
         transform.localScale = baseScale;
         isFacingRight = true;
         
         Collider2D col = GetComponent<Collider2D>();
-        if (col != null) col.enabled = true;
+        if (col != null) 
+        {
+            col.enabled = true;
+            col.isTrigger = true; 
+        }
 
         if (sr != null) sr.color = Color.white;
         ResetAttackVisuals();
