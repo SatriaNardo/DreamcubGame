@@ -121,6 +121,21 @@ public class PlayerController : MonoBehaviour
             Flip();
         }
 
+        if (Keyboard.current.spaceKey.wasReleasedThisFrame)
+        {
+            
+
+            if (isWallJumping)
+            {
+                canMove = true; 
+                isWallJumping = false; 
+            } else if (rb.linearVelocity.y > 0f)
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
+                coyoteTimeCounter = 0f;
+            }
+        }
+
         UpdateAnimations();
     }
 
@@ -230,9 +245,12 @@ public class PlayerController : MonoBehaviour
         }
 
         yield return new WaitForSeconds(wallJumpDuration);
-        
-        canMove = true; 
-        isWallJumping = false; 
+
+        if (isWallJumping)
+        {
+            canMove = true; 
+            isWallJumping = false;  
+        }
     }
 
     private void PerformAttack()
