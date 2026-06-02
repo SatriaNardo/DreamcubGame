@@ -74,6 +74,12 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 originalOffset;
 
+    [Header("Audio")]
+[SerializeField] private AudioSource audioSource;
+[SerializeField] private AudioClip jumpSFX;
+[SerializeField] private AudioClip dashSFX;
+[SerializeField] private AudioClip attackSFX;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -197,6 +203,7 @@ public class PlayerController : MonoBehaviour
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
                 coyoteTimeCounter = 0f; 
+                PlaySFX(jumpSFX, 0.1f);
                 
                 if (WakeManager.Instance != null) WakeManager.Instance.AddActionSpike();
             }
@@ -236,6 +243,7 @@ public class PlayerController : MonoBehaviour
 
         float jumpDirection = -wallDirection; 
         rb.linearVelocity = new Vector2(jumpDirection * wallJumpForce.x, wallJumpForce.y);
+        PlaySFX(jumpSFX, 0.1f);
 
         if ((wallDirection == 1 && isFacingRight) || (wallDirection == -1 && !isFacingRight))
         {
@@ -258,6 +266,7 @@ public class PlayerController : MonoBehaviour
         lastAttackTime = Time.time;
         
         if (anim != null) anim.SetTrigger("Attack");
+        PlaySFX(attackSFX, 0.1f);
 
         StartCoroutine(AttackGizmoVisual());
 
@@ -322,6 +331,7 @@ public class PlayerController : MonoBehaviour
         rb.gravityScale = 0f;
         float dashDirection = moveInput.x != 0 ? Mathf.Sign(moveInput.x) : (isFacingRight ? 1f : -1f);
         rb.linearVelocity = new Vector2(dashDirection * dashForce, 0f);
+        PlaySFX(dashSFX, 0.1f);
         yield return new WaitForSeconds(dashDuration);
         isDashing = false;
         yield return new WaitForSeconds(dashCooldown);
@@ -414,5 +424,12 @@ public class PlayerController : MonoBehaviour
         {
             cameraFollow.offset = originalOffset;
         }
+    }
+
+    private void PlaySFX(AudioClip clip, float pitchVariance = 0f)
+    {
+        if (clip == null || audioSource == null) return;
+        audioSource.pitch = 1f + Random.Range(-pitchVariance, pitchVariance);
+        audioSource.PlayOneShot(clip);
     }
 }
