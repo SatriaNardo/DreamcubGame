@@ -20,8 +20,14 @@ public class PlayerController : MonoBehaviour
     private bool isFacingRight = true;
     private bool canMove = true; 
 
-    [Header("Jumping & Snappy Gravity")]
-    [SerializeField] private float jumpForce = 16f;         
+    [Header("Jumping & Variable Height")]
+    [SerializeField] private float jumpForce = 7f;           // Lower initial pop
+    [SerializeField] private float maxJumpHoldTime = 0.35f;   // How long you can hold to gain height
+    [SerializeField] private float holdJumpForce = 18f;      // Upward push while holding
+    private float jumpTimeCounter;
+    private bool isJumping;
+
+    [Header("Snappy Gravity")]
     [SerializeField] private float baseGravityScale = 4f;    
     [SerializeField] private float fallMultiplier = 2f;      
     [SerializeField] private float lowJumpMultiplier = 1.5f; 
@@ -62,7 +68,6 @@ public class PlayerController : MonoBehaviour
 
     [Header("Combat & Attacking")]
     [SerializeField] private Transform attackPoint;
-    // --- CHANGED: Attack Area is now a Vector2 (X for width, Y for height) ---
     [SerializeField] private Vector2 attackArea = new Vector2(1.5f, 1f);
     [SerializeField] private int attackDamage = 10; 
     [SerializeField] private LayerMask projectileLayer;
@@ -139,9 +144,33 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            if (rb.linearVelocity.y < 0) rb.gravityScale = baseGravityScale * fallMultiplier;
-            else if (rb.linearVelocity.y > 0 && !isHoldingJump) rb.gravityScale = baseGravityScale * lowJumpMultiplier;
-            else rb.gravityScale = baseGravityScale;
+            // --- CHARGE-UP HOLD ENGINE ---
+            if (isHoldingJump && isJumping)
+            {
+                if (jumpTimeCounter > 0)
+                {
+                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, holdJumpForce);
+                    jumpTimeCounter -= Time.fixedDeltaTime;
+                }
+                else
+                {
+                    isJumping = false;
+                }
+            }
+
+            // --- SNAPPY VARIABLE FALL GRAVITY ---
+            if (rb.linearVelocity.y < -0.01f) 
+            {
+                rb.gravityScale = baseGravityScale * fallMultiplier;
+            }
+            else if (rb.linearVelocity.y > 0.01f && !isHoldingJump) 
+            {
+                rb.gravityScale = baseGravityScale * lowJumpMultiplier;
+            }
+            else 
+            {
+                rb.gravityScale = baseGravityScale;
+            }
         }
     }
 
@@ -160,23 +189,35 @@ public class PlayerController : MonoBehaviour
         moveInput = value.Get<Vector2>(); 
     }
 
+    // --- FIXED: Swapped back to InputValue to eliminate the MissingMethodException error! ---
     public void OnJump(InputValue value)
     {
         if (!isJumpUnlocked) return;
         if (DialogueManager.Instance != null && DialogueManager.Instance.IsDialogueActive) return;
         if (!canMove) return;
 
+        // Correctly read true/false from the InputValue context
         isHoldingJump = value.isPressed;
+        
         if (isHoldingJump)
         {
             if (moveInput.y < -0.1f && isGrounded) StartCoroutine(DropThroughPlatform());
             else if (wallCoyoteTimeCounter > 0f) StartCoroutine(WallJumpRoutine());
             else if (coyoteTimeCounter > 0f)
             {
+                isJumping = true;
+                jumpTimeCounter = maxJumpHoldTime;
+                
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-                coyoteTimeCounter = 0f;
+                coyoteTimeCounter = 0f; 
+                
                 if (WakeManager.Instance != null) WakeManager.Instance.AddActionSpike();
             }
+        }
+        else
+        {
+            // Triggers correctly the exact frame you release the spacebar/button!
+            isJumping = false;
         }
     }
 
@@ -238,7 +279,6 @@ public class PlayerController : MonoBehaviour
         Vector2 mouseScreenPosition = Mouse.current.position.ReadValue();
         Vector2 mouseWorldPosition = Camera.main.ScreenToWorldPoint(mouseScreenPosition);
 
-        // --- CHANGED: Using OverlapBoxAll instead of OverlapCircleAll ---
         Collider2D[] hitProjectiles = Physics2D.OverlapBoxAll(attackPoint.position, attackArea, 0f, projectileLayer);
         foreach (Collider2D proj in hitProjectiles)
         {
@@ -252,7 +292,6 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        // --- CHANGED: Using OverlapBoxAll instead of OverlapCircleAll ---
         Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(attackPoint.position, attackArea, 0f, enemyLayer);
         foreach (Collider2D enemyHit in hitEnemies)
         {
@@ -261,6 +300,9 @@ public class PlayerController : MonoBehaviour
 
             ShootingEnemy shooterScript = enemyHit.GetComponent<ShootingEnemy>(); 
             if (shooterScript != null) shooterScript.TakeDamage(attackDamage);
+
+            FlyingMeleeEnemy flyingScript = enemyHit.GetComponent<FlyingMeleeEnemy>();
+            if (flyingScript != null) flyingScript.TakeDamage(attackDamage);
         }
     }
 
@@ -351,7 +393,6 @@ public class PlayerController : MonoBehaviour
     {
         Gizmos.color = isAttackingGizmo ? Color.red : Color.white;
         
-        // --- CHANGED: Using DrawWireCube to draw a rectangle instead of a sphere ---
         if (attackPoint != null) Gizmos.DrawWireCube(attackPoint.position, attackArea);
         
         if (groundCheck != null) { Gizmos.color = Color.red; Gizmos.DrawWireSphere(groundCheck.position, 0.2f); }
