@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: eab8a36def88440858697e2c547553c2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3138215661824158706
+    second: mata_kedip_0
+  - first:
+      213: 4877389371944571128
+    second: mata_kedip_1
+  - first:
+      213: 307848242001827336
+    second: mata_kedip_2
+  - first:
+      213: 2435570321192335782
+    second: mata_kedip_3
+  - first:
+      213: 8114686754581678359
+    second: mata_kedip_4
+  - first:
+      213: 7690491276166862769
+    second: mata_kedip_5
+  - first:
+      213: 1297760857867105998
+    second: mata_kedip_6
+  - first:
+      213: -7035373572139267860
+    second: mata_kedip_7
+  - first:
+      213: -3847555055968415271
+    second: mata_kedip_8
+  - first:
+      213: 7419962822099734780
+    second: mata_kedip_9
+  - first:
+      213: -331306024277322577
+    second: mata_kedip_10
+  - first:
+      213: -8768158795069263623
+    second: mata_kedip_11
+  - first:
+      213: -5665743684494801073
+    second: mata_kedip_12
+  - first:
+      213: -2035302243630843503
+    second: mata_kedip_13
+  - first:
+      213: 205501325264180229
+    second: mata_kedip_14
+  - first:
+      213: 2100563034868563403
+    second: mata_kedip_15
+  - first:
+      213: 849090350066581216
+    second: mata_kedip_16
+  - first:
+      213: -2838460185302391690
+    second: mata_kedip_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mata_kedip_0
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 75
+        width: 406
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fba897748e2d8b20800000000000000
+      internalID: 3138215661824158706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mata_kedip_1
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 75
+        width: 406
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f09502dac7ffa340800000000000000
+      internalID: 4877389371944571128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mata_kedip_2
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 75
+        width: 406
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8065f355852b54400800000000000000
+      internalID: 307848242001827336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mata_kedip_3
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 75
+        width: 406
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a9372c8d42ecc120800000000000000
+      internalID: 2435570321192335782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mata_kedip_4
+      rect:
+        serializedVersion: 2
+        x: 2108
+        y: 75
+        width: 406
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 719886e1c982d9070800000000000000
+      internalID: 8114686754581678359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mata_kedip_5
+      rect:
+        serializedVersion: 2
+        x: 2646
+        y: 75
+        width: 406
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b79a28d11d1aba60800000000000000
+      internalID: 7690491276166862769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mata_kedip_6
+      rect:
+        serializedVersion: 2
+        x: 3140
+        y: 75
+        width: 406
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec63398df92920210800000000000000
+      internalID: 1297760857867105998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mata_kedip_7
+      rect:
+        serializedVersion: 2
+        x: 3678
+        y: 75
+        width: 406
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8c77ad2055d5e90800000000000000
+      internalID: -7035373572139267860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mata_kedip_8
+      rect:
+        serializedVersion: 2
+        x: 4172
+        y: 75
+        width: 406
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d19e33df0dba9ac0800000000000000
+      internalID: -3847555055968415271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mata_kedip_9
+      rect:
+        serializedVersion: 2
+        x: 4710
+        y: 75
+        width: 406
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf01cd1cfd009f660800000000000000
+      internalID: 7419962822099734780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mata_kedip_10
+      rect:
+        serializedVersion: 2
+        x: 5204
+        y: 75
+        width: 406
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa4d00f1de6f66bf0800000000000000
+      internalID: -331306024277322577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mata_kedip_11
+      rect:
+        serializedVersion: 2
+        x: 5742
+        y: 75
+        width: 406
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0fda5180e315680800000000000000
+      internalID: -8768158795069263623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mata_kedip_12
+      rect:
+        serializedVersion: 2
+        x: 6236
+        y: 75
+        width: 406
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f474649232c3f51b0800000000000000
+      internalID: -5665743684494801073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mata_kedip_13
+      rect:
+        serializedVersion: 2
+        x: 6774
+        y: 75
+        width: 406
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 199f3d5946721c3e0800000000000000
+      internalID: -2035302243630843503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mata_kedip_14
+      rect:
+        serializedVersion: 2
+        x: 7268
+        y: 75
+        width: 406
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5045e35dd561ad200800000000000000
+      internalID: 205501325264180229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mata_kedip_15
+      rect:
+        serializedVersion: 2
+        x: 7806
+        y: 75
+        width: 406
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcd38a173f2b62d10800000000000000
+      internalID: 2100563034868563403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mata_kedip_16
+      rect:
+        serializedVersion: 2
+        x: 8300
+        y: 75
+        width: 406
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ee3ee9bc2398cb00800000000000000
+      internalID: 849090350066581216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mata_kedip_17
+      rect:
+        serializedVersion: 2
+        x: 8838
+        y: 75
+        width: 406
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67426f11083cb98d0800000000000000
+      internalID: -2838460185302391690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mata_kedip_0: 3138215661824158706
+      mata_kedip_1: 4877389371944571128
+      mata_kedip_10: -331306024277322577
+      mata_kedip_11: -8768158795069263623
+      mata_kedip_12: -5665743684494801073
+      mata_kedip_13: -2035302243630843503
+      mata_kedip_14: 205501325264180229
+      mata_kedip_15: 2100563034868563403
+      mata_kedip_16: 849090350066581216
+      mata_kedip_17: -2838460185302391690
+      mata_kedip_2: 307848242001827336
+      mata_kedip_3: 2435570321192335782
+      mata_kedip_4: 8114686754581678359
+      mata_kedip_5: 7690491276166862769
+      mata_kedip_6: 1297760857867105998
+      mata_kedip_7: -7035373572139267860
+      mata_kedip_8: -3847555055968415271
+      mata_kedip_9: 7419962822099734780
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
