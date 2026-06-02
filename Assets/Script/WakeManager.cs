@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using TMPro;
 using System.Collections.Generic;
 
@@ -33,6 +34,16 @@ public class WakeManager : MonoBehaviour
     // --- Active Checkpoint Memory ---
     private Vector3 activeRespawnPosition;
 
+    [Header("Prefabs & Visuals")]
+    //glass shards
+    [SerializeField] private GameObject smallShardPrefab;
+    [SerializeField] private GameObject mediumShardPrefab;
+    [SerializeField] private GameObject largeShardPrefab;
+    [SerializeField] private GameObject EyeTransitionPrefab;
+
+    private float wakeDecayResumeTime = 0f;
+    [SerializeField] private float decayDelayAfterAction = 0.4f;
+
     void Awake()
     {
         if (Instance == null) Instance = this;
@@ -52,14 +63,44 @@ public class WakeManager : MonoBehaviour
 
     void Update()
     {
-        if (!isPlayerMovingThisFrame && currentWake > 0f)
+        bool canDecay = Time.time >= wakeDecayResumeTime;
+
+        if (canDecay && !isPlayerMovingThisFrame && currentWake > 0f)
         {
             currentWake -= decayRatePerSecond * Time.deltaTime;
             currentWake = Mathf.Clamp(currentWake, 0f, maxWake);
-            UpdateUI(); 
+            UpdateUI();
         }
 
         isPlayerMovingThisFrame = false;
+
+
+        if (currentWake > 75f)
+        {
+            // trigger full shard
+            largeShardPrefab.SetActive(true);
+            mediumShardPrefab.SetActive(false);
+            smallShardPrefab.SetActive(false);
+        } else if (currentWake > 50f)
+        {
+            // medium shard
+            largeShardPrefab.SetActive(false);
+            mediumShardPrefab.SetActive(true);
+            smallShardPrefab.SetActive(false);
+        } else if (currentWake > 25f)
+        {
+            // small shard
+            largeShardPrefab.SetActive(false);
+            mediumShardPrefab.SetActive(false);
+            smallShardPrefab.SetActive(true);
+        } else
+        {
+            // no shard
+            largeShardPrefab.SetActive(false);
+            mediumShardPrefab.SetActive(false);
+            smallShardPrefab.SetActive(false);
+        }
+
     }
 
     // --- ENEMY REGISTRATION ---
@@ -91,22 +132,28 @@ public class WakeManager : MonoBehaviour
     public void AddActionSpike()
     {
         currentWake += actionSpike;
+        wakeDecayResumeTime = Time.time + decayDelayAfterAction;
+
         CheckWakeStatus();
-        UpdateUI(); 
+        UpdateUI();
     }
 
     public void RewardSuccessfulParry()
     {
-        currentWake -= actionSpike; 
+        currentWake -= actionSpike;
         currentWake = Mathf.Clamp(currentWake, 0f, maxWake);
-        Debug.Log("Perfect Parry! Wake spike refunded.");
+
+        wakeDecayResumeTime = Time.time + decayDelayAfterAction;
+
+        Debug.Log("Perfect Parry! Wake spike refxunded.");
         UpdateUI();
     }
 
     public void TakeDamagePenalty()
     {
         currentWake += enemyHitPenalty;
-        Debug.Log($"Ouch! Enemy hit you. Wake spiked by {enemyHitPenalty}%!");
+        wakeDecayResumeTime = Time.time + decayDelayAfterAction;
+
         CheckWakeStatus();
         UpdateUI();
     }
@@ -174,5 +221,13 @@ public class WakeManager : MonoBehaviour
 
         currentWake = 0f;
         UpdateUI();
+        StartCoroutine(EyeAnimation());
+    }
+
+    IEnumerator EyeAnimation()
+    {
+        EyeTransitionPrefab.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        EyeTransitionPrefab.SetActive(false);
     }
 }
