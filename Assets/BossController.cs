@@ -85,7 +85,7 @@ public class BossController : MonoBehaviour
         rb.isKinematic = true;
         anim.Play("Boss_Spawn");
         
-        yield return new WaitForSeconds(2f); 
+        yield return new WaitForSeconds(4.2f); 
         
         rb.isKinematic = false;
         hasFightStarted = true;
