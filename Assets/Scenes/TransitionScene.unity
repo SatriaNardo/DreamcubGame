@@ -684,7 +684,7 @@ MonoBehaviour:
     speakerPortrait: {fileID: 0}
   - sentence: im not gonna let another victim engulf in his nightmare
     speakerPortrait: {fileID: 0}
-  nextGameplaySceneName: World1
+  nextGameplaySceneName: World1Visual
   startDelay: 0.5
 --- !u!4 &1974866541
 Transform:
