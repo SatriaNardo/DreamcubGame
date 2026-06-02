@@ -4222,6 +4222,67 @@ Transform:
   - {fileID: 2087935108}
   m_Father: {fileID: 1941618958}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &597809075
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 628032549}
+    m_Modifications:
+    - target: {fileID: 3418341449135168746, guid: 620da3d6fa412498a9d9eddd73911aaf, type: 3}
+      propertyPath: m_Name
+      value: Effects
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426408796349258595, guid: 620da3d6fa412498a9d9eddd73911aaf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426408796349258595, guid: 620da3d6fa412498a9d9eddd73911aaf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426408796349258595, guid: 620da3d6fa412498a9d9eddd73911aaf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426408796349258595, guid: 620da3d6fa412498a9d9eddd73911aaf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426408796349258595, guid: 620da3d6fa412498a9d9eddd73911aaf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426408796349258595, guid: 620da3d6fa412498a9d9eddd73911aaf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426408796349258595, guid: 620da3d6fa412498a9d9eddd73911aaf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426408796349258595, guid: 620da3d6fa412498a9d9eddd73911aaf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426408796349258595, guid: 620da3d6fa412498a9d9eddd73911aaf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426408796349258595, guid: 620da3d6fa412498a9d9eddd73911aaf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6295895015920349854, guid: 620da3d6fa412498a9d9eddd73911aaf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.59
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 620da3d6fa412498a9d9eddd73911aaf, type: 3}
 --- !u!1 &602072510
 GameObject:
   m_ObjectHideFlags: 0
@@ -4588,10 +4649,11 @@ Transform:
   m_GameObject: {fileID: 628032546}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -38.38, y: -8, z: -10}
+  m_LocalPosition: {x: -38.38, y: -8, z: -40}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1301014517}
   m_Father: {fileID: 1799153611}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &628032550
@@ -4652,7 +4714,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
   target: {fileID: 371050128269192500}
   smoothSpeed: 5
-  offset: {x: 0, y: 1, z: -10}
+  offset: {x: 0, y: 1, z: -50}
 --- !u!114 &628032553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6119,7 +6181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
   dialoguePanel: {fileID: 1106203945409765548}
   dialogueText: {fileID: 5831055392101709173}
-  portraitDisplay: {fileID: 5044992017408551840}
+  portraitDisplay: {fileID: 5199749781058376527}
   typingSpeed: 0.04
 --- !u!4 &843894321
 Transform:
@@ -10112,6 +10174,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1198660061 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5025180578786985249, guid: 620da3d6fa412498a9d9eddd73911aaf, type: 3}
+  m_PrefabInstance: {fileID: 597809075}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1204003151
 GameObject:
   m_ObjectHideFlags: 0
@@ -11026,106 +11093,11 @@ Transform:
   - {fileID: 171104697}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1306309597
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1306309600}
-  - component: {fileID: 1306309599}
-  - component: {fileID: 1306309601}
-  m_Layer: 0
-  m_Name: BossChat
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &1306309599
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1306309597}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 12.0207205, y: -0.8364706}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 18.613249, y: 2.6729412}
-  m_EdgeRadius: 0
---- !u!4 &1306309600
+--- !u!4 &1301014517 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4426408796349258595, guid: 620da3d6fa412498a9d9eddd73911aaf, type: 3}
+  m_PrefabInstance: {fileID: 597809075}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1306309597}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.74, y: -31.13, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1306309601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1306309597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f2de041a186c424f9aece23830b7aa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AutoDialogueTrigger
-  dialogueLines:
-  - sentence: I have been expecting you
-    speakerPortrait: {fileID: 21300000, guid: 636c094f764ea47799071f49e9a417ad, type: 3}
-  - sentence: i wont let you ruined another people dream
-    speakerPortrait: {fileID: 21300000, guid: 7a24933f7162448559c3005b6a59924e, type: 3}
-  - sentence: kill me if you can
-    speakerPortrait: {fileID: 21300000, guid: 636c094f764ea47799071f49e9a417ad, type: 3}
-  freezePlayer: 0
-  playEveryTime: 0
 --- !u!1 &1307976320
 GameObject:
   m_ObjectHideFlags: 0
@@ -11804,6 +11776,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404254523}
   m_CullTransparentMesh: 1
+--- !u!1 &1423217357 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5904007169310895895, guid: 620da3d6fa412498a9d9eddd73911aaf, type: 3}
+  m_PrefabInstance: {fileID: 597809075}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1436237371
 GameObject:
   m_ObjectHideFlags: 0
@@ -12698,6 +12675,105 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1603680935
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1603680938}
+  - component: {fileID: 1603680937}
+  - component: {fileID: 1603680936}
+  m_Layer: 0
+  m_Name: BossChat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1603680936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603680935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9e1b223cea14d55bbaee55c18ffb04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  bossController: {fileID: 4161621366889527977}
+  encounterDialogue:
+  - sentence: I have been expecting you
+    speakerPortrait: {fileID: 21300000, guid: 636c094f764ea47799071f49e9a417ad, type: 3}
+  - sentence: i wont let you ruined another people dream
+    speakerPortrait: {fileID: 21300000, guid: 7a24933f7162448559c3005b6a59924e, type: 3}
+  - sentence: kill me if you can
+    speakerPortrait: {fileID: 21300000, guid: 636c094f764ea47799071f49e9a417ad, type: 3}
+--- !u!61 &1603680937
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603680935}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 12.0207205, y: -0.8364706}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 18.613249, y: 2.6729412}
+  m_EdgeRadius: 0
+--- !u!4 &1603680938
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603680935}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.74, y: -31.13, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1626115936
 GameObject:
   m_ObjectHideFlags: 0
@@ -13072,6 +13148,37 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1660582994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1660582995}
+  m_Layer: 0
+  m_Name: CubeSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1660582995
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660582994}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 45.58, y: -33, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1661348422
 GameObject:
   m_ObjectHideFlags: 0
@@ -15571,6 +15678,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &2001730321 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7685891879536652592, guid: 620da3d6fa412498a9d9eddd73911aaf, type: 3}
+  m_PrefabInstance: {fileID: 597809075}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2003764536
 GameObject:
   m_ObjectHideFlags: 0
@@ -16810,6 +16922,8 @@ GameObject:
   - component: {fileID: 4161621366889527976}
   - component: {fileID: 1076931159453741997}
   - component: {fileID: 3760244641239439157}
+  - component: {fileID: 4161621366889527978}
+  - component: {fileID: 4161621366889527977}
   m_Layer: 9
   m_Name: Boss
   m_TagString: Untagged
@@ -16957,6 +17071,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4161621366889527977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2344769508336533236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdd4bed744025407fbbee2fe1dcb6c0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  maxHealth: 500
+  moveSpeed: 3
+  anim: {fileID: 3760244641239439157}
+  player: {fileID: 371050128269192500}
+  rb: {fileID: 4161621366889527978}
+  attackRange: 2
+  attackCooldown: 2.5
+  meleeDamage: 20
+  cubePrefab: {fileID: 7779878751089116106, guid: 6560687a23e434f619e2a96bd41f5964, type: 3}
+  summonPoint: {fileID: 1660582995}
+--- !u!50 &4161621366889527978
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2344769508336533236}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 6200000, guid: 882b90f1d8e9e4adcbf45dd521a41b78, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &4610729571926500747
 GameObject:
   m_ObjectHideFlags: 0
@@ -17409,10 +17572,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WakeManager
   maxWake: 100
   runRatePerSecond: 2
-  actionSpike: 10
-  enemyHitPenalty: 30
+  actionSpike: 5
+  enemyHitPenalty: 15
   decayRatePerSecond: 10
   wakeTextDisplay: {fileID: 1404254525}
+  smallShardPrefab: {fileID: 1423217357}
+  mediumShardPrefab: {fileID: 2001730321}
+  largeShardPrefab: {fileID: 1198660061}
+  EyeTransitionPrefab: {fileID: 1198660061}
+  decayDelayAfterAction: 0.4
 --- !u!222 &8912907901480832530
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17449,7 +17617,7 @@ SceneRoots:
   - {fileID: 1661348423}
   - {fileID: 874701588}
   - {fileID: 843894321}
-  - {fileID: 1306309600}
+  - {fileID: 1603680938}
   - {fileID: 1057341212}
   - {fileID: 938156417}
   - {fileID: 1980176172}
@@ -17458,3 +17626,4 @@ SceneRoots:
   - {fileID: 1298828771}
   - {fileID: 751092366}
   - {fileID: 4161621366889527976}
+  - {fileID: 1660582995}

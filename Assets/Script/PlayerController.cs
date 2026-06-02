@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     private bool canMove = true; 
 
     [Header("Jumping Mechanics (Tap-Only Fixed Height)")]
-    [SerializeField] private float jumpForce = 15f; // Adjust this value to set your exact fixed jump peak
+    [SerializeField] private float jumpForce = 15f; 
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask platformLayer;
@@ -118,12 +118,6 @@ public class PlayerController : MonoBehaviour
         }
 
         UpdateAnimations();
-
-        if (Keyboard.current.spaceKey.wasReleasedThisFrame && rb.linearVelocity.y > 0f)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
-            coyoteTimeCounter = 0f;
-        }
     }
 
     void FixedUpdate()
@@ -144,8 +138,6 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            // --- SNAPPY FALL GRAVITY ---
-            // Automatically increases gravity scale only when the player is moving downwards
             if (rb.linearVelocity.y < -0.01f) 
             {
                 rb.gravityScale = baseGravityScale * fallMultiplier;
@@ -178,7 +170,6 @@ public class PlayerController : MonoBehaviour
         if (DialogueManager.Instance != null && DialogueManager.Instance.IsDialogueActive) return;
         if (!canMove) return;
 
-        // Triggers once right when the button is first tapped down
         if (value.isPressed)
         {
             if (moveInput.y < -0.1f && isGrounded) StartCoroutine(DropThroughPlatform());
@@ -186,7 +177,7 @@ public class PlayerController : MonoBehaviour
             else if (coyoteTimeCounter > 0f)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-                coyoteTimeCounter = 0f; // Prevent double jumping inside coyote window
+                coyoteTimeCounter = 0f; 
                 
                 if (WakeManager.Instance != null) WakeManager.Instance.AddActionSpike();
             }
@@ -254,12 +245,21 @@ public class PlayerController : MonoBehaviour
         Collider2D[] hitProjectiles = Physics2D.OverlapBoxAll(attackPoint.position, attackArea, 0f, projectileLayer);
         foreach (Collider2D proj in hitProjectiles)
         {
+            // Standard Enemy Projectile Parry
             EnemyProjectile p = proj.GetComponent<EnemyProjectile>(); 
             if (p != null)
             {
                 Vector2 deflectDirection = (mouseWorldPosition - (Vector2)proj.transform.position).normalized;
                 p.Deflect(deflectDirection);
                 Debug.DrawLine(proj.transform.position, mouseWorldPosition, Color.yellow, 0.5f);
+                if (WakeManager.Instance != null) WakeManager.Instance.RewardSuccessfulParry();
+            }
+
+            // --- NEW: Boss Cube Parry ---
+            BossCube cube = proj.GetComponent<BossCube>();
+            if (cube != null)
+            {
+                cube.DeflectToBoss(); // Automatically flies back to the boss!
                 if (WakeManager.Instance != null) WakeManager.Instance.RewardSuccessfulParry();
             }
         }
@@ -275,9 +275,12 @@ public class PlayerController : MonoBehaviour
 
             FlyingMeleeEnemy flyingScript = enemyHit.GetComponent<FlyingMeleeEnemy>();
             if (flyingScript != null) flyingScript.TakeDamage(attackDamage);
+            
+            // --- NEW: Standard Melee Damage against Boss ---
+            BossController bossScript = enemyHit.GetComponent<BossController>();
+            if (bossScript != null) bossScript.TakeDamage(attackDamage);
         }
     }
-    
 
     private IEnumerator AttackGizmoVisual()
     {

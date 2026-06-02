@@ -3027,7 +3027,8 @@ Transform:
   m_LocalPosition: {x: -35.38, y: -4.58, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1177796653}
   m_Father: {fileID: 1799153611}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &628032550
@@ -6296,6 +6297,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1146410424}
   m_CullTransparentMesh: 1
+--- !u!1001 &1177796652
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 628032549}
+    m_Modifications:
+    - target: {fileID: 1099270961711542738, guid: 75e4f0fc847e54b828e2b24efcb88f6d, type: 3}
+      propertyPath: m_Name
+      value: Effects Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115782715126724187, guid: 75e4f0fc847e54b828e2b24efcb88f6d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115782715126724187, guid: 75e4f0fc847e54b828e2b24efcb88f6d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115782715126724187, guid: 75e4f0fc847e54b828e2b24efcb88f6d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115782715126724187, guid: 75e4f0fc847e54b828e2b24efcb88f6d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115782715126724187, guid: 75e4f0fc847e54b828e2b24efcb88f6d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115782715126724187, guid: 75e4f0fc847e54b828e2b24efcb88f6d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115782715126724187, guid: 75e4f0fc847e54b828e2b24efcb88f6d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115782715126724187, guid: 75e4f0fc847e54b828e2b24efcb88f6d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115782715126724187, guid: 75e4f0fc847e54b828e2b24efcb88f6d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115782715126724187, guid: 75e4f0fc847e54b828e2b24efcb88f6d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 75e4f0fc847e54b828e2b24efcb88f6d, type: 3}
+--- !u!4 &1177796653 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2115782715126724187, guid: 75e4f0fc847e54b828e2b24efcb88f6d, type: 3}
+  m_PrefabInstance: {fileID: 1177796652}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1214826544
 GameObject:
   m_ObjectHideFlags: 0
@@ -11933,6 +11996,11 @@ MonoBehaviour:
   enemyHitPenalty: 10
   decayRatePerSecond: 10
   wakeTextDisplay: {fileID: 1404254525}
+  smallShardPrefab: {fileID: 0}
+  mediumShardPrefab: {fileID: 0}
+  largeShardPrefab: {fileID: 0}
+  EyeTransitionPrefab: {fileID: 0}
+  decayDelayAfterAction: 0.4
 --- !u!114 &8398034481789894334
 MonoBehaviour:
   m_ObjectHideFlags: 0
